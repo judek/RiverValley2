@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+    <link href='http://rivervalleycarpe.readyhosting.com/rivervalley/style.css' rel='stylesheet' type='text/css'/>
+
+    <b:include data='blog' name='all-head-content'/>
+    <title>
+      <data:blog.pageTitle/>
+    </title>
+    <b:skin><![CDATA[]]></b:skin>
+  </head>
+
+  <body>
+    <!-- BEGIN Main Table Content -->
+    <table align='center' border='0' cellpadding='0' cellspacing='0' id='Table_01' style='width: 1000px;'>
+
+
+      <tr>
+        <td colspan='3' height='67px' width='1000px'>
+
+          <table width='1000px'>
+            <tr>
+              <td width='100px'>
+                <a href='http://rivervalley.webhop.org/rivervalley/Default.aspx'>
+                  <img alt='' src='http://rivervalleycarpe.readyhosting.com/rivervalley/images/New_Picture.gif' style='border: none;'/>
+                </a>
+              </td>
+              <td align='right' valign='middle'>
+                <span class='headertitle'>River Valley Community Church</span>
+                <span class='headertext'>
+                  <br/><a href='http://rivervalley.webhop.org/rivervalley/Contact.aspx'>1655 Bowman Dr | Aurora, IL 60506 | 630-907-2992</a>
+                  <br/>questions@rivervalleycommunity.org
+                  <br/>Sunday Worship at 10:00AM
+                </span>
+
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+
+      <!-- BEGIN Menu Row-->
+      <tr>
+        <td rowspan='4'>
+        </td>
+        <td colspan='2'>
+
+          <ul id='sddm'>
+
+            <li>
+              <a href='http://rivervalley.webhop.org/rivervalley/Default.aspx'>welcome</a>
+            </li>
+
+            <li>
+              <a href='http://rivervalley.webhop.org/rivervalley/Worship.aspx'>worship</a>
+
+            </li>
+
+
+            <li>
+              <a href='http://rivervalley.webhop.org/rivervalley/Ministry.aspx'>ministries</a>
+
+            </li>
+
+            <li>
+              <a href='http://rivervalley.webhop.org/rivervalley/Missions.aspx'>missions</a>
+
+            </li>
+
+
+            <li>
+              <a href='http://rivervalley.webhop.org/rivervalley/Discipleship.aspx'>discipleship</a>
+
+            </li>
+
+
+            <li>
+              <a href='http://rivervalley.webhop.org/rivervalley/Calendar.aspx'>calendar</a>
+
+            </li>
+
+
+            <li>
+              <a href='http://rivervalley.webhop.org/rivervalley/Multimedia.aspx'>audio/video</a>
+
+            </li>
+
+
+            <li>
+              <a href='http://rivervalleycommunity.blogspot.com/'>rvcc blog</a>
+
+            </li>
+
+
+          </ul>
+
+        </td>
+
+      </tr>
+
+      <!-- END Menu Row-->
+
+
+
+      <!--BEGIN Page Title -->
+      <tr>
+        <td colspan='2'>
+          <br/>
+          <span class='title'>RVCC Blog</span>
+        </td>
+      </tr>
+      <!--End Page Title -->
+
+
+
+
+      <!--BEGIN PAGE CONTENT -->
+      <tr>
+        <td valign='top' width='720px'>
+          <div class='just'>
+            <br/>
+            <br/>
+
+
+
+            <b:section class='main' id='main' showaddelement='no'>
+              <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'/>
+            </b:section>
+
+          </div>
+
+        </td>
+
+        <!--Picture Column -->
+        <td align='right' valign='top' width='280px'>
+
+          <b:section class='sidebar' id='sidebar' preferred='yes'>
+            <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'/>
+          </b:section>
+
+
+        </td>
+      </tr>
+      <!--END PAGE CONTENT -->
+
+
+
+
+
+
+
+
+
+
+
+    </table>
+    <!-- END Main Table Content -->
+    <div class='footer'>
+      Copyright &#169; 2010 &quot;River Valley Community Church&quot; <br/>
+      <a href='http://rivervalley.webhop.org/rivervalley/Contact.aspx'>Contact Us</a>
+    </div>
+
+
+  </body>
+</html>

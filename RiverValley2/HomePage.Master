@@ -1,0 +1,249 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomePage.master.cs" Inherits="RiverValley2.HomePage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+<link href="style.css" rel="stylesheet" type="text/css" />
+    <title>River Valley Community Church</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <script type="text/javascript">
+<!--
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+// open hidden layer
+function mopen(id)
+{	
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+// -->
+</script>
+
+</head>
+<body>
+
+    <form id="form1" runat="server">
+    <div id="main">
+
+<table style="width: 1000px;" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+    <tr id="TopPageSpacer">
+      <td colspan="6" height="20">
+        </td>
+      </tr>
+    <tr id="MenuRow">
+      <td rowspan="4" id="leftMenuSpacer"></td>
+      
+	    <td colspan="4" id="MenuItems">
+	    
+	    <ul id="sddm">
+	    
+	<li><a href="Default.aspx" onmouseover="mopen('m1')" onmouseout="mclosetime()">welcome</a>
+		<div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+		<a href="Default.aspx">Home</a>
+	    <a href="Contact.aspx">Contact Us</a>
+	    <a href="About.aspx">About Us</a>
+		<a href="Beliefs.aspx">Beliefs</a>
+		<a href="Practices.aspx">Best Practices</a>
+		<a href="Virtues.aspx">Core Virtues</a>
+
+		</div>
+	</li>
+	    
+
+	
+	<li><a href="Worship.aspx" onmouseover="mopen('m3')" onmouseout="mclosetime()">worship</a>
+		<div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+		<a href="Worship.aspx">Worship</a>
+		<a href="Prayer_and_Praise.aspx">Prayer and Praise</a>
+		</div>
+	</li>
+	
+	
+	<li><a href="Ministry.aspx" onmouseover="mopen('m4')" onmouseout="mclosetime()">ministries</a>
+		<div id="m4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+		<a href="Ministry.aspx">Our Ministries</a>
+		<a href="MensMinistry.aspx">Men's</a>
+		<a href="WomensMinistry.aspx">Women's</a>
+		<a href="Children.aspx">Children</a>
+		<a href="YouthMinistry.aspx">Youth</a>
+		<a href="Singles.aspx">Singles</a>
+		<a href="Lighthouses.aspx">Lighthouses</a>
+		</div>
+	</li>
+	
+	<li><a href="Missions.aspx" onmouseover="mopen('m5')" onmouseout="mclosetime()">missions</a>
+		<div id="m5" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+	    <a href="Missions.aspx">Our Missions</a>
+	    <a href="LocalMinistries.aspx">Local Ministries</a>
+	    <a href="GlobalMissionaries.aspx">Missionaries</a>
+	  <%--  <a href="Missions.aspx#theriversedgecafe">River's Edge Cafe</a>
+		<a href="Missions.aspx#Oasis">Oasis</a>
+		<a href="Missions.aspx#DiscipleshipHouse">Discipleship House</a>
+		<a href="Missions.aspx#FamilyCounseling">Christian Family Counseling</a>
+		<a href="Missions.aspx#klife">K-Life Youth</a>
+		<a href="Missions.aspx#lifespring">LifeSpring</a>
+		<a href="Missions.aspx#hesedhouse">Hesed House</a>
+		<a href="Missions.aspx#waysidecross">Wayside Cross</a>
+		<a href="Missions.aspx#TeenNite">Teen-Nite</a>--%>
+		</div>
+	</li>
+	
+	
+	<li><a href="Discipleship.aspx" onmouseover="mopen('m6')" onmouseout="mclosetime()">discipleship</a>
+		<div id="m6" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+		<a href="Discipleship.aspx">Life Groups</a>
+		<a href="Classes.aspx">Classes</a>
+		</div>
+	</li>
+	
+	
+	<li><a href="Calendar.aspx" onmouseover="mopen('m7')" onmouseout="mclosetime()">calendar</a>
+		<div id="m7" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+		<a href="Calendar.aspx">Our Calendar</a>
+		<%--<a href="News.aspx">Christian News</a>--%>
+		</div>
+	</li>
+	
+	
+	<li><a href="Multimedia.aspx?Tags=sermon" onmouseover="mopen('m8')" onmouseout="mclosetime()">audio/video</a>
+		<div id="m8" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+		<a href="Multimedia.aspx">All Files</a>
+		<a href="Podcast.aspx" target="_blank">Podcast</a>
+		<a href="Multimedia.aspx?Tags=sermon">Sermons</a>
+		<a href="Multimedia.aspx?Tags=video">Videos</a>
+	    <%--<a href="gallery.aspx">Picture Gallery</a>--%>
+    </div>
+	</li>
+	
+		<li><a href="http://rivervalleycommunity.blogspot.com/" onmouseover="mopen('m2')" onmouseout="mclosetime()">rvcc blog</a>
+		<div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+		
+		</div>
+	</li>
+
+</ul>
+
+       
+        </td>
+	    
+     <td rowspan="4" id="rightMenuSpacer"></td>
+      </tr>
+      
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+     
+    
+      
+    <tr valign="top" id="ButtonRow">
+        <td align="center">
+      <div class="homeBox">events</div>
+      <a href="Calendar.aspx">
+      <img src="images/events.jpg" alt="coming events" class="shadowMe" />
+      </a>
+      <br />
+      <div class="content_buttom">
+      
+<asp:ContentPlaceHolder ID="ContentEvents" runat="server">
+        </asp:ContentPlaceHolder>
+
+</div>
+        <%--  <br />
+          <asp:Button ID="Button1" runat="server" Text="READ MORE" 
+              CssClass="button-edit" onclick="Button1_Click" />--%>
+
+</td>
+	    <td align="center">
+        <div class="homeBox">sermons</div>
+        <a href="Multimedia.aspx?Tags=sermon">
+        <img src="images/sermons.png" alt="sermon archive" class="shadowMe" />
+        </a>
+              <br />
+      <div class="content_buttom">
+
+<asp:ContentPlaceHolder ID="ContentSermons" runat="server">
+        </asp:ContentPlaceHolder>      
+        
+ 
+  <%--<br />
+  <asp:Button ID="Button2" runat="server" Text="READ MORE" 
+              CssClass="button-edit" onclick="Button2_Click"/> --%>
+    
+    </td>
+	    <td align="center">
+        <div class="homeBox">missions</div>
+              <a href="Missions.aspx" >
+              <img src="images/Missions.jpg" alt="the story" class="shadowMe" />
+              </a>
+              <div class="content_buttom">
+              
+              </div>
+              
+       <br />
+       
+	    
+	    
+	    </td>
+	    <td align="center">
+        <div class="homeBox">location</div>
+              <a href="http://maps.google.com/?q=888%20S%20Edgelawn%20Ave%20Aurora%20IL" target="_blank" >
+              <img src="images/Map.png" alt="Spiritual Gifts Test" class="shadowMe" />
+              </a>
+              <div class="content_buttom">
+              Join us Sunday's at 10 a.m.
+              </div>
+	    </td>
+      </tr>
+   
+  </table>
+
+
+
+        
+<!--
+<div class="footer">Copyright &#169; 2011 &quot;River Valley Community Church&quot; <br />
+  <a href="Contact.aspx">Contact Us</a>
+  </div>
+    -->
+    
+    
+    </div>
+    </form>
+</body>
+</html>

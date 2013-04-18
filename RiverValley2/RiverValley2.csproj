@@ -1,0 +1,548 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4778AFD3-02F5-4E23-946F-27DF25D2B608}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RiverValley2</RootNamespace>
+    <AssemblyName>RiverValley2</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.GData.AccessControl, Version=1.8.0.0, Culture=neutral, PublicKeyToken=b4b8eb9a7afc8328, processorArchitecture=MSIL" />
+    <Reference Include="Google.GData.Calendar, Version=1.8.0.0, Culture=neutral, PublicKeyToken=aa6748391206b888, processorArchitecture=MSIL" />
+    <Reference Include="Google.GData.Client, Version=1.8.0.0, Culture=neutral, PublicKeyToken=04a59ca9b0273830, processorArchitecture=MSIL" />
+    <Reference Include="Google.GData.Extensions, Version=1.8.0.0, Culture=neutral, PublicKeyToken=0b4c5df2ebf20876, processorArchitecture=MSIL" />
+    <Reference Include="RSS.NET, Version=0.86.4129.19820, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>assemblies\RSS.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="RssReader, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>assemblies\RssReader.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Beliefs.aspx.cs">
+      <DependentUpon>Beliefs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beliefs.aspx.designer.cs">
+      <DependentUpon>Beliefs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar.aspx.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calendar.aspx.designer.cs">
+      <DependentUpon>Calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarEvent.aspx.cs">
+      <DependentUpon>CalendarEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalendarEvent.aspx.designer.cs">
+      <DependentUpon>CalendarEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Children.aspx.cs">
+      <DependentUpon>Children.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Children.aspx.designer.cs">
+      <DependentUpon>Children.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes.aspx.cs">
+      <DependentUpon>Classes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes.aspx.designer.cs">
+      <DependentUpon>Classes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentReader.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Discipleship.aspx.cs">
+      <DependentUpon>Discipleship.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Discipleship.aspx.designer.cs">
+      <DependentUpon>Discipleship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document.cs" />
+    <Compile Include="Edit\CalendarEdit\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit\CalendarEdit\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\GalleryEdit\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit\GalleryEdit\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\HomeworkUpload\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit\HomeworkUpload\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Event.cs" />
+    <Compile Include="gallery.aspx.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gallery.aspx.designer.cs">
+      <DependentUpon>gallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GalleryItem.cs" />
+    <Compile Include="GetFile.aspx.cs">
+      <DependentUpon>GetFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GetFile.aspx.designer.cs">
+      <DependentUpon>GetFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="getthumbnail.aspx.cs">
+      <DependentUpon>getthumbnail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="getthumbnail.aspx.designer.cs">
+      <DependentUpon>getthumbnail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalMissionaries.aspx.cs">
+      <DependentUpon>GlobalMissionaries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GlobalMissionaries.aspx.designer.cs">
+      <DependentUpon>GlobalMissionaries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Godattheboxoffice.aspx.cs">
+      <DependentUpon>Godattheboxoffice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Godattheboxoffice.aspx.designer.cs">
+      <DependentUpon>Godattheboxoffice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoogleAPI.cs" />
+    <Compile Include="HomePage.Master.cs">
+      <DependentUpon>HomePage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.Master.designer.cs">
+      <DependentUpon>HomePage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Lighthouses.aspx.cs">
+      <DependentUpon>Lighthouses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lighthouses.aspx.designer.cs">
+      <DependentUpon>Lighthouses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LocalMinistries.aspx.cs">
+      <DependentUpon>LocalMinistries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LocalMinistries.aspx.designer.cs">
+      <DependentUpon>LocalMinistries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MensMinistry.aspx.cs">
+      <DependentUpon>MensMinistry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MensMinistry.aspx.designer.cs">
+      <DependentUpon>MensMinistry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ministry.aspx.cs">
+      <DependentUpon>Ministry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ministry.aspx.designer.cs">
+      <DependentUpon>Ministry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Missions.aspx.cs">
+      <DependentUpon>Missions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Missions.aspx.designer.cs">
+      <DependentUpon>Missions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Multimedia.aspx.cs">
+      <DependentUpon>Multimedia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Multimedia.aspx.designer.cs">
+      <DependentUpon>Multimedia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\MultimediaEdit\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit\MultimediaEdit\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MultimediaPlay.aspx.cs">
+      <DependentUpon>MultimediaPlay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MultimediaPlay.aspx.designer.cs">
+      <DependentUpon>MultimediaPlay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Play.aspx.cs">
+      <DependentUpon>Play.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Play.aspx.designer.cs">
+      <DependentUpon>Play.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Podcast.aspx.cs">
+      <DependentUpon>Podcast.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Podcast.aspx.designer.cs">
+      <DependentUpon>Podcast.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Podcast.cs" />
+    <Compile Include="Practices.aspx.cs">
+      <DependentUpon>Practices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Practices.aspx.designer.cs">
+      <DependentUpon>Practices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrayerCampaign.aspx.cs">
+      <DependentUpon>PrayerCampaign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrayerCampaign.aspx.designer.cs">
+      <DependentUpon>PrayerCampaign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Prayer_and_Praise.aspx.cs">
+      <DependentUpon>Prayer_and_Praise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Prayer_and_Praise.aspx.designer.cs">
+      <DependentUpon>Prayer_and_Praise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="privacystatement.aspx.cs">
+      <DependentUpon>privacystatement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="privacystatement.aspx.designer.cs">
+      <DependentUpon>privacystatement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RiverValley.Master.cs">
+      <DependentUpon>RiverValley.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RiverValley.Master.designer.cs">
+      <DependentUpon>RiverValley.Master</DependentUpon>
+    </Compile>
+    <Compile Include="RiverValleyMobile.Master.cs">
+      <DependentUpon>RiverValleyMobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RiverValleyMobile.Master.designer.cs">
+      <DependentUpon>RiverValleyMobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="RiverValleyPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RiverValleyPage2.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShrinkImage.aspx.cs">
+      <DependentUpon>ShrinkImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShrinkImage.aspx.designer.cs">
+      <DependentUpon>ShrinkImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Singles.aspx.cs">
+      <DependentUpon>Singles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Singles.aspx.designer.cs">
+      <DependentUpon>Singles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="slideshow.aspx.cs">
+      <DependentUpon>slideshow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="slideshow.aspx.designer.cs">
+      <DependentUpon>slideshow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Util.aspx.cs">
+      <DependentUpon>Util.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Util.aspx.designer.cs">
+      <DependentUpon>Util.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewEvent.aspx.cs">
+      <DependentUpon>viewEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewEvent.aspx.designer.cs">
+      <DependentUpon>viewEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Virtues.aspx.cs">
+      <DependentUpon>Virtues.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Virtues.aspx.designer.cs">
+      <DependentUpon>Virtues.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WomensMinistry.aspx.cs">
+      <DependentUpon>WomensMinistry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WomensMinistry.aspx.designer.cs">
+      <DependentUpon>WomensMinistry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Worship.aspx.cs">
+      <DependentUpon>Worship.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Worship.aspx.designer.cs">
+      <DependentUpon>Worship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XMLUtil.cs" />
+    <Compile Include="YouthMinistry.aspx.cs">
+      <DependentUpon>YouthMinistry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YouthMinistry.aspx.designer.cs">
+      <DependentUpon>YouthMinistry.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="images\background.jpg" />
+    <Content Include="images\City.jpg" />
+    <Content Include="images\index_01.jpg" />
+    <Content Include="images\index_02.jpg" />
+    <Content Include="images\index_03.jpg" />
+    <Content Include="images\index_04.jpg" />
+    <Content Include="images\index_05.jpg" />
+    <Content Include="images\index_06.jpg" />
+    <Content Include="images\index_07.jpg" />
+    <Content Include="images\index_08.jpg" />
+    <Content Include="images\index_09.jpg" />
+    <Content Include="images\index_10.jpg" />
+    <Content Include="images\personal_advice.jpg" />
+    <Content Include="images\profile.jpg" />
+    <Content Include="images\read_more.png" />
+    <Content Include="images\sleep.jpg" />
+    <Content Include="images\spacer.gif" />
+    <Content Include="RiverValley.Master" />
+    <Content Include="style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="images\About1.jpg" />
+    <Content Include="images\About2.jpg" />
+    <Content Include="images\Events.jpg" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\Missions.jpg" />
+    <Content Include="images\Sermons.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Beliefs.aspx" />
+    <Content Include="Calendar.aspx" />
+    <Content Include="CalendarEvent.aspx" />
+    <Content Include="Children.aspx" />
+    <Content Include="Classes.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Discipleship.aspx" />
+    <Content Include="Edit\CalendarEditor\addevent.asp" />
+    <Content Include="Edit\CalendarEditor\Calendar.asp" />
+    <Content Include="Edit\CalendarEditor\Calendar.gif" />
+    <Content Include="Edit\CalendarEditor\default.asp" />
+    <Content Include="Edit\CalendarEditor\edit.asp" />
+    <Content Include="Edit\CalendarEditor\editEvent.asp" />
+    <Content Include="Edit\CalendarEditor\editEvents.asp" />
+    <Content Include="Edit\CalendarEditor\leftl1.gif" />
+    <Content Include="Edit\CalendarEditor\ListEvents.asp" />
+    <Content Include="Edit\CalendarEditor\rightl1.gif" />
+    <Content Include="Edit\CalendarEditor\tosscookies.asp" />
+    <Content Include="Edit\CalendarEditor\updateEvent.asp" />
+    <Content Include="Edit\CalendarEditor\updateEvents.asp" />
+    <Content Include="Edit\CalendarEdit\Default.aspx" />
+    <Content Include="Edit\Default.aspx" />
+    <Content Include="Edit\GalleryEdit\Default.aspx" />
+    <Content Include="Edit\HomeworkUpload\Default.aspx" />
+    <Content Include="gallery.aspx" />
+    <Content Include="GetFile.aspx" />
+    <Content Include="getthumbnail.aspx" />
+    <Content Include="Godattheboxoffice.aspx" />
+    <Content Include="HomePage.Master" />
+    <Content Include="images\About3.jpg" />
+    <Content Include="images\CitySliced.jpg" />
+    <Content Include="images\CitySlogan.jpg" />
+    <Content Include="images\index_04w.jpg" />
+    <Content Include="images\LogoSmall.jpg" />
+    <Content Include="images\New_Picture.png" />
+    <Content Include="Lighthouses.aspx" />
+    <Content Include="MensMinistry.aspx" />
+    <Content Include="Ministry.aspx" />
+    <Content Include="Missions.aspx" />
+    <Content Include="Multimedia.aspx" />
+    <Content Include="Edit\MultimediaEdit\Default.aspx" />
+    <Content Include="MultimediaPlay.aspx" />
+    <Content Include="News.aspx" />
+    <Content Include="picts\background-center.jpg" />
+    <Content Include="picts\button-order.gif" />
+    <Content Include="picts\buttonon-order.gif" />
+    <Content Include="picts\feed-icon-14x14.png" />
+    <Content Include="picts\icon_download.gif" />
+    <Content Include="picts\shadeform.gif" />
+    <Content Include="picts\small-windows.gif" />
+    <Content Include="Play.aspx" />
+    <Content Include="Podcast.aspx" />
+    <Content Include="Practices.aspx" />
+    <Content Include="Prayer_and_Praise.aspx" />
+    <Content Include="RiverValleyBlogTemplate.xml" />
+    <Content Include="ShrinkImage.aspx" />
+    <Content Include="Singles.aspx" />
+    <Content Include="slideshow.aspx" />
+    <Content Include="viewEvent.aspx" />
+    <Content Include="Virtues.aspx" />
+    <Content Include="WomensMinistry.aspx" />
+    <Content Include="Worship.aspx" />
+    <Content Include="YouthMinistry.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Autentication\Web.config" />
+    <Content Include="GlobalMissionaries.aspx" />
+    <Content Include="images\Aurora.jpg" />
+    <Content Include="images\AuroraSlogan.jpg" />
+    <Content Include="images\AuroraSlogan2.jpg" />
+    <Content Include="images\AuroraSlogan3.jpg" />
+    <Content Include="images\awakenings.png" />
+    <Content Include="images\Banner1.jpg" />
+    <Content Include="images\Banner2.jpg" />
+    <Content Include="images\Banner3.jpg" />
+    <Content Include="images\Banner4.jpg" />
+    <Content Include="images\Banner5.jpg" />
+    <Content Include="images\Banner6.jpg" />
+    <Content Include="images\Banner7.jpg" />
+    <Content Include="images\JimiAurora.jpg" />
+    <Content Include="images\JimiSample.jpg" />
+    <Content Include="images\MarriageSeminar.png" />
+    <Content Include="images\Ministry1.jpg" />
+    <Content Include="images\Ministry2.jpg" />
+    <Content Include="images\Ministry3.jpg" />
+    <Content Include="images\New_Picture.gif" />
+    <Content Include="images\PrayerCampaign.jpg" />
+    <Content Include="LocalMinistries.aspx" />
+    <Content Include="PrayerCampaign.aspx" />
+    <Content Include="privacystatement.aspx" />
+    <Content Include="Test.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\SpiritualGifts.png" />
+    <Content Include="RiverValleyMobile.Master" />
+    <Content Include="stylemobile.css" />
+    <Content Include="Util.aspx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49256</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

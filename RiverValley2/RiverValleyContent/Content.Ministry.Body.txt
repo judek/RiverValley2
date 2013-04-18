@@ -1,0 +1,15 @@
+--++ Minstry
+
+--+++ Ministry at River Valley Community Church 
+
+We believe in connecting here at River Valley. We are a place where you can connect with God, and connect with one another. While our Life groups serve as the primary place of connection and our Sunday morning worship celebrations provide a family-reunion-type of atmosphere where we gather to praise God, River Valley's adult ministries are places of connection that take us into deeper community with God and with one another.
+
+<ul>
+<li><a href="MensMinistry.aspx">Men's</li></a>
+<li><a href="WomensMinistry.aspx">Women's</li></a>
+<li><a href="Children.aspx">Childern</li></a>
+<li><a href="YouthMinistry.aspx">Youth</li></a>
+<li><a href="Singles.aspx">Singles</li></a>
+<li><a href="Lighthouses.aspx">Lighthouses</li></a>
+<li><a href="Godattheboxoffice.aspx">God@the box office</li></a>
+</ul>

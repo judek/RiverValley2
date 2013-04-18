@@ -1,0 +1,14 @@
+judek@yahoo.com,Kannankeril,Jude,312-442-8687,100 S Wacker,Chicago,IL,60606
+judek@yahoo.com,User,Test,8008001234,Ignore,NoWhere,CA,90210
+frogljh@ymail.com,Herbig,Lois,,2 South 716 Grove Lane,Warrenville,IL,60555-2712
+sherilyn@rivervalleycommunity.org,Kingsbury,Sherilyn,630-809-6742,860 Greenview Drive,Aurora,IL,60505
+Ballismon@yahoo.com,ballis,michelle,,24 pembrooke rd,montgomery,IL,60538
+sjhipple@verizon.net,Hipple,Jerry & Sue,815-264-3979,8737 State Rt. 23,Waterman,IL,60556
+kaj1965@hotmail.com,Justice,Kara,630-879-6974,343 N. Lincoln St.,Batavia,IL,60510
+joyh@dreyerfoote.com,Hendricksen,Joy,630/761-2964,1366 Georgetown Drive,Batavia,IL,
+Aggiecassidy@gmail.com,Cassidy,Aggie,630 -;66,29 windwood dr,,,
+Katiesudsarth@gmail.com,Suddarth,Katie,630-777-1265,1222 Nantucket rd apt c,Aurora,IL,60506
+Aggiecassidy@gmail.com,Cassidy,Aggie,630-466-1012,29 windwood dr,Sugar grove,IL,60554
+esuddarth@gmail.com,Suddarth,Eli,,1222 Nantucket Rd. Apt C,Aurora,IL,60506
+judek@yahoo.com,User,Test,630-555-1212,This is only test for email change,Test City 3,KS,549012
+admin@rivervalleycommunity.org,Abuhl,Pamela,,725 Morton Avenue,Aurora,IL,60506

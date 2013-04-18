@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCalEvent>
+  <CalEvent>
+    <ID>4ht83jhlgkglmfqph98brjt95s</ID>
+    <Subject>Test Event</Subject>
+    <Details />
+    <Location />
+    <StartDate>2013-04-27T00:00:00</StartDate>
+    <EndDate>2013-04-28T00:00:00</EndDate>
+    <StartTime>2013-04-26T23:00:00</StartTime>
+    <EndTime>2013-04-27T23:00:00</EndTime>
+    <IsAllDayEvent>true</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>pn246j7l8nau9bm1fdft5vs4a4_20140315T130000Z</ID>
+    <Subject>Men's Ministry Breakfast</Subject>
+    <Details>Join us for breakfast, worship time, devotional, discussion, and prayer.</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731, Aurora, IL 60506</Location>
+    <StartDate>2014-03-15T08:00:00-05:00</StartDate>
+    <EndDate>2014-03-15T09:30:00-05:00</EndDate>
+    <StartTime>2014-03-15T07:00:00-05:00</StartTime>
+    <EndTime>2014-03-15T08:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>pn246j7l8nau9bm1fdft5vs4a4_20140215T140000Z</ID>
+    <Subject>Men's Ministry Breakfast</Subject>
+    <Details>Join us for breakfast, worship time, devotional, discussion, and prayer.</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731, Aurora, IL 60506</Location>
+    <StartDate>2014-02-15T08:00:00-06:00</StartDate>
+    <EndDate>2014-02-15T09:30:00-06:00</EndDate>
+    <StartTime>2014-02-15T07:00:00-06:00</StartTime>
+    <EndTime>2014-02-15T08:30:00-06:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>pn246j7l8nau9bm1fdft5vs4a4_20140118T140000Z</ID>
+    <Subject>Men's Ministry Breakfast</Subject>
+    <Details>Join us for breakfast, worship time, devotional, discussion, and prayer.</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731, Aurora, IL 60506</Location>
+    <StartDate>2014-01-18T08:00:00-06:00</StartDate>
+    <EndDate>2014-01-18T09:30:00-06:00</EndDate>
+    <StartTime>2014-01-18T07:00:00-06:00</StartTime>
+    <EndTime>2014-01-18T08:30:00-06:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>pn246j7l8nau9bm1fdft5vs4a4_20131221T140000Z</ID>
+    <Subject>Men's Ministry Breakfast</Subject>
+    <Details>Join us for breakfast, worship time, devotional, discussion, and prayer.</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731, Aurora, IL 60506</Location>
+    <StartDate>2013-12-21T08:00:00-06:00</StartDate>
+    <EndDate>2013-12-21T09:30:00-06:00</EndDate>
+    <StartTime>2013-12-21T07:00:00-06:00</StartTime>
+    <EndTime>2013-12-21T08:30:00-06:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>pn246j7l8nau9bm1fdft5vs4a4_20131116T140000Z</ID>
+    <Subject>Men's Ministry Breakfast</Subject>
+    <Details>Join us for breakfast, worship time, devotional, discussion, and prayer.</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731, Aurora, IL 60506</Location>
+    <StartDate>2013-11-16T08:00:00-06:00</StartDate>
+    <EndDate>2013-11-16T09:30:00-06:00</EndDate>
+    <StartTime>2013-11-16T07:00:00-06:00</StartTime>
+    <EndTime>2013-11-16T08:30:00-06:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>pn246j7l8nau9bm1fdft5vs4a4_20131019T130000Z</ID>
+    <Subject>Men's Ministry Breakfast</Subject>
+    <Details>Join us for breakfast, worship time, devotional, discussion, and prayer.</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731, Aurora, IL 60506</Location>
+    <StartDate>2013-10-19T08:00:00-05:00</StartDate>
+    <EndDate>2013-10-19T09:30:00-05:00</EndDate>
+    <StartTime>2013-10-19T07:00:00-05:00</StartTime>
+    <EndTime>2013-10-19T08:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>pn246j7l8nau9bm1fdft5vs4a4_20130921T130000Z</ID>
+    <Subject>Men's Ministry Breakfast</Subject>
+    <Details>Join us for breakfast, worship time, devotional, discussion, and prayer.</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731, Aurora, IL 60506</Location>
+    <StartDate>2013-09-21T08:00:00-05:00</StartDate>
+    <EndDate>2013-09-21T09:30:00-05:00</EndDate>
+    <StartTime>2013-09-21T07:00:00-05:00</StartTime>
+    <EndTime>2013-09-21T08:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>pn246j7l8nau9bm1fdft5vs4a4_20130817T130000Z</ID>
+    <Subject>Men's Ministry Breakfast</Subject>
+    <Details>Join us for breakfast, worship time, devotional, discussion, and prayer.</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731, Aurora, IL 60506</Location>
+    <StartDate>2013-08-17T08:00:00-05:00</StartDate>
+    <EndDate>2013-08-17T09:30:00-05:00</EndDate>
+    <StartTime>2013-08-17T07:00:00-05:00</StartTime>
+    <EndTime>2013-08-17T08:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>pn246j7l8nau9bm1fdft5vs4a4_20130720T130000Z</ID>
+    <Subject>Men's Ministry Breakfast</Subject>
+    <Details>Join us for breakfast, worship time, devotional, discussion, and prayer.</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731, Aurora, IL 60506</Location>
+    <StartDate>2013-07-20T08:00:00-05:00</StartDate>
+    <EndDate>2013-07-20T09:30:00-05:00</EndDate>
+    <StartTime>2013-07-20T07:00:00-05:00</StartTime>
+    <EndTime>2013-07-20T08:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>pn246j7l8nau9bm1fdft5vs4a4_20130615T130000Z</ID>
+    <Subject>Men's Ministry Breakfast</Subject>
+    <Details>Join us for breakfast, worship time, devotional, discussion, and prayer.</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731, Aurora, IL 60506</Location>
+    <StartDate>2013-06-15T08:00:00-05:00</StartDate>
+    <EndDate>2013-06-15T09:30:00-05:00</EndDate>
+    <StartTime>2013-06-15T07:00:00-05:00</StartTime>
+    <EndTime>2013-06-15T08:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>pn246j7l8nau9bm1fdft5vs4a4_20130518T130000Z</ID>
+    <Subject>Men's Ministry Breakfast</Subject>
+    <Details>Join us for breakfast, worship time, devotional, discussion, and prayer.</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731, Aurora, IL 60506</Location>
+    <StartDate>2013-05-18T08:00:00-05:00</StartDate>
+    <EndDate>2013-05-18T09:30:00-05:00</EndDate>
+    <StartTime>2013-05-18T07:00:00-05:00</StartTime>
+    <EndTime>2013-05-18T08:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>pn246j7l8nau9bm1fdft5vs4a4_20130420T130000Z</ID>
+    <Subject>Men's Ministry Breakfast</Subject>
+    <Details>Join us for breakfast, worship time, devotional, discussion, and prayer.</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731, Aurora, IL 60506</Location>
+    <StartDate>2013-04-20T08:00:00-05:00</StartDate>
+    <EndDate>2013-04-20T09:30:00-05:00</EndDate>
+    <StartTime>2013-04-20T07:00:00-05:00</StartTime>
+    <EndTime>2013-04-20T08:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>78uvb27ds0j7ton0il5in69e5g</ID>
+    <Subject>Young Adults Dinner</Subject>
+    <Details>At Dave &amp; Lisa Lumbert's House
+
+This event is for people ages 19-36. We will make our own pizza's and discuss what everyone is looking for to start a Young Adult Ministry at River Valley. Please call the church for more information 630-844-9115</Details>
+    <Location>645 St Christopher, Aurora IL</Location>
+    <StartDate>2013-04-06T18:00:00-05:00</StartDate>
+    <EndDate>2013-04-06T21:00:00-05:00</EndDate>
+    <StartTime>2013-04-06T17:00:00-05:00</StartTime>
+    <EndTime>2013-04-06T20:00:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>dnsihok0vvubfdms1agi2nnenc</ID>
+    <Subject>Dinner's For 8</Subject>
+    <Details>Mark your calendars...more information to come soon!</Details>
+    <Location>Host Houses will be released soon</Location>
+    <StartDate>2013-04-13T18:30:00-05:00</StartDate>
+    <EndDate>2013-04-13T20:30:00-05:00</EndDate>
+    <StartTime>2013-04-13T17:30:00-05:00</StartTime>
+    <EndTime>2013-04-13T19:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>tr4lslnsq5mae23il59qjt2gkg</ID>
+    <Subject>Gospel Brunch</Subject>
+    <Details>The Wheaton College Choir will be joining us for church this day. We will have a brunch/potluck, please bring a dish to pass. This will be during our normal church service, more details to come!</Details>
+    <Location>River Valley Community Church</Location>
+    <StartDate>2013-04-28T10:00:00-05:00</StartDate>
+    <EndDate>2013-04-28T11:30:00-05:00</EndDate>
+    <StartTime>2013-04-28T09:00:00-05:00</StartTime>
+    <EndTime>2013-04-28T10:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>tscv1vq7akc970t5sl3r3f2e8o</ID>
+    <Subject>Kids Easter Party</Subject>
+    <Details>More information to come!</Details>
+    <Location>888 S. Edgelawn Dr., Unit 1731. Aurora, IL 60506</Location>
+    <StartDate>2013-03-16T10:00:00-05:00</StartDate>
+    <EndDate>2013-03-16T12:00:00-05:00</EndDate>
+    <StartTime>2013-03-16T09:00:00-05:00</StartTime>
+    <EndTime>2013-03-16T11:00:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>bnjl1vf0cmhs74c80r2a1pkjoc_20140317T233000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
+    <StartDate>2014-03-17T18:30:00-05:00</StartDate>
+    <EndDate>2014-03-17T20:30:00-05:00</EndDate>
+    <StartTime>2014-03-17T17:30:00-05:00</StartTime>
+    <EndTime>2014-03-17T19:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>bnjl1vf0cmhs74c80r2a1pkjoc_20140218T003000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
+    <StartDate>2014-02-17T18:30:00-06:00</StartDate>
+    <EndDate>2014-02-17T20:30:00-06:00</EndDate>
+    <StartTime>2014-02-17T17:30:00-06:00</StartTime>
+    <EndTime>2014-02-17T19:30:00-06:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>bnjl1vf0cmhs74c80r2a1pkjoc_20140121T003000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
+    <StartDate>2014-01-20T18:30:00-06:00</StartDate>
+    <EndDate>2014-01-20T20:30:00-06:00</EndDate>
+    <StartTime>2014-01-20T17:30:00-06:00</StartTime>
+    <EndTime>2014-01-20T19:30:00-06:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>bnjl1vf0cmhs74c80r2a1pkjoc_20131217T003000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
+    <StartDate>2013-12-16T18:30:00-06:00</StartDate>
+    <EndDate>2013-12-16T20:30:00-06:00</EndDate>
+    <StartTime>2013-12-16T17:30:00-06:00</StartTime>
+    <EndTime>2013-12-16T19:30:00-06:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>bnjl1vf0cmhs74c80r2a1pkjoc_20131119T003000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
+    <StartDate>2013-11-18T18:30:00-06:00</StartDate>
+    <EndDate>2013-11-18T20:30:00-06:00</EndDate>
+    <StartTime>2013-11-18T17:30:00-06:00</StartTime>
+    <EndTime>2013-11-18T19:30:00-06:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>bnjl1vf0cmhs74c80r2a1pkjoc_20131021T233000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
+    <StartDate>2013-10-21T18:30:00-05:00</StartDate>
+    <EndDate>2013-10-21T20:30:00-05:00</EndDate>
+    <StartTime>2013-10-21T17:30:00-05:00</StartTime>
+    <EndTime>2013-10-21T19:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>bnjl1vf0cmhs74c80r2a1pkjoc_20130916T233000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
+    <StartDate>2013-09-16T18:30:00-05:00</StartDate>
+    <EndDate>2013-09-16T20:30:00-05:00</EndDate>
+    <StartTime>2013-09-16T17:30:00-05:00</StartTime>
+    <EndTime>2013-09-16T19:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>bnjl1vf0cmhs74c80r2a1pkjoc_20130819T233000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
+    <StartDate>2013-08-19T18:30:00-05:00</StartDate>
+    <EndDate>2013-08-19T20:30:00-05:00</EndDate>
+    <StartTime>2013-08-19T17:30:00-05:00</StartTime>
+    <EndTime>2013-08-19T19:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>bnjl1vf0cmhs74c80r2a1pkjoc_20130715T233000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
+    <StartDate>2013-07-15T18:30:00-05:00</StartDate>
+    <EndDate>2013-07-15T20:30:00-05:00</EndDate>
+    <StartTime>2013-07-15T17:30:00-05:00</StartTime>
+    <EndTime>2013-07-15T19:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>bnjl1vf0cmhs74c80r2a1pkjoc_20130617T233000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
+    <StartDate>2013-06-17T18:30:00-05:00</StartDate>
+    <EndDate>2013-06-17T20:30:00-05:00</EndDate>
+    <StartTime>2013-06-17T17:30:00-05:00</StartTime>
+    <EndTime>2013-06-17T19:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>bnjl1vf0cmhs74c80r2a1pkjoc_20130520T233000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
+    <StartDate>2013-05-20T18:30:00-05:00</StartDate>
+    <EndDate>2013-05-20T20:30:00-05:00</EndDate>
+    <StartTime>2013-05-20T17:30:00-05:00</StartTime>
+    <EndTime>2013-05-20T19:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>bnjl1vf0cmhs74c80r2a1pkjoc_20130415T233000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
+    <StartDate>2013-04-15T18:30:00-05:00</StartDate>
+    <EndDate>2013-04-15T20:30:00-05:00</EndDate>
+    <StartTime>2013-04-15T17:30:00-05:00</StartTime>
+    <EndTime>2013-04-15T19:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>bnjl1vf0cmhs74c80r2a1pkjoc_20130318T233000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
+    <StartDate>2013-03-18T18:30:00-05:00</StartDate>
+    <EndDate>2013-03-18T20:30:00-05:00</EndDate>
+    <StartTime>2013-03-18T17:30:00-05:00</StartTime>
+    <EndTime>2013-03-18T19:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>59np4iu71erdtb7055i95bp1f8_20140407T233000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+Any questions contact the church office 630-844-9115</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731. Aurora, IL 60506</Location>
+    <StartDate>2014-04-07T18:30:00-05:00</StartDate>
+    <EndDate>2014-04-07T20:30:00-05:00</EndDate>
+    <StartTime>2014-04-07T17:30:00-05:00</StartTime>
+    <EndTime>2014-04-07T19:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>59np4iu71erdtb7055i95bp1f8_20140304T003000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+Any questions contact the church office 630-844-9115</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731. Aurora, IL 60506</Location>
+    <StartDate>2014-03-03T18:30:00-06:00</StartDate>
+    <EndDate>2014-03-03T20:30:00-06:00</EndDate>
+    <StartTime>2014-03-03T17:30:00-06:00</StartTime>
+    <EndTime>2014-03-03T19:30:00-06:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>59np4iu71erdtb7055i95bp1f8_20140204T003000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+Any questions contact the church office 630-844-9115</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731. Aurora, IL 60506</Location>
+    <StartDate>2014-02-03T18:30:00-06:00</StartDate>
+    <EndDate>2014-02-03T20:30:00-06:00</EndDate>
+    <StartTime>2014-02-03T17:30:00-06:00</StartTime>
+    <EndTime>2014-02-03T19:30:00-06:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>59np4iu71erdtb7055i95bp1f8_20140107T003000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+Any questions contact the church office 630-844-9115</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731. Aurora, IL 60506</Location>
+    <StartDate>2014-01-06T18:30:00-06:00</StartDate>
+    <EndDate>2014-01-06T20:30:00-06:00</EndDate>
+    <StartTime>2014-01-06T17:30:00-06:00</StartTime>
+    <EndTime>2014-01-06T19:30:00-06:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>59np4iu71erdtb7055i95bp1f8_20131203T003000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+Any questions contact the church office 630-844-9115</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731. Aurora, IL 60506</Location>
+    <StartDate>2013-12-02T18:30:00-06:00</StartDate>
+    <EndDate>2013-12-02T20:30:00-06:00</EndDate>
+    <StartTime>2013-12-02T17:30:00-06:00</StartTime>
+    <EndTime>2013-12-02T19:30:00-06:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>59np4iu71erdtb7055i95bp1f8_20131105T003000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+Any questions contact the church office 630-844-9115</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731. Aurora, IL 60506</Location>
+    <StartDate>2013-11-04T18:30:00-06:00</StartDate>
+    <EndDate>2013-11-04T20:30:00-06:00</EndDate>
+    <StartTime>2013-11-04T17:30:00-06:00</StartTime>
+    <EndTime>2013-11-04T19:30:00-06:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>59np4iu71erdtb7055i95bp1f8_20131007T233000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+Any questions contact the church office 630-844-9115</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731. Aurora, IL 60506</Location>
+    <StartDate>2013-10-07T18:30:00-05:00</StartDate>
+    <EndDate>2013-10-07T20:30:00-05:00</EndDate>
+    <StartTime>2013-10-07T17:30:00-05:00</StartTime>
+    <EndTime>2013-10-07T19:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>59np4iu71erdtb7055i95bp1f8_20130902T233000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+Any questions contact the church office 630-844-9115</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731. Aurora, IL 60506</Location>
+    <StartDate>2013-09-02T18:30:00-05:00</StartDate>
+    <EndDate>2013-09-02T20:30:00-05:00</EndDate>
+    <StartTime>2013-09-02T17:30:00-05:00</StartTime>
+    <EndTime>2013-09-02T19:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>59np4iu71erdtb7055i95bp1f8_20130805T233000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+Any questions contact the church office 630-844-9115</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731. Aurora, IL 60506</Location>
+    <StartDate>2013-08-05T18:30:00-05:00</StartDate>
+    <EndDate>2013-08-05T20:30:00-05:00</EndDate>
+    <StartTime>2013-08-05T17:30:00-05:00</StartTime>
+    <EndTime>2013-08-05T19:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>59np4iu71erdtb7055i95bp1f8_20130701T233000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+Any questions contact the church office 630-844-9115</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731. Aurora, IL 60506</Location>
+    <StartDate>2013-07-01T18:30:00-05:00</StartDate>
+    <EndDate>2013-07-01T20:30:00-05:00</EndDate>
+    <StartTime>2013-07-01T17:30:00-05:00</StartTime>
+    <EndTime>2013-07-01T19:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>59np4iu71erdtb7055i95bp1f8_20130603T233000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+Any questions contact the church office 630-844-9115</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731. Aurora, IL 60506</Location>
+    <StartDate>2013-06-03T18:30:00-05:00</StartDate>
+    <EndDate>2013-06-03T20:30:00-05:00</EndDate>
+    <StartTime>2013-06-03T17:30:00-05:00</StartTime>
+    <EndTime>2013-06-03T19:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>59np4iu71erdtb7055i95bp1f8_20130506T233000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+Any questions contact the church office 630-844-9115</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731. Aurora, IL 60506</Location>
+    <StartDate>2013-05-06T18:30:00-05:00</StartDate>
+    <EndDate>2013-05-06T20:30:00-05:00</EndDate>
+    <StartTime>2013-05-06T17:30:00-05:00</StartTime>
+    <EndTime>2013-05-06T19:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>59np4iu71erdtb7055i95bp1f8_20130401T233000Z</ID>
+    <Subject>Stitches Of Love</Subject>
+    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
+
+*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
+
+Any questions contact the church office 630-844-9115</Details>
+    <Location>888 S. Edgelawn Dr., unit 1731. Aurora, IL 60506</Location>
+    <StartDate>2013-04-01T18:30:00-05:00</StartDate>
+    <EndDate>2013-04-01T20:30:00-05:00</EndDate>
+    <StartTime>2013-04-01T17:30:00-05:00</StartTime>
+    <EndTime>2013-04-01T19:30:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>q0fjhlam03qjjkl7ibuq8gkhis_20140326T003000Z</ID>
+    <Subject>Master's Touch Graduation</Subject>
+    <Details>Master's Touch is a Bible-based; Christ centered resolution to the crisis of the broken life, facilitated by on-on-one discipleship/mentoring within the context of local church partners
+
+A comprehensive 6-month residential, life transformation ministry for troubled men whose lives are out of control as a result of drugs, alcohol or some other destructive behavior pattern. The program helps them confront life-controlling problems and empowers them to change.
+
+Come support and celebrate the men that have graduated from the program.</Details>
+    <Location>Warehouse Church - 308 East Galena Boulevard, Aurora IL</Location>
+    <StartDate>2014-03-25T19:30:00-05:00</StartDate>
+    <EndDate>2014-03-25T21:00:00-05:00</EndDate>
+    <StartTime>2014-03-25T18:30:00-05:00</StartTime>
+    <EndTime>2014-03-25T20:00:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>q0fjhlam03qjjkl7ibuq8gkhis_20140129T013000Z</ID>
+    <Subject>Master's Touch Graduation</Subject>
+    <Details>Master's Touch is a Bible-based; Christ centered resolution to the crisis of the broken life, facilitated by on-on-one discipleship/mentoring within the context of local church partners
+
+A comprehensive 6-month residential, life transformation ministry for troubled men whose lives are out of control as a result of drugs, alcohol or some other destructive behavior pattern. The program helps them confront life-controlling problems and empowers them to change.
+
+Come support and celebrate the men that have graduated from the program.</Details>
+    <Location>Warehouse Church - 308 East Galena Boulevard, Aurora IL</Location>
+    <StartDate>2014-01-28T19:30:00-06:00</StartDate>
+    <EndDate>2014-01-28T21:00:00-06:00</EndDate>
+    <StartTime>2014-01-28T18:30:00-06:00</StartTime>
+    <EndTime>2014-01-28T20:00:00-06:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>q0fjhlam03qjjkl7ibuq8gkhis_20131127T013000Z</ID>
+    <Subject>Master's Touch Graduation</Subject>
+    <Details>Master's Touch is a Bible-based; Christ centered resolution to the crisis of the broken life, facilitated by on-on-one discipleship/mentoring within the context of local church partners
+
+A comprehensive 6-month residential, life transformation ministry for troubled men whose lives are out of control as a result of drugs, alcohol or some other destructive behavior pattern. The program helps them confront life-controlling problems and empowers them to change.
+
+Come support and celebrate the men that have graduated from the program.</Details>
+    <Location>Warehouse Church - 308 East Galena Boulevard, Aurora IL</Location>
+    <StartDate>2013-11-26T19:30:00-06:00</StartDate>
+    <EndDate>2013-11-26T21:00:00-06:00</EndDate>
+    <StartTime>2013-11-26T18:30:00-06:00</StartTime>
+    <EndTime>2013-11-26T20:00:00-06:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>q0fjhlam03qjjkl7ibuq8gkhis_20130925T003000Z</ID>
+    <Subject>Master's Touch Graduation</Subject>
+    <Details>Master's Touch is a Bible-based; Christ centered resolution to the crisis of the broken life, facilitated by on-on-one discipleship/mentoring within the context of local church partners
+
+A comprehensive 6-month residential, life transformation ministry for troubled men whose lives are out of control as a result of drugs, alcohol or some other destructive behavior pattern. The program helps them confront life-controlling problems and empowers them to change.
+
+Come support and celebrate the men that have graduated from the program.</Details>
+    <Location>Warehouse Church - 308 East Galena Boulevard, Aurora IL</Location>
+    <StartDate>2013-09-24T19:30:00-05:00</StartDate>
+    <EndDate>2013-09-24T21:00:00-05:00</EndDate>
+    <StartTime>2013-09-24T18:30:00-05:00</StartTime>
+    <EndTime>2013-09-24T20:00:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>q0fjhlam03qjjkl7ibuq8gkhis_20130731T003000Z</ID>
+    <Subject>Master's Touch Graduation</Subject>
+    <Details>Master's Touch is a Bible-based; Christ centered resolution to the crisis of the broken life, facilitated by on-on-one discipleship/mentoring within the context of local church partners
+
+A comprehensive 6-month residential, life transformation ministry for troubled men whose lives are out of control as a result of drugs, alcohol or some other destructive behavior pattern. The program helps them confront life-controlling problems and empowers them to change.
+
+Come support and celebrate the men that have graduated from the program.</Details>
+    <Location>Warehouse Church - 308 East Galena Boulevard, Aurora IL</Location>
+    <StartDate>2013-07-30T19:30:00-05:00</StartDate>
+    <EndDate>2013-07-30T21:00:00-05:00</EndDate>
+    <StartTime>2013-07-30T18:30:00-05:00</StartTime>
+    <EndTime>2013-07-30T20:00:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>q0fjhlam03qjjkl7ibuq8gkhis_20130529T003000Z</ID>
+    <Subject>Master's Touch Graduation</Subject>
+    <Details>Master's Touch is a Bible-based; Christ centered resolution to the crisis of the broken life, facilitated by on-on-one discipleship/mentoring within the context of local church partners
+
+A comprehensive 6-month residential, life transformation ministry for troubled men whose lives are out of control as a result of drugs, alcohol or some other destructive behavior pattern. The program helps them confront life-controlling problems and empowers them to change.
+
+Come support and celebrate the men that have graduated from the program.</Details>
+    <Location>Warehouse Church - 308 East Galena Boulevard, Aurora IL</Location>
+    <StartDate>2013-05-28T19:30:00-05:00</StartDate>
+    <EndDate>2013-05-28T21:00:00-05:00</EndDate>
+    <StartTime>2013-05-28T18:30:00-05:00</StartTime>
+    <EndTime>2013-05-28T20:00:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+  <CalEvent>
+    <ID>q0fjhlam03qjjkl7ibuq8gkhis_20130327T003000Z</ID>
+    <Subject>Master's Touch Graduation</Subject>
+    <Details>Master's Touch is a Bible-based; Christ centered resolution to the crisis of the broken life, facilitated by on-on-one discipleship/mentoring within the context of local church partners
+
+A comprehensive 6-month residential, life transformation ministry for troubled men whose lives are out of control as a result of drugs, alcohol or some other destructive behavior pattern. The program helps them confront life-controlling problems and empowers them to change.
+
+Come support and celebrate the men that have graduated from the program.</Details>
+    <Location>Warehouse Church - 308 East Galena Boulevard, Aurora IL</Location>
+    <StartDate>2013-03-26T19:30:00-05:00</StartDate>
+    <EndDate>2013-03-26T21:00:00-05:00</EndDate>
+    <StartTime>2013-03-26T18:30:00-05:00</StartTime>
+    <EndTime>2013-03-26T20:00:00-05:00</EndTime>
+    <IsAllDayEvent>false</IsAllDayEvent>
+    <IsPrivate>false</IsPrivate>
+  </CalEvent>
+</ArrayOfCalEvent>
