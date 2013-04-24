@@ -27,7 +27,7 @@
     | <a href="Prayer_and_Praise.aspx">prayer</a>
     | <a href="Ministry.aspx">ministries</a>
     | <a href="Missions.aspx">missions</a>
-    | <a href="Discipleship.aspx">groups</a>
+    | <a href="Discipleship.aspx">discipleship</a>
     | <a href="Calendar.aspx">calendar</a>
     <%--| <a href="News.aspx">news</a>--%>
     | <a href="Multimedia.aspx?Tags=sermon">sermons</a>
@@ -49,6 +49,9 @@
          <div class="footer">Copyright &#169; 2013 &quot;River Valley Community Church&quot;      
         <br />You are veiwing the mobile version of our web site. <a href="Util.aspx?Full=true">Click here</a> to view normal version
         <br /><img src="images/New_Picture.gif" style="border: none;"  alt=""/>
+         <br /><iframe src="http://www.facebook.com/plugins/like.php?href=rivervalleycommunity.org&amp;layout=standard&amp;show_faces=false&amp;width=250&amp;action=like&amp;font=arial&amp;colorscheme=dark&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:35px;" allowTransparency="true"></iframe>
+        <br /><a href="https://twitter.com/RVCCAurora" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @RVCCAurora</a>
+<script>    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } } (document, 'script', 'twitter-wjs');</script>
         </div>
     </div>
     </form>
