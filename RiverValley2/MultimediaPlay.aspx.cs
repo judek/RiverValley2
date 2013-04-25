@@ -21,11 +21,8 @@ namespace RiverValley2
         {
             _CanEdit = (null != Session["EditRiverValleyMedia"]);
 
-            _CanEdit = true;
-
-
             if (IsPostBack)
-                return;
+            return;
 
 
             EnalbeEdits(CanEdit);

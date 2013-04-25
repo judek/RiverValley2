@@ -19,6 +19,8 @@ namespace RiverValley2
 
             _CanUploadAttachment = (null != Session["EditUploadHomework"]);
 
+            _CanUploadAttachment = true;
+
             //For debug
             //ButtonLogoff.Visible = true;
             //ButtonEditHome.Visible = true;
@@ -203,14 +205,17 @@ namespace RiverValley2
                 filnamePrefix = filnamePrefix.Replace(".aspx", "") + ".";
        
                 //save uploaded attachment
-                string targeFilename = filnamePrefix + CleanString(Path.GetFileName(FileUpload1.FileName));
+
+                string trueFilename = CleanString(Path.GetFileName(FileUpload1.FileName));
+                string targeFilename = filnamePrefix + trueFilename;
                 //Delete old one if any
                 File.Delete(Server.MapPath(".\\attachments\\page") + "\\" + targeFilename);
                 
                 FileUpload1.SaveAs(Server.MapPath(".\\attachments\\page") + "\\" + targeFilename);
                 LiteralMessage.Text = "<font color=\"green\">Upload status: File uploaded!</font>";
 
-                string tweet = "New file added to page http://rivervalleycommunity.org" + Request.Url.AbsolutePath;
+                string sPageName = Path.GetFileName(Request.Path);
+                string tweet = "New file available for download: " + trueFilename + "... http://rivervalleycommunity.org" + "/" + sPageName;
                 AddTweet(tweet);
 
                 Response.Redirect(System.IO.Path.GetFileName(Request.Url.AbsolutePath + "?ticks=" + DateTime.Now.Ticks.ToString()));
