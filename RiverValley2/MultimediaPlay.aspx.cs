@@ -21,6 +21,9 @@ namespace RiverValley2
         {
             _CanEdit = (null != Session["EditRiverValleyMedia"]);
 
+            _CanEdit = true;
+
+
             if (IsPostBack)
                 return;
 
@@ -160,9 +163,9 @@ namespace RiverValley2
 
             LiteralDescription.Text = TextBoxDescription.Text;
 
-
+            string sPageName = Path.GetFileName(Request.Path);
             LiteralMessage.Text = "Save Successfull";
-            string tweet = "Sermon updated http://rivervalleycommunity.org" + Request.Url.AbsolutePath + "&" + Request.Url.PathAndQuery;
+            string tweet = multimediaFile.Title + " " + "http://rivervalleycommunity.org" + "/" + sPageName + Request.Url.Query;
             AddTweet(tweet);
             DumpCache();
 
