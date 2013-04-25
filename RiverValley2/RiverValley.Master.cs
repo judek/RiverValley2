@@ -19,8 +19,6 @@ namespace RiverValley2
 
             _CanUploadAttachment = (null != Session["EditUploadHomework"]);
 
-            _CanUploadAttachment = true;
-
             //For debug
             //ButtonLogoff.Visible = true;
             //ButtonEditHome.Visible = true;
