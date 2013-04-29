@@ -343,6 +343,13 @@
     <Compile Include="slideshow.aspx.designer.cs">
       <DependentUpon>slideshow.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TweetCalendar.aspx.cs">
+      <DependentUpon>TweetCalendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TweetCalendar.aspx.designer.cs">
+      <DependentUpon>TweetCalendar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Util.aspx.cs">
       <DependentUpon>Util.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -516,6 +523,7 @@
     <Content Include="images\SpiritualGifts.png" />
     <Content Include="RiverValleyMobile.Master" />
     <Content Include="stylemobile.css" />
+    <Content Include="TweetCalendar.aspx" />
     <Content Include="Util.aspx" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

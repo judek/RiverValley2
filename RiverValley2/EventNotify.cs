@@ -10,11 +10,10 @@ namespace RiverValley2
         
         
         
-        static void Run(RiverValleyPage callerPage)
+        public static void Run(RiverValleyPage callerPage)
         {
         //            Is time to run
 
-            DateTime timeToRun = DateTime.Now;
 
         //NO
         //    DONE
@@ -22,17 +21,46 @@ namespace RiverValley2
         //Save next time to run
 
         //Get events
-        List<CalEvent>  events =  callerPage.CalEvents;
+       
+                
+             //To Do: match day exactly
+            List<CalEvent> coming7daysEvents =
+                FilterDay(callerPage.CalEvents, 7);
+            
+            string test = "";
+            if (coming7daysEvents.Count > 0)
+                test = coming7daysEvents[0].Subject;
 
-        //tweet new events, events in one week, event next day.
-        List<CalEvent> newEvents = events.FindAll(delegate(CalEvent c) { return c.StartDate > timeToRun; });
-        //To Do: match day exactly
-        List<CalEvent> coming7daysEvents = events.FindAll(delegate(CalEvent c) { return c.StartDate > timeToRun.AddDays(7); });
-        List<CalEvent> coming3daysEvents = events.FindAll(delegate(CalEvent c) { return c.StartDate > timeToRun.AddDays(3); });
-
-        //DONE
+            int ntest = test.Length;   
+                
+            
+            int ncoming7daysEvents = coming7daysEvents.Count; 
+        
+            
+           
+            //DONE
 
 
         }
+
+
+        static List<CalEvent> FilterDay(List<CalEvent> events, int nDay)
+        {
+            DateTime timeToRun = DateTime.Now;
+           
+
+            List<CalEvent> comingEvents = events.FindAll(delegate(CalEvent c)
+            {
+                return ((c.StartDate.Year == 2013)
+                    && (c.StartDate.Month == 5)
+                    && (c.StartDate.Day == 6)
+                    );
+
+            });
+
+            return comingEvents;
+        }
+
+
     }
 }
