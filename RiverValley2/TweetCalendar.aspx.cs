@@ -10,13 +10,12 @@ namespace RiverValley2
     {
         public  void Page_Load(object sender, EventArgs e)
         {
-            PrintLine("Starting calendar tweet logic");
             EventNotify.Run(this);
         }
 
         public void PrintLine(string line)
         {
-            Response.Write("</ br>" + DateTime.Now + " : " + line);
+            Response.Write("<br>" + DateTime.Now + " : " + line);
 
         }
     }
