@@ -18,5 +18,10 @@ namespace RiverValley2
             Response.Write("<br>" + DateTime.Now + " : " + line);
 
         }
+
+        internal void AddaTweet(string stweet)
+        {
+            AddTweet(stweet);
+        }
     }
 }

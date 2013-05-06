@@ -15,26 +15,25 @@ namespace RiverValley2
 
         public static void Run(TweetCalendar callerPage)
         {
-            callerPage.PrintLine("Starting calendar tweet logic");
+            callerPage.PrintLine("Starting calendar notify logic");
             
             if (null == _spath) 
                 _spath = callerPage.Server.MapPath("TimeToCheckCalendar.txt");
 
-            if (false == IsTimeToRun(callerPage))
-            {
+            //if (false == IsTimeToRun(callerPage))
+            //{
+            //    return;
+            //}
 
-                return;
-            }
-           
-       
 
             List<CalEvent> coming7daysEvents =
-                FilterDay(callerPage.CalEvents, 7);
+                FilterDay(callerPage.CalEvents, 12, callerPage);
+
+            if (coming7daysEvents.Count > 0)
+                TweetEvents(coming7daysEvents, callerPage);
 
             List<CalEvent> coming3daysEvents =
-                FilterDay(callerPage.CalEvents, 3);
-            
-           
+                FilterDay(callerPage.CalEvents, 3, callerPage);
             
             
             string test = "";
@@ -54,9 +53,11 @@ namespace RiverValley2
         }
 
 
-        static List<CalEvent> FilterDay(List<CalEvent> events, int nDay)
+        static List<CalEvent> FilterDay(List<CalEvent> events, int nDay, TweetCalendar callerPage)
         {
             DateTime timeCheck = DateTime.Now.AddDays(nDay);
+
+            callerPage.PrintLine("Cheching for events that happen on " + timeCheck.ToString("MM/dd/yyyy") + "...");
            
 
             List<CalEvent> comingEvents = events.FindAll(delegate(CalEvent c)
@@ -68,6 +69,9 @@ namespace RiverValley2
 
             });
 
+            callerPage.PrintLine("found " + comingEvents.Count + " events.");
+            
+
             return comingEvents;
         }
 
@@ -78,15 +82,24 @@ namespace RiverValley2
             callerPage.PrintLine("Time to run file:" + _spath);
 
             try
-            {
+            {//Code block for releasing read and write locks
 
                 if (true == System.IO.File.Exists(_spath))
                 {
-                    DateTime nowTime  = DateTime.Now; 
-                    _Lock.AcquireReaderLock(100);
-                    callerPage.PrintLine("Acquired reader lock");
+                    DateTime nowTime  = DateTime.Now;
+                    try
+                    {
 
+                        _Lock.AcquireReaderLock(100);
+                        callerPage.PrintLine("Acquired reader lock");
+                    }
+                    catch 
+                    {
+                        callerPage.PrintLine("Could not acquire reader lock");
+                        return false;
+                    }
 
+                    //Set to max value so if parse fails we do not keep notifying
                     DateTime reconsturct = DateTime.MaxValue;
                     try
                     {
@@ -104,28 +117,22 @@ namespace RiverValley2
                     }
 
                 }
-                    
+                
+                //If we reach this point then it is time to run
+               
+                //Update next run time
                 _Lock.UpgradeToWriterLock(10000);
                 callerPage.PrintLine("Acquired writer lock");
-
-
                 DateTime _NextTimetoRun = DateTime.Now.AddDays(1);
 
+                callerPage.PrintLine("Next go time is:" + _NextTimetoRun.ToLongDateString());
+
                 System.IO.File.WriteAllText(_spath, _NextTimetoRun.ToString());
-                
 
-                // 
-                 //_TimetoRun = reconsturct;
 
-                //_TimetoRun = _NextTimetoRun;
-                //callerPage.PrintLine("Next time to run will be:" + _TimetoRun.ToString());
-                
+                return true;
               
-                
-
-
-
-
+    
             }
             catch { return false; }
             finally
@@ -138,7 +145,16 @@ namespace RiverValley2
             }
 
 
-            return false;
+           }
+
+        static void TweetEvents(List<CalEvent> eventsToTweet, TweetCalendar callerPage)
+        {
+            foreach(CalEvent eventToTweet in eventsToTweet)
+            {
+                string tweet = eventToTweet.Subject;
+                callerPage.PrintLine(tweet);
+                callerPage.AddaTweet(tweet);
+            }
         }
 
 
