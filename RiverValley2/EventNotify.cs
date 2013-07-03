@@ -25,15 +25,21 @@ namespace RiverValley2
             //    return;
             //}
 
+            List<CalEvent> coming30daysEvents =
+                FilterDay(callerPage.CalEvents, 30, callerPage, false);
+
+            if (coming30daysEvents.Count > 0)
+                TweetEvents(coming30daysEvents, callerPage, "Save the date!:");
+
 
             List<CalEvent> coming7daysEvents =
-                FilterDay(callerPage.CalEvents, 12, callerPage);
+                FilterDay(callerPage.CalEvents, 7, callerPage, false);
 
             if (coming7daysEvents.Count > 0)
-                TweetEvents(coming7daysEvents, callerPage);
+                TweetEvents(coming7daysEvents, callerPage, "Next week:");
 
-            List<CalEvent> coming3daysEvents =
-                FilterDay(callerPage.CalEvents, 3, callerPage);
+            List<CalEvent> coming2daysEvents =
+                FilterDay(callerPage.CalEvents, 2, callerPage, true);
             
             
             string test = "";
@@ -53,7 +59,7 @@ namespace RiverValley2
         }
 
 
-        static List<CalEvent> FilterDay(List<CalEvent> events, int nDay, TweetCalendar callerPage)
+        static List<CalEvent> FilterDay(List<CalEvent> events, int nDay, TweetCalendar callerPage, bool blnIncludeReacurring)
         {
             DateTime timeCheck = DateTime.Now.AddDays(nDay);
 
@@ -62,6 +68,10 @@ namespace RiverValley2
 
             List<CalEvent> comingEvents = events.FindAll(delegate(CalEvent c)
             {
+                if (false == blnIncludeReacurring)
+                    if (c.Recurrence == null)
+                        return false;
+                
                 return ((c.StartDate.Year == timeCheck.Year)
                     && (c.StartDate.Month == timeCheck.Month)
                     && (c.StartDate.Day == timeCheck.Day)
@@ -147,11 +157,14 @@ namespace RiverValley2
 
            }
 
-        static void TweetEvents(List<CalEvent> eventsToTweet, TweetCalendar callerPage)
+        static void TweetEvents(List<CalEvent> eventsToTweet, TweetCalendar callerPage, string sTweetPrefix)
         {
+            if (null == sTweetPrefix)
+                sTweetPrefix = "";
+            
             foreach(CalEvent eventToTweet in eventsToTweet)
             {
-                string tweet = eventToTweet.Subject;
+                string tweet = sTweetPrefix + " " + eventToTweet.Subject;
                 callerPage.PrintLine(tweet);
                 callerPage.AddaTweet(tweet);
             }
