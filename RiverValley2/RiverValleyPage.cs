@@ -39,7 +39,10 @@ namespace RiverValley2
 
                 List<CalEvent>  calevents = Cache.Get("cache.CalEvents.RiverValley") as List<CalEvent>;
                 if (null != calevents)
+                {
+                    //markRepeatingEvents(calevents);
                     return calevents;
+                }
 
 
                 calevents = new List<CalEvent>();
@@ -91,6 +94,9 @@ namespace RiverValley2
                             throw new ApplicationException("Calendar returned zero events");
 
                     //blnCreateBackup = true;
+
+                    
+                    markRepeatingEvents(calevents);
 
                     #endregion
 
@@ -161,8 +167,46 @@ namespace RiverValley2
                 return calevents;
             }
         }
-        
 
+        void markRepeatingEvents(List<CalEvent> calEvents)
+        {
+            List<string> subjects = new List<string>();
+
+            List<string> RepeatiungEvents = new List<string>();
+
+
+
+            
+            foreach (CalEvent calEvent in calEvents)
+            {
+
+                string s = subjects.Find(delegate(string c)
+                {
+                    return (c == calEvent.Subject);
+                });
+
+
+                if (null == s)
+                    subjects.Add(calEvent.Subject);
+                else
+                    calEvent.Recurrence = "True";
+
+
+                
+                /* List<CalEvent> calEvents1 = CalEvents.FindAll(delegate(CalEvent c)
+                {
+                    return (c.ID == calEvent.Subject);
+                });
+
+                if (calEvents1.Count > 1)
+                    calEvent.Recurrence = "True";
+                */
+
+            }
+   
+
+
+        }
 
         public virtual DataSet OLDCalendarEvents
         {

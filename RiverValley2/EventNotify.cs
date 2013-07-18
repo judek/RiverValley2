@@ -40,8 +40,11 @@ namespace RiverValley2
 
             List<CalEvent> coming2daysEvents =
                 FilterDay(callerPage.CalEvents, 2, callerPage, true);
-            
-            
+
+
+            if (coming2daysEvents.Count > 0)
+                TweetEvents(coming2daysEvents, callerPage, "Tomorrow");
+
             string test = "";
             if (coming7daysEvents.Count > 0)
                 test = coming7daysEvents[0].Subject;
@@ -161,10 +164,20 @@ namespace RiverValley2
         {
             if (null == sTweetPrefix)
                 sTweetPrefix = "";
+
+
+        
             
             foreach(CalEvent eventToTweet in eventsToTweet)
             {
-                string tweet = sTweetPrefix + " " + eventToTweet.Subject;
+                string tweet;
+
+                if (false == eventToTweet.IsAllDayEvent)
+                    tweet = sTweetPrefix + " " + eventToTweet.Subject + " " + eventToTweet.ID;
+                else
+                    tweet = sTweetPrefix + " " + eventToTweet.Subject + " " + eventToTweet.StartTime.ToShortTimeString() + " - " + eventToTweet.EndTime.ToShortTimeString() + " " + eventToTweet.ID;
+                
+                
                 callerPage.PrintLine(tweet);
                 callerPage.AddaTweet(tweet);
             }
