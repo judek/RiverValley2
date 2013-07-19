@@ -15,7 +15,7 @@ namespace RiverValley2
 
         public static void Run(TweetCalendar callerPage)
         {
-            callerPage.PrintLine("Starting calendar notify logic");
+            callerPage.PrintLine("Starting calendar notify logic", true);
             
             if (null == _spath) 
                 _spath = callerPage.Server.MapPath("TimeToCheckCalendar.txt");
@@ -25,36 +25,16 @@ namespace RiverValley2
             //    return;
             //}
 
-            List<CalEvent> coming30daysEvents =
-                FilterDay(callerPage.CalEvents, 30, callerPage, false);
-
-            if (coming30daysEvents.Count > 0)
-                TweetEvents(coming30daysEvents, callerPage, "Save the date!:");
-
-
-            List<CalEvent> coming7daysEvents =
-                FilterDay(callerPage.CalEvents, 7, callerPage, false);
-
-            if (coming7daysEvents.Count > 0)
-                TweetEvents(coming7daysEvents, callerPage, "Next week:");
-
-            List<CalEvent> coming2daysEvents =
-                FilterDay(callerPage.CalEvents, 2, callerPage, true);
-
-
-            if (coming2daysEvents.Count > 0)
-                TweetEvents(coming2daysEvents, callerPage, "Tomorrow");
-
-            string test = "";
-            if (coming7daysEvents.Count > 0)
-                test = coming7daysEvents[0].Subject;
-
-            int ntest = test.Length;   
-                
+            TweetEvents(FilterDay(callerPage.CalEvents, 60, callerPage, false), callerPage, "Save the date: "); 
             
-            int ncoming7daysEvents = coming7daysEvents.Count; 
-        
-            
+            TweetEvents(FilterDay(callerPage.CalEvents, 30, callerPage, false), callerPage, "Save the date: ");
+
+             TweetEvents(FilterDay(callerPage.CalEvents, 14, callerPage, false), callerPage, "Coming soon: ");
+
+             TweetEvents(FilterDay(callerPage.CalEvents, 7, callerPage, false), callerPage, "Next week: ");
+
+             TweetEvents(FilterDay(callerPage.CalEvents, 1, callerPage, true), callerPage, "Tomorrw: ");
+
            
             //DONE
 
@@ -66,7 +46,7 @@ namespace RiverValley2
         {
             DateTime timeCheck = DateTime.Now.AddDays(nDay);
 
-            callerPage.PrintLine("Cheching for events that happen on " + timeCheck.ToString("MM/dd/yyyy") + "...");
+            callerPage.PrintLine("Cheching for events that happen in " + nDay + " days on " + timeCheck.ToString("MM/dd/yyyy") + "...");
            
 
             List<CalEvent> comingEvents = events.FindAll(delegate(CalEvent c)
@@ -162,20 +142,25 @@ namespace RiverValley2
 
         static void TweetEvents(List<CalEvent> eventsToTweet, TweetCalendar callerPage, string sTweetPrefix)
         {
+            if (null == eventsToTweet)
+                return;
+            
             if (null == sTweetPrefix)
                 sTweetPrefix = "";
-
-
-        
             
             foreach(CalEvent eventToTweet in eventsToTweet)
             {
                 string tweet;
+                string sURL;
 
-                if (false == eventToTweet.IsAllDayEvent)
-                    tweet = sTweetPrefix + " " + eventToTweet.Subject + " " + eventToTweet.ID;
+                sURL = callerPage.Request.Url.AbsoluteUri.Replace(callerPage.Request.Path, "/CalendarEvent.aspx?ID=");
+
+               
+
+                if (eventToTweet.IsAllDayEvent)
+                    tweet = sTweetPrefix + " " + eventToTweet.Subject + " " + sURL + eventToTweet.ID;
                 else
-                    tweet = sTweetPrefix + " " + eventToTweet.Subject + " " + eventToTweet.StartTime.ToShortTimeString() + " - " + eventToTweet.EndTime.ToShortTimeString() + " " + eventToTweet.ID;
+                    tweet = sTweetPrefix + " " + eventToTweet.Subject + " " + eventToTweet.StartTime.ToShortTimeString() + " - " + eventToTweet.EndTime.ToShortTimeString() + " " + sURL + eventToTweet.ID;
                 
                 
                 callerPage.PrintLine(tweet);

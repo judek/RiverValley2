@@ -15,8 +15,16 @@ namespace RiverValley2
 
         public void PrintLine(string line)
         {
-            Response.Write("<br>" + DateTime.Now + " : " + line);
+            PrintLine(line, false);
+        }
+        
+        public void PrintLine(string line, bool blnTimeStamp)
+        {
+            if(true == blnTimeStamp)
+                Response.Write("<br>" + DateTime.Now + " : " + line);
 
+            else
+                Response.Write("<br>" + line);
         }
 
         internal void AddaTweet(string stweet)
