@@ -96,7 +96,7 @@ namespace RiverValley2
                     //blnCreateBackup = true;
 
                     
-                    markRepeatingEvents(calevents);
+                    //markRepeatingEvents(calevents);
 
                     #endregion
 
@@ -168,45 +168,45 @@ namespace RiverValley2
             }
         }
 
-        void markRepeatingEvents(List<CalEvent> calEvents)
-        {
-            List<string> subjects = new List<string>();
+        //void markRepeatingEvents(List<CalEvent> calEvents)
+        //{
+        //    List<string> subjects = new List<string>();
 
-            List<string> RepeatiungEvents = new List<string>();
+        //    List<string> RepeatiungEvents = new List<string>();
 
 
 
             
-            foreach (CalEvent calEvent in calEvents)
-            {
+        //    foreach (CalEvent calEvent in calEvents)
+        //    {
 
-                string s = subjects.Find(delegate(string c)
-                {
-                    return (c == calEvent.Subject);
-                });
+        //        string s = subjects.Find(delegate(string c)
+        //        {
+        //            return (c == calEvent.Subject);
+        //        });
 
 
-                if (null == s)
-                    subjects.Add(calEvent.Subject);
-                else
-                    calEvent.Recurrence = "True";
+        //        if (null == s)
+        //            subjects.Add(calEvent.Subject);
+        //        else
+        //            calEvent.Recurrence = "True";
 
 
                 
-                /* List<CalEvent> calEvents1 = CalEvents.FindAll(delegate(CalEvent c)
-                {
-                    return (c.ID == calEvent.Subject);
-                });
+        //        /* List<CalEvent> calEvents1 = CalEvents.FindAll(delegate(CalEvent c)
+        //        {
+        //            return (c.ID == calEvent.Subject);
+        //        });
 
-                if (calEvents1.Count > 1)
-                    calEvent.Recurrence = "True";
-                */
+        //        if (calEvents1.Count > 1)
+        //            calEvent.Recurrence = "True";
+        //        */
 
-            }
+        //    }
    
 
 
-        }
+        //}
 
         public virtual DataSet OLDCalendarEvents
         {
