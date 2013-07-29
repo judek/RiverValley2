@@ -25,15 +25,17 @@ namespace RiverValley2
             //    return;
             //}
 
-            TweetEvents(FilterDay(callerPage.CalEvents, 60, callerPage, false), callerPage, "Save the date: "); 
+            //TweetEvents(FilterDay(callerPage.CalEvents, 60, callerPage, false), callerPage, "Save the date: "); 
             
-            TweetEvents(FilterDay(callerPage.CalEvents, 30, callerPage, false), callerPage, "Save the date: ");
+            //TweetEvents(FilterDay(callerPage.CalEvents, 30, callerPage, false), callerPage, "Save the date: ");
 
-             TweetEvents(FilterDay(callerPage.CalEvents, 14, callerPage, false), callerPage, "Coming soon: ");
+             //TweetEvents(FilterDay(callerPage.CalEvents, 14, callerPage, false), callerPage, "Coming soon: ");
 
-             TweetEvents(FilterDay(callerPage.CalEvents, 7, callerPage, false), callerPage, "Next week: ");
+             //TweetEvents(FilterDay(callerPage.CalEvents, 6, callerPage, false), callerPage, "Next week: ");
 
-             TweetEvents(FilterDay(callerPage.CalEvents, 1, callerPage, true), callerPage, "Tomorrw: ");
+             //TweetEvents(FilterDay(callerPage.CalEvents, 1, callerPage, true), callerPage, "Tomorrow: ");
+
+             TweetEvents(FilterDay(callerPage.CalEvents, 2, callerPage, true), callerPage, "Next ");
 
            
             //DONE
@@ -52,7 +54,7 @@ namespace RiverValley2
             List<CalEvent> comingEvents = events.FindAll(delegate(CalEvent c)
             {
                 if (false == blnIncludeReacurring)
-                    if (c.Recurrence == null)
+                    if (c.Recurrence != null)
                         return false;
                 
                 return ((c.StartDate.Year == timeCheck.Year)
@@ -155,12 +157,12 @@ namespace RiverValley2
 
                 sURL = callerPage.Request.Url.AbsoluteUri.Replace(callerPage.Request.Path, "/CalendarEvent.aspx?ID=");
 
-               
+                ;
 
                 if (eventToTweet.IsAllDayEvent)
-                    tweet = sTweetPrefix + " " + eventToTweet.Subject + " " + sURL + eventToTweet.ID;
+                    tweet = sTweetPrefix + " " + eventToTweet.StartTime.ToString("ddd") + ", " + eventToTweet.Subject + ", " + sURL + eventToTweet.ID;
                 else
-                    tweet = sTweetPrefix + " " + eventToTweet.Subject + " " + eventToTweet.StartTime.ToShortTimeString() + " - " + eventToTweet.EndTime.ToShortTimeString() + " " + sURL + eventToTweet.ID;
+                    tweet = sTweetPrefix + " " + eventToTweet.StartTime.ToString("ddd") + ", " + eventToTweet.Subject + ", " + eventToTweet.StartTime.ToShortTimeString() + " - " + eventToTweet.EndTime.ToShortTimeString() + " " + sURL + eventToTweet.ID;
                 
                 
                 callerPage.PrintLine(tweet);
