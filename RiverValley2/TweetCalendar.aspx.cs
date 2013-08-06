@@ -10,6 +10,7 @@ namespace RiverValley2
     {
         public  void Page_Load(object sender, EventArgs e)
         {
+            Literal1.Text = "Loading...";
             EventNotify.Run(this);
         }
 
@@ -21,10 +22,12 @@ namespace RiverValley2
         public void PrintLine(string line, bool blnTimeStamp)
         {
             if(true == blnTimeStamp)
-                Response.Write("<br>" + DateTime.Now + " : " + line);
+                //Response.Write("<br>" + DateTime.Now + " : " + line);
+                Literal1.Text += ("<br>" + DateTime.Now + " : " + line);
 
             else
-                Response.Write("<br>" + line);
+                //Response.Write("<br>" + line);
+                Literal1.Text += ("<br>" + line);
         }
 
         internal void AddaTweet(string stweet)
