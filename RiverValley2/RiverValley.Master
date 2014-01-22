@@ -172,7 +172,7 @@ document.onclick = mclose;
 		<a href="Podcast.aspx" target="_blank">Podcast</a>
 		<a href="Multimedia.aspx?Tags=sermon">Sermons</a>
 		<a href="Multimedia.aspx?Tags=video">Videos</a>
-	    <%--<a href="gallery.aspx">Picture Gallery</a>--%>
+	    <a href="gallery.aspx">Picture Gallery</a>
     </div>
 	</li>
 	
