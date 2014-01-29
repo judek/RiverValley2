@@ -10,7 +10,9 @@ namespace RiverValley2
 {
     public partial class getthumbnail : System.Web.UI.Page
     {
-        static string THUMB_FOLDER_NAME = @"\thumbs\";
+        static string THUMB_FOLDER_NAME = @"\cache\";
+
+        static readonly object imageWriteLock = new object();
         
         bool ThumbnailCallback()
         {
@@ -140,7 +142,10 @@ namespace RiverValley2
                
                 ouputImage.Save(Response.OutputStream, ImageFormat.Jpeg);
 
-                ouputImage.Save(newFileInfo.FullName, ImageFormat.Jpeg);
+                lock (imageWriteLock)
+                {
+                    ouputImage.Save(newFileInfo.FullName, ImageFormat.Jpeg);
+                }
 
             }
 

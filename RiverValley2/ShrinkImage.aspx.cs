@@ -7,12 +7,16 @@ using System.Web.UI.WebControls;
 using System.Drawing.Imaging;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Threading;
 
 namespace RiverValley2
 {
     public partial class ShrinkImage : System.Web.UI.Page
     {
         bool _InsertWarterMark = true;
+        static string THUMB_FOLDER_NAME = @"\cache\";
+
+        static readonly object imageWriteLock = new object();
         
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -23,7 +27,23 @@ namespace RiverValley2
             Graphics oGraphic = null;
             Graphics canvas = null;
             Font wmFont = null;
-            float fWaterMarkFontSize = 3;
+            float fWaterMarkFontSize = 2;
+
+            string sOldImageFileName = Server.MapPath(Request.QueryString["i"]);
+            #region Create thumbnail folder if not present
+            FileInfo olfFileInfo = new FileInfo(sOldImageFileName);
+            if (false == Directory.Exists(olfFileInfo.DirectoryName + THUMB_FOLDER_NAME))
+            {
+                try { Directory.CreateDirectory(olfFileInfo.DirectoryName + THUMB_FOLDER_NAME); }
+                catch
+                {
+                    Response.End();
+                    return;
+                }
+            }
+            #endregion
+
+
 
             try
             {
@@ -49,6 +69,36 @@ namespace RiverValley2
                     catch { }
                 }
 
+
+                FileInfo newFileInfo = new FileInfo(olfFileInfo.DirectoryName + THUMB_FOLDER_NAME + requestedWidth.ToString() + "_" + olfFileInfo.Name);
+
+                #region Short circut if we already have good thumb nail
+
+                bool blnCreateThumbnail = true;
+                if (true == newFileInfo.Exists)
+                {
+                    blnCreateThumbnail = false;
+                    if (olfFileInfo.LastWriteTimeUtc > newFileInfo.LastWriteTimeUtc)
+                    {
+                        blnCreateThumbnail = true;
+                    }
+                }
+
+                if (false == blnCreateThumbnail)
+                {
+                    try
+                    {
+                        using (System.Drawing.Image cachedThumbImage = System.Drawing.Image.FromFile(newFileInfo.FullName))
+                        {
+                            Response.ContentType = "image/jpeg";
+                            cachedThumbImage.Save(Response.OutputStream, ImageFormat.Jpeg);
+                            Response.End();
+                        }
+                    }
+                    catch { Response.End(); }
+                }
+
+                #endregion
 
                 bool blnShrinkToThumb = false;
                 float webFactor;
@@ -137,8 +187,14 @@ namespace RiverValley2
 
                     string sWaterMark = "© RiverValleyCommunity.org";
 
-                    int nWaterMarkX = ouputImage.Width - 220;
+                    int nWaterMarkX = ouputImage.Width - 320;
                     int nWaterMarkY = ouputImage.Height - 30;
+
+                    if (ouputImage.Height > ouputImage.Width)
+                    {
+                        nWaterMarkX = ouputImage.Width + 20;
+                        nWaterMarkY = ouputImage.Height + 320;
+                    }
 
                     canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.Lime), nWaterMarkX, nWaterMarkY);
                     canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.FromArgb(128, 0, 0, 0)), nWaterMarkX + 2, nWaterMarkY + 2);
@@ -150,6 +206,11 @@ namespace RiverValley2
 
                 Response.ContentType = "image/jpeg";
                 ouputImage.Save(Response.OutputStream, ImageFormat.Jpeg);
+
+                lock (imageWriteLock)
+                {
+                    //ouputImage.Save(newFileInfo.FullName, ImageFormat.Jpeg);
+                }
 
             }
             finally
