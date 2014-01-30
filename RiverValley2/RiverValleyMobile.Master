@@ -43,7 +43,7 @@
         <asp:ContentPlaceHolder ID="ContentEvents" runat="server"></asp:ContentPlaceHolder>
         <asp:ContentPlaceHolder ID="ContentSermons" runat="server"></asp:ContentPlaceHolder>  
         
-         <div class="footer">Copyright &#169; 2013 &quot;River Valley Community Church&quot;      
+         <div class="footer">Copyright &#169; <%=DateTime.Now.Year%> &quot;River Valley Community Church&quot;      
         <br />You are veiwing the mobile version of our web site. <a href="Util.aspx?Full=true">Click here</a> to view normal version
         <center>
         <br /><img src="images/New_Picture.gif" style="border: none;"  alt=""/>

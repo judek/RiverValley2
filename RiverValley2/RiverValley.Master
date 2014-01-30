@@ -240,7 +240,7 @@ document.onclick = mclose;
 
 
   </table>
-<div class="footer">Copyright &#169; 2013 &quot;River Valley Community Church&quot; <br />
+<div class="footer">Copyright &#169; <%=DateTime.Now.Year%> &quot;River Valley Community Church&quot; <br />
 <a href="Util.aspx?Mobile=true">View Mobile Version</a>
     </div>
     </form>
