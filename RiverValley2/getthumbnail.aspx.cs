@@ -25,18 +25,9 @@ namespace RiverValley2
             string sOldImageFileName = Server.MapPath(Request.QueryString["i"]);
             int tester = sOldImageFileName.Length;
 
-            #region Create thumbnail folder if not present
+            
             FileInfo olfFileInfo = new FileInfo(sOldImageFileName);
-            if (false == Directory.Exists(olfFileInfo.DirectoryName + THUMB_FOLDER_NAME))
-            {
-                try { Directory.CreateDirectory(olfFileInfo.DirectoryName + THUMB_FOLDER_NAME); }
-                catch
-                {
-                    Response.End();
-                    return;
-                }
-            }
-            #endregion
+         
 
             
            
@@ -69,6 +60,9 @@ namespace RiverValley2
             {
                 try
                 {
+                    //Amazingly the using code block below is MUCH FASTER than Response.WriteFile!
+                    //Response.WriteFile(newFileInfo.FullName);
+
                     using (System.Drawing.Image cachedThumbImage = System.Drawing.Image.FromFile(newFileInfo.FullName))
                     {
                         Response.ContentType = "image/jpeg";
@@ -79,6 +73,18 @@ namespace RiverValley2
                 catch { Response.End(); }
             }
 
+            #endregion
+
+            #region Create thumbnail folder if not present
+            if (false == Directory.Exists(olfFileInfo.DirectoryName + THUMB_FOLDER_NAME))
+            {
+                try { Directory.CreateDirectory(olfFileInfo.DirectoryName + THUMB_FOLDER_NAME); }
+                catch
+                {
+                    Response.End();
+                    return;
+                }
+            }
             #endregion
 
 
