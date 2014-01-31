@@ -27,7 +27,10 @@ namespace RiverValley2
             Graphics oGraphic = null;
             Graphics canvas = null;
             Font wmFont = null;
-            float fWaterMarkFontSize = 2;
+            
+            //This is based on requested width of 900
+            //Need to add code to factor in different widths
+            float fWaterMarkFontSize = 14;
 
             string sOldImageFileName = Server.MapPath(Request.QueryString["i"]);
             
@@ -127,7 +130,7 @@ namespace RiverValley2
                             //
                             webFactor = (float)oldImage.Width / (float)requestedWidth;
 
-                            fWaterMarkFontSize = (fWaterMarkFontSize * webFactor * 2);
+                            //fWaterMarkFontSize = (fWaterMarkFontSize * webFactor * 2);
                             //
                             //Calculate new height and width for photo
                             //
@@ -194,14 +197,19 @@ namespace RiverValley2
 
                     string sWaterMark = "© RiverValleyCommunity.org";
 
+                    //This is based on requested width of 900
+                    //Need to add code to factor in different widths
                     int nWaterMarkX = ouputImage.Width - 320;
                     int nWaterMarkY = ouputImage.Height - 30;
+                    
+                    //int nWaterMarkX = ouputImage.Width - 320;
+                    //int nWaterMarkY = ouputImage.Height - 30;
 
-                    if (ouputImage.Height > ouputImage.Width)
-                    {
-                        nWaterMarkX = ouputImage.Width + 20;
-                        nWaterMarkY = ouputImage.Height + 320;
-                    }
+                    //if (ouputImage.Height > ouputImage.Width)
+                    //{
+                    //    nWaterMarkX = ouputImage.Width + 20;
+                    //    nWaterMarkY = ouputImage.Height + 320;
+                    //}
 
                     canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.Lime), nWaterMarkX, nWaterMarkY);
                     canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.FromArgb(128, 0, 0, 0)), nWaterMarkX + 2, nWaterMarkY + 2);
