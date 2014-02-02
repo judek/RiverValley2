@@ -72,20 +72,20 @@ namespace RiverValley2
             //Tried caching images but still too slow.
             if (MasterPageFile.Contains("Mobile"))
             {
-               
-                sb.Append("<img width=\"233\" src=\"Random/" + files[pict1].Name + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /><br />");
 
-                //sb.Append("<img width=\"233\" src=\"" + CacheifyImage(files[pict1].Name) + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /><br />");
+                sb.Append("<a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"Random/" + files[pict1].Name + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /</a>><br />");
+
+                //sb.Append("<a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"" + CacheifyImage(files[pict1].Name) + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
             }
             else
             {
-                sb.Append("<br /><img width=\"233\" src=\"Random/" + files[pict1].Name + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /><br />");
-                sb.Append("<br /><img width=\"233\" src=\"Random/" + files[pict2].Name + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /><br />");
-                sb.Append("<br /><img width=\"233\" src=\"Random/" + files[pict3].Name + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /><br />");
-              
-                //sb.Append("<img width=\"233\" src=\"" + CacheifyImage(files[pict1].Name) + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /><br />");
-                //sb.Append("<img width=\"233\" src=\"" + CacheifyImage(files[pict2].Name) + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /><br />");
-                //sb.Append("<img width=\"233\" src=\"" + CacheifyImage(files[pict3].Name) + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /><br />");
+                sb.Append("<br /><a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"Random/" + files[pict1].Name + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
+                sb.Append("<br /><a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"Random/" + files[pict2].Name + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
+                sb.Append("<br /><a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"Random/" + files[pict3].Name + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
+
+                //sb.Append("<a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"" + CacheifyImage(files[pict1].Name) + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
+                //sb.Append("<a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"" + CacheifyImage(files[pict2].Name) + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
+                //sb.Append("<a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"" + CacheifyImage(files[pict3].Name) + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
 
             }
 

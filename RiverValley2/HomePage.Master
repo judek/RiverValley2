@@ -82,6 +82,7 @@ document.onclick = mclose;
 		<a href="Beliefs.aspx">Beliefs</a>
 		<a href="Practices.aspx">Best Practices</a>
 		<a href="Virtues.aspx">Core Virtues</a>
+		<a href="gallery.aspx?f=gallery99Gallery">Pictures</a>
 
 		</div>
 	</li>
@@ -148,7 +149,7 @@ document.onclick = mclose;
 		<a href="Podcast.aspx" target="_blank">Podcast</a>
 		<a href="Multimedia.aspx?Tags=sermon">Sermons</a>
 		<a href="Multimedia.aspx?Tags=video">Videos</a>
-	    <a href="gallery.aspx?f=gallery99Gallery">Picture Gallery</a>
+	    <a href="gallery.aspx?f=gallery99Gallery">Pictures</a>
     </div>
 	</li>
 	
