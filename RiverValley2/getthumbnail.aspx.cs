@@ -10,7 +10,8 @@ namespace RiverValley2
 {
     public partial class getthumbnail : System.Web.UI.Page
     {
-        static string THUMB_FOLDER_NAME = @"\cache\";
+        static string THUMB_FOLDER = "cache";
+        static string THUMB_FOLDER_NAME = @"\" + THUMB_FOLDER + @"\";
 
         static readonly object imageWriteLock = new object();
         
@@ -22,8 +23,13 @@ namespace RiverValley2
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            string sOldImageFileName = Server.MapPath(Request.QueryString["i"]);
-            int tester = sOldImageFileName.Length;
+            string sOldImageFileUrl = Request.QueryString["i"];
+
+            if (string.IsNullOrEmpty(sOldImageFileUrl))
+                Response.End();
+
+
+            string sOldImageFileName = Server.MapPath(sOldImageFileUrl);
 
             
             FileInfo olfFileInfo = new FileInfo(sOldImageFileName);
@@ -63,12 +69,15 @@ namespace RiverValley2
                     //Amazingly the using code block below is MUCH FASTER than Response.WriteFile!
                     //Response.WriteFile(newFileInfo.FullName);
 
-                    using (System.Drawing.Image cachedThumbImage = System.Drawing.Image.FromFile(newFileInfo.FullName))
-                    {
-                        Response.ContentType = "image/jpeg";
-                        cachedThumbImage.Save(Response.OutputStream, ImageFormat.Jpeg);
-                        Response.End();
-                    }
+                    string sNewImageFileUrl = sOldImageFileUrl.Replace(olfFileInfo.Name, "") + THUMB_FOLDER + "/" + requestedWidth.ToString() + "_" + olfFileInfo.Name;
+                    Server.Transfer(sNewImageFileUrl);
+
+                    //using (System.Drawing.Image cachedThumbImage = System.Drawing.Image.FromFile(newFileInfo.FullName))
+                    //{
+                    //    Response.ContentType = "image/jpeg";
+                    //    cachedThumbImage.Save(Response.OutputStream, ImageFormat.Jpeg);
+                    //    Response.End();
+                    //}
                 }
                 catch { Response.End(); }
             }

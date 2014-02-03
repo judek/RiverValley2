@@ -14,8 +14,8 @@ namespace RiverValley2
     public partial class ShrinkImage : System.Web.UI.Page
     {
         bool _InsertWarterMark = true;
-        static string THUMB_FOLDER_NAME = @"\cache\";
-
+        static string THUMB_FOLDER = "cache";
+        static string THUMB_FOLDER_NAME = @"\" + THUMB_FOLDER + @"\";
         static readonly object imageWriteLock = new object();
         
         protected void Page_Load(object sender, EventArgs e)
@@ -30,9 +30,16 @@ namespace RiverValley2
             
             //This is based on requested width of 900
             //Need to add code to factor in different widths
-            float fWaterMarkFontSize = 14;
+            float fWaterMarkFontSize = 4;
 
-            string sOldImageFileName = Server.MapPath(Request.QueryString["i"]);
+            string sOldImageFileUrl = Request.QueryString["i"];
+
+            if (string.IsNullOrEmpty(sOldImageFileUrl))
+                Response.End();
+
+
+            string sOldImageFileName = Server.MapPath(sOldImageFileUrl);
+
             
             FileInfo olfFileInfo = new FileInfo(sOldImageFileName);
 
@@ -74,13 +81,16 @@ namespace RiverValley2
                     {
                         //Amazingly the using code block below is MUCH FASTER than Response.WriteFile!
                         //Response.WriteFile(newFileInfo.FullName);
+
+                        string sNewImageFileUrl = sOldImageFileUrl.Replace(olfFileInfo.Name, "") + THUMB_FOLDER + "/" + requestedWidth.ToString() + "_" + olfFileInfo.Name;
+                        Server.Transfer(sNewImageFileUrl);
    
-                        using (System.Drawing.Image cachedThumbImage = System.Drawing.Image.FromFile(newFileInfo.FullName))
-                        {
-                            Response.ContentType = "image/jpeg";
-                            cachedThumbImage.Save(Response.OutputStream, ImageFormat.Jpeg);
-                            Response.End();
-                        }
+                        //using (System.Drawing.Image cachedThumbImage = System.Drawing.Image.FromFile(newFileInfo.FullName))
+                        //{
+                        //    Response.ContentType = "image/jpeg";
+                        //    cachedThumbImage.Save(Response.OutputStream, ImageFormat.Jpeg);
+                        //    Response.End();
+                        //}
                     }
                     catch { Response.End(); }
                 }
@@ -212,10 +222,10 @@ namespace RiverValley2
                     //}
 
                     canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.Lime), nWaterMarkX, nWaterMarkY);
-                    canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.FromArgb(128, 0, 0, 0)), nWaterMarkX + 2, nWaterMarkY + 2);
-                    canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.FromArgb(128, 255, 255, 255)), nWaterMarkX, nWaterMarkY);
-                    canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.FromArgb(128, 0, 0, 0)), nWaterMarkX + 2, nWaterMarkY + 2);
-                    canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.FromArgb(128, 255, 255, 255)), nWaterMarkX, nWaterMarkY);
+                    //canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.FromArgb(128, 0, 0, 0)), nWaterMarkX + 2, nWaterMarkY + 2);
+                    //canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.FromArgb(128, 255, 255, 255)), nWaterMarkX, nWaterMarkY);
+                    //canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.FromArgb(128, 0, 0, 0)), nWaterMarkX + 2, nWaterMarkY + 2);
+                    //canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.FromArgb(128, 255, 255, 255)), nWaterMarkX, nWaterMarkY);
                 }
                 #endregion
 
