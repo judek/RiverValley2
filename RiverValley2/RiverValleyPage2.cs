@@ -10,7 +10,7 @@ namespace RiverValley2
         public string GenerateRandomPictures()
         {
             
-            DirectoryInfo dinfo = new DirectoryInfo(Server.MapPath(".\\Random"));
+            DirectoryInfo dinfo = new DirectoryInfo(Server.MapPath(".\\folders\\Random"));
 
 
             string sPageName = System.IO.Path.GetFileName(Request.Url.AbsolutePath);
@@ -73,19 +73,19 @@ namespace RiverValley2
             if (MasterPageFile.Contains("Mobile"))
             {
 
-                sb.Append("<a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"Random/" + files[pict1].Name + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /</a>><br />");
+                //sb.Append("<a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"folders/Random/" + files[pict1].Name + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /</a>><br />");
 
-                //sb.Append("<a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"" + CacheifyImage(files[pict1].Name) + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
+                sb.Append("<a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"" + CacheifyImage(files[pict1].Name) + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
             }
             else
             {
-                sb.Append("<br /><a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"Random/" + files[pict1].Name + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
-                sb.Append("<br /><a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"Random/" + files[pict2].Name + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
-                sb.Append("<br /><a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"Random/" + files[pict3].Name + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
+                //sb.Append("<br /><a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"folders/Random/" + files[pict1].Name + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
+                //sb.Append("<br /><a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"folders/Random/" + files[pict2].Name + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
+                //sb.Append("<br /><a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"folders/Random/" + files[pict3].Name + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
 
-                //sb.Append("<a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"" + CacheifyImage(files[pict1].Name) + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
-                //sb.Append("<a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"" + CacheifyImage(files[pict2].Name) + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
-                //sb.Append("<a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"" + CacheifyImage(files[pict3].Name) + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
+                sb.Append("<br /><a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"" + CacheifyImage(files[pict1].Name) + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
+                sb.Append("<br /><a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"" + CacheifyImage(files[pict2].Name) + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
+                sb.Append("<br /><a href=\"gallery.aspx?f=gallery99Gallery\"><img width=\"233\" src=\"" + CacheifyImage(files[pict3].Name) + "\" alt=\"River Valley Community Church\" class=\"shadowMe\" /></a><br />");
 
             }
 
@@ -95,7 +95,7 @@ namespace RiverValley2
 
         string CacheifyImage(string imageName)
         {
-            return "ShrinkImage.aspx?i=Random/" + imageName + "&w=233";
+            return "ShrinkImage.aspx?i=folders/Random/" + imageName + "&w=233";
         }
 
 

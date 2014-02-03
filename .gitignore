@@ -1,6 +1,8 @@
 bin/
 obj/
 gallery99Gallery/
+cache/
+random/
 *.suo
 *.user
 RiverValleyCalEvents.xml

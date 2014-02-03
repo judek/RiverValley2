@@ -13,7 +13,7 @@ namespace RiverValley2
 {
     public partial class ShrinkImage : System.Web.UI.Page
     {
-        bool _InsertWarterMark = true;
+        bool _InsertWarterMark = false;
         static string THUMB_FOLDER = "cache";
         static string THUMB_FOLDER_NAME = @"\" + THUMB_FOLDER + @"\";
         static readonly object imageWriteLock = new object();
