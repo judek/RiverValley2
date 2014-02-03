@@ -222,10 +222,10 @@ namespace RiverValley2
                     //}
 
                     canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.Lime), nWaterMarkX, nWaterMarkY);
-                    //canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.FromArgb(128, 0, 0, 0)), nWaterMarkX + 2, nWaterMarkY + 2);
-                    //canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.FromArgb(128, 255, 255, 255)), nWaterMarkX, nWaterMarkY);
-                    //canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.FromArgb(128, 0, 0, 0)), nWaterMarkX + 2, nWaterMarkY + 2);
-                    //canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.FromArgb(128, 255, 255, 255)), nWaterMarkX, nWaterMarkY);
+                    canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.FromArgb(128, 0, 0, 0)), nWaterMarkX + 2, nWaterMarkY + 2);
+                    canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.FromArgb(128, 255, 255, 255)), nWaterMarkX, nWaterMarkY);
+                    canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.FromArgb(128, 0, 0, 0)), nWaterMarkX + 2, nWaterMarkY + 2);
+                    canvas.DrawString(sWaterMark, wmFont, new SolidBrush(Color.FromArgb(128, 255, 255, 255)), nWaterMarkX, nWaterMarkY);
                 }
                 #endregion
 
