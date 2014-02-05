@@ -225,12 +225,12 @@ document.onclick = mclose;
 	    
 	    </td>
 	    <td align="center">
-        <div class="homeBox">location</div>
-              <a href="http://maps.google.com/?q=888%20S%20Edgelawn%20Ave%20Aurora%20IL" target="_blank" >
+        <div class="homeBox">hope</div>
+              <a href="http://www.ltcaurora.org/" target="_blank" >
               <img src="ShrinkImage.aspx?i=folders/buttons/button4.jpg&w=233" alt="Spiritual Gifts Test" class="shadowMe" />
               </a>
               <div class="content_buttom">
-              Join us Sunday's at 10 a.m.
+              Hope For The Journey
               </div>
 	    </td>
       </tr>
