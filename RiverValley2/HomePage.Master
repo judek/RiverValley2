@@ -100,11 +100,13 @@ document.onclick = mclose;
 	<li><a href="Ministry.aspx" onmouseover="mopen('m4')" onmouseout="mclosetime()">ministries</a>
 		<div id="m4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
 		<a href="Ministry.aspx">Our Ministries</a>
+		<a href="http://rivervalleycommunity.blogspot.com/">Mission Trip Blog</a>
 		<a href="MensMinistry.aspx">Men's</a>
 		<a href="WomensMinistry.aspx">Women's</a>
 		<a href="Children.aspx">Children</a>
 		<a href="YouthMinistry.aspx">Youth</a>
-		<a href="Singles.aspx">Singles</a>
+		<%--<a href="Singles.aspx">Singles</a>--%>
+		<a href="http://www.ltcaurora.org/" target ="_blank">Life Transformation Center</a>
 		<a href="Lighthouses.aspx">Lighthouses</a>
 		</div>
 	</li>
@@ -153,11 +155,12 @@ document.onclick = mclose;
     </div>
 	</li>
 	
-		<li><a href="http://rivervalleycommunity.blogspot.com/" onmouseover="mopen('m2')" onmouseout="mclosetime()">rvcc blog</a>
+		<li><a href="gallery.aspx?f=gallery99Gallery" onmouseover="mopen('m2')" onmouseout="mclosetime()">pictures</a>
 		<div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
 		
 		</div>
 	</li>
+
 
 </ul>
 
