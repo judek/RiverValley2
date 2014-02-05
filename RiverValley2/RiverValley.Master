@@ -124,7 +124,6 @@ document.onclick = mclose;
 	<li><a href="Ministry.aspx" onmouseover="mopen('m4')" onmouseout="mclosetime()">ministries</a>
 		<div id="m4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
 		<a href="Ministry.aspx">Our Ministries</a>
-		<a href="http://rivervalleycommunity.blogspot.com/">Mission Trip Blog</a>
 		<a href="MensMinistry.aspx">Men's</a>
 		<a href="WomensMinistry.aspx">Women's</a>
 		<a href="Children.aspx">Children</a>
@@ -138,6 +137,7 @@ document.onclick = mclose;
 	<li><a href="Missions.aspx" onmouseover="mopen('m5')" onmouseout="mclosetime()">missions</a>
 		<div id="m5" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
 	    <a href="Missions.aspx">Our Missions</a>
+	    <a href="http://rivervalleycommunity.blogspot.com/">Mission Trip Blog</a>
 	    <a href="LocalMinistries.aspx">Local Ministries</a>
 	    <a href="GlobalMissionaries.aspx">Missionaries</a>
 	  <%--  <a href="Missions.aspx#theriversedgecafe">River's Edge Cafe</a>
