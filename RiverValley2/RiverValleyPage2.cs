@@ -22,7 +22,7 @@ namespace RiverValley2
             sPageName = sPageName.Replace(".aspx", "");
 
 
-            FileInfo[] files = dinfo.GetFiles(sPageName + ".*.jpg");
+            FileInfo[] files = dinfo.GetFiles("*" + sPageName + "*.jpg");
 
             if (files.Length < 3)
                 files = dinfo.GetFiles("*.jpg");
@@ -41,7 +41,7 @@ namespace RiverValley2
             rng.GetBytes(rnd);
             urnd = System.BitConverter.ToUInt32(rnd, 0);
 
-            pict1 = ((int)urnd) % (files.Length - 1);
+            pict1 = ((int)urnd) % (files.Length);
             if (pict1 < 0)
                 pict1 = pict1 * (-1);
             
@@ -50,7 +50,7 @@ namespace RiverValley2
             rng.GetBytes(rnd);
             urnd = System.BitConverter.ToUInt32(rnd, 0);
             
-            pict2 = ((int)urnd) % (files.Length - 1);
+            pict2 = ((int)urnd) % (files.Length);
 
           
             if (pict2 < 0)
