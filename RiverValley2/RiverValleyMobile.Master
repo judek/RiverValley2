@@ -24,12 +24,14 @@
     | <a href="Prayer_and_Praise.aspx">prayer</a>
     | <a href="Ministry.aspx">ministries</a>
     | <a href="Missions.aspx">missions</a>
+    | <a href="http://www.ltcaurora.org/" target ="_blank">ltc aurora</a>
     | <a href="Discipleship.aspx">discipleship</a>
     | <a href="Calendar.aspx">calendar</a>
     <%--| <a href="News.aspx">news</a>--%>
-    | <a href="gallery.aspx?f=gallery99Gallery">pictrues</a>
     | <a href="Multimedia.aspx?Tags=sermon">sermons</a>
-    | <a href="http://rivervalleycommunity.blogspot.com/" target="_blank">blog</a>
+    | <a href="gallery.aspx?f=gallery99Gallery">pictrues</a>
+    
+  
     
     <br />
     <span class="title"><asp:ContentPlaceHolder ID="PageTitle" runat="server"></asp:ContentPlaceHolder></span> 
