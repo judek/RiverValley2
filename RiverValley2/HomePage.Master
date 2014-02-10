@@ -211,12 +211,14 @@ document.onclick = mclose;
     
     </td>
 	    <td align="center">
-        <div class="homeBox">missions</div>
+        <div class="homeBox">
+            <asp:Literal ID="LiteralButton3Title" runat="server"></asp:Literal>
+            </div>
               <a href="Missions.aspx" >
               <img src="ShrinkImage.aspx?i=folders/buttons/button3.jpg&w=233" alt="the story" class="shadowMe" />
               </a>
               <div class="content_buttom">
-              
+                  <asp:Literal ID="LiteralButton3Description" runat="server"></asp:Literal>
               </div>
               
        <br />
@@ -225,12 +227,13 @@ document.onclick = mclose;
 	    
 	    </td>
 	    <td align="center">
-        <div class="homeBox">hope</div>
+        <div class="homeBox">
+            <asp:Literal ID="LiteralButton4Title" runat="server"></asp:Literal></div>
               <a href="http://www.ltcaurora.org/" target="_blank" >
               <img src="ShrinkImage.aspx?i=folders/buttons/button4.jpg&w=233" alt="Spiritual Gifts Test" class="shadowMe" />
               </a>
               <div class="content_buttom">
-              Hope For The Journey
+              <asp:Literal ID="LiteralButton4Description" runat="server"></asp:Literal>
               </div>
 	    </td>
       </tr>
