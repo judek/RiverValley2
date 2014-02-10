@@ -13,9 +13,14 @@ namespace RiverValley2
         {
             LiteralButton4Title.Text = GetContent("Button4Title");
             LiteralButton4Description.Text = GetContent("Button4Description");
-
+            LiteralButton4Link.Text = GetContent("Button4Link");
+           
             LiteralButton3Title.Text = GetContent("Button3Title");
             LiteralButton3Description.Text = GetContent("Button3Description");
+            LiteralButton3Link.Text = GetContent("Button3Link");
+           
+
+           
         }
 
         protected virtual string GetContent(string sPortion)

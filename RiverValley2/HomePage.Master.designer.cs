@@ -77,6 +77,15 @@ namespace RiverValley2 {
         protected global::System.Web.UI.WebControls.Literal LiteralButton3Title;
         
         /// <summary>
+        /// LiteralButton3Link control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal LiteralButton3Link;
+        
+        /// <summary>
         /// LiteralButton3Description control.
         /// </summary>
         /// <remarks>
@@ -93,6 +102,15 @@ namespace RiverValley2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal LiteralButton4Title;
+        
+        /// <summary>
+        /// LiteralButton4Link control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal LiteralButton4Link;
         
         /// <summary>
         /// LiteralButton4Description control.
