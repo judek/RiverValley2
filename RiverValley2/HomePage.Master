@@ -214,9 +214,9 @@ document.onclick = mclose;
         <div class="homeBox">
             <asp:Literal ID="LiteralButton3Title" runat="server"></asp:Literal>
             </div>
-              <a href='<asp:Literal ID="LiteralButton3Link" runat="server"></asp:Literal>' >
+              <asp:Literal ID="LiteralButton3Link" runat="server"></asp:Literal>
               <img src="ShrinkImage.aspx?i=folders/buttons/button3.jpg&w=233" alt="the story" class="shadowMe" />
-              </a>
+              </a><!--The front part of </a> will be filled in by the literal above-->
               <div class="content_buttom">
                   <asp:Literal ID="LiteralButton3Description" runat="server"></asp:Literal>
               </div>
@@ -229,9 +229,10 @@ document.onclick = mclose;
 	    <td align="center">
         <div class="homeBox">
             <asp:Literal ID="LiteralButton4Title" runat="server"></asp:Literal></div>
-              <a href='<asp:Literal ID="LiteralButton4Link" runat="server"></asp:Literal>' target='_blank' >
+              <!--<a href='' target='_blank' > -->
+              <asp:Literal ID="LiteralButton4Link" runat="server"></asp:Literal>
               <img src="ShrinkImage.aspx?i=folders/buttons/button4.jpg&w=233" alt="Spiritual Gifts Test" class="shadowMe" />
-              </a>
+              </a> <!--The front part of </a> will be filled in by the literal above-->
               <div class="content_buttom">
               <asp:Literal ID="LiteralButton4Description" runat="server"></asp:Literal>
               </div>

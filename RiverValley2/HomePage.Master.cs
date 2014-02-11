@@ -13,13 +13,29 @@ namespace RiverValley2
         {
             LiteralButton4Title.Text = GetContent("Button4Title");
             LiteralButton4Description.Text = GetContent("Button4Description");
-            LiteralButton4Link.Text = GetContent("Button4Link");
-           
+            string Button4Link = GetContent("Button4Link");
+            
+            LiteralButton4Link.Text = "<a href='" + Button4Link + "'";
+
+            if (Button4Link.StartsWith("http"))
+                LiteralButton4Link.Text += " target='_blank' >";
+            else
+                LiteralButton4Link.Text += ">";
+            
+            
+            
             LiteralButton3Title.Text = GetContent("Button3Title");
             LiteralButton3Description.Text = GetContent("Button3Description");
-            LiteralButton3Link.Text = GetContent("Button3Link");
-           
 
+
+            string Button3Link = GetContent("Button3Link");
+
+            LiteralButton3Link.Text = "<a href='" + Button3Link + "'";
+
+            if (Button3Link.StartsWith("http"))
+                LiteralButton3Link.Text += " target='_blank' >";
+            else
+                LiteralButton3Link.Text += " >";
            
         }
 
