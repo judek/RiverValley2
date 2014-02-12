@@ -96,8 +96,23 @@ namespace RiverValley2
                     sb.Append(line);
                     continue;
                 }
-                
-                sb.Append((formatLine(line) + "<br />"));
+
+                int leftArrowCount = 0;
+                int rightArrowCount = 0;
+                foreach (char c in line)
+                {
+                    switch (c)
+                    {
+                        case '<': leftArrowCount++; break;
+                        case '>': rightArrowCount++; break;
+                        default: break;
+                    }
+                }
+
+                if (leftArrowCount > rightArrowCount)
+                    sb.Append((formatLine(line)));//We don't want to put break within a html tag.
+                else
+                    sb.Append((formatLine(line) + "<br />"));
             }
 
             return sb.ToString();
