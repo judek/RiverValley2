@@ -296,55 +296,6 @@ namespace RiverValley2
 
         }
 
-        protected virtual string AppendRecodeContent(string sPortion)
-        {
-            string sContent = "";
-
-
-            string sFileName = System.IO.Path.GetFileName(Request.Url.AbsolutePath);
-
-            if (false == sFileName.EndsWith(".aspx"))
-                throw new ApplicationException("CafePage.GetContent():Unable to parse page name from url path");
-
-
-            sFileName = sFileName.Replace(".aspx", "");
-
-            string sSuffix = sFileName + "." + sPortion + ".txt";
-
-            string sPrefix;
-
-            if (Request.QueryString["preview"] != null)
-                sPrefix = "./RiverValleyContent/Preview.";
-            else
-            {
-                sPrefix = "./RiverValleyContent/Content.";
-                sContent = Cache.Get(("cache." + (sPrefix + sSuffix))) as string;
-                if (sContent != null)
-                    return sContent;
-            }
-
-            try
-            {
-                sContent = ContentReader.GetContent(Server.MapPath(sPrefix + sSuffix));
-
-                Cache.Insert(("cache." + (sPrefix + sSuffix)), sContent,
-                new CacheDependency(Server.MapPath((sPrefix + sSuffix))),
-                DateTime.Now.AddHours(1), TimeSpan.Zero);
-
-
-                return sContent;
-            }
-            catch
-            {
-                return sContent;
-            }
-
-
-
-
-
-        }
-
         protected string StringTrunk(string mystring, int nMaxLength)
         {
             return mystring.Substring(0, Math.Min(mystring.Length, nMaxLength));
