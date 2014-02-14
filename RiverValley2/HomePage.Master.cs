@@ -55,8 +55,11 @@ namespace RiverValley2
             string sSuffix = sFileName + "." + sPortion + ".txt";
 
             string sPrefix;
+            string sPreviewSection = Request.QueryString["section"];
+            if (null == sPreviewSection)
+                sPreviewSection = sPortion;//To support backward compatibility, otherwise we would set to just ""
 
-            if (Request.QueryString["preview"] != null)
+            if ((Request.QueryString["preview"] != null) && (sPortion.ToLower() == sPreviewSection.ToLower()))
                 sPrefix = "./RiverValleyContent/Preview.";
             else
             {
