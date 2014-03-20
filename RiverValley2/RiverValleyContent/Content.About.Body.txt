@@ -1,5 +1,8 @@
 --++ About Us
 
+
+[url=http://localhost:49256/images/City.jpg][img]http://localhost:49256/images/about1.jpg[/img][/Url]
+
 At River Valley Community Church, we believe that the local church is the hope of the world. We define the church as the universal body of believers who follow Jesus Christ, rather than an institution, building, or specific group of people. We are committed to building a growing community of followers of Jesus Christ through Life groups, small groups of men, women, and children who share a desire to grow together spiritually. Life groups meet weekly in the homes of group members, in the manner of the Acts 2 church. We come together each Sunday for a family reunion and celebration of the resurrection of Jesus Christ.
 
 --++++ River Valley Community Church exists to glorify God and transform people through the work of the Holy Spirit into fully developing followers of Jesus Christ

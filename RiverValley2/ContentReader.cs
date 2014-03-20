@@ -126,6 +126,8 @@ namespace RiverValley2
             //    sline = Regex.Replace(Regex.Replace(sline, @"[0-7]+[A-Z]", "<sup>$&"), @"<sup>[0-7]", "$&</sup>");
             //}
 
+            sline = BBCode(sline);
+
             if (sline.StartsWith("--++ "))
             {
                 return "<span class=\"title\">" + sline.Substring(5) + "</span>";
@@ -151,6 +153,50 @@ namespace RiverValley2
                 return sline;
 
 
+        }
+
+        static Regex _regExIMG = new Regex(@"\[img\]([^\]]+)\[\/img\]", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+        static Regex _regExURL = new Regex(@"\[url\]([^\]]+)\[\/url\]", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+        static Regex _regExURLAnchor = new Regex(@"\[url=([^\]]+)\]([^\]]+)\[\/url\]", RegexOptions.Compiled | RegexOptions.IgnoreCase); 
+        static public string BBCode(string strTextToReplace)
+        {
+
+            ////Define regex 
+            //Regex regExp;
+
+            //Image regex 
+            //regExp = new Regex(@"\[img\]([^\]]+)\[\/img\]", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            strTextToReplace = _regExIMG.Replace(strTextToReplace, "<img src=\"$1\"  style=\"border: none;\" />");
+
+            ////Regex for URL tag without anchor 
+            //regExp = new Regex(@"\[url\]([^\]]+)\[\/url\]", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            strTextToReplace = _regExURL.Replace(strTextToReplace, "<a href=\"$1\" target=\"_blank\">$1</a>");
+
+            //Regex for URL with anchor 
+            //regExp = new Regex(@"\[url=([^\]]+)\]([^\]]+)\[\/url\]", RegexOptions.Compiled | RegexOptions.IgnoreCase); 
+            strTextToReplace = _regExURLAnchor.Replace(strTextToReplace, "<a href=\"$1\" target=\"_blank\">$2</a>"); 
+
+            //////Bold text 
+            //regExp = new Regex(@"\[b\](.+?)\[\/b\]", RegexOptions.Compiled | RegexOptions.IgnoreCase); 
+            //strTextToReplace = regExp.Replace(strTextToReplace, "<b>$1</b>"); 
+
+            //////Italic text 
+            //regExp = new Regex(@"\[i\](.+?)\[\/i\]", RegexOptions.Compiled | RegexOptions.IgnoreCase); 
+            //strTextToReplace = regExp.Replace(strTextToReplace, "<i>$1</i>"); 
+
+            //////Underline text 
+            //regExp = new Regex(@"\[u\](.+?)\[\/u\]", RegexOptions.Compiled | RegexOptions.IgnoreCase); 
+            //strTextToReplace = regExp.Replace(strTextToReplace, "<u>$1</u>"); 
+
+            //////Font size
+            //regExp = new Regex(@"\[size=([^\]]+)\]([^\]]+)\[\/size\]", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            //strTextToReplace = regExp.Replace(strTextToReplace, "<span style=\"font-size: $1px\">$2</span>"); 
+
+            //////Font color
+            //regExp = new Regex(@"\[color=([^\]]+)\]([^\]]+)\[\/color\]", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            //strTextToReplace = regExp.Replace(strTextToReplace, "<span style=\"color: $1\">$2</span>");               
+
+            return strTextToReplace;
         }
     }
 }
