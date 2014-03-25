@@ -130,16 +130,34 @@ namespace RiverValley2
 
             if (sline.StartsWith("--++ "))
             {
-                return "<span class=\"title\">" + sline.Substring(5) + "</span>";
+                return "<h1>" + sline.Substring(5) + "</h1>";
             }
             else if (sline.StartsWith("--+++ "))
             {
-                return "<span class=\"subtitle\">" + sline.Substring(6) + "</span>";
+                return "<h2>" + sline.Substring(6) + "</h2>";
             }
             else if (sline.StartsWith("--++++ "))
             {
-                return "<span class=\"smalltitle\">" + sline.Substring(7) + "</span>";
+                return "<h3>" + sline.Substring(7) + "</h3>";
             }
+
+            //Mark down syntax
+            else if (sline.StartsWith("# "))
+            {
+                return "<h1>" + sline.Substring(2) + "</h1>";
+            }
+            else if (sline.StartsWith("## "))
+            {
+                return "<h2>" + sline.Substring(3) + "</h2>";
+            }
+            else if (sline.StartsWith("### "))
+            {
+                return "<h3>" + sline.Substring(4) + "</h3>";
+            }
+           
+            
+            
+            
             else if (sline.StartsWith("--+++++ "))
             {
                 return "<span class=\"phonetitle\">" + sline.Substring(8) + "</span>";

@@ -1,6 +1,6 @@
-﻿--++ Missions
+﻿# Missions
 
---+++ Missions at River Valley Community Church 
+## Missions at River Valley Community Church 
 
 <ul>
 <li>We pray for our missionaries</li>

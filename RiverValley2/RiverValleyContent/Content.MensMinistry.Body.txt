@@ -1,6 +1,6 @@
---++ Men's Minstry 
+# Men's Minstry 
 
---+++ Welcome to Men's Ministry!
+## Welcome to Men's Ministry!
 
 River Valley's Men's Ministry provides a place for men to get together for devotions, prayer, accountability, and fun.
 
@@ -8,16 +8,16 @@ River Valley Community Church hosts weekly meetings of Men Discipling Men; small
 
 We currently have two groups that meet.
 
---+++ Monday evenings from 6:30pm to 8:30pm
+## Monday evenings from 6:30pm to 8:30pm
 River's Edge Cafe, located at 18 W. Downer Place, downtown Aurora. 
 If you would like to join us for dinner at 6:00pm, contact Pam at 630-844-9115 by 12:00pm on Monday with your sandwich order.
 
---+++ Saturday mornings 8:00am
+## Saturday mornings 8:00am
 This group meets every other Saturday (3/5, 3/19, 4/2, 4/16, 5/7, 5/21, break for summer)
 River Valley's office, located at 725 Morton Avenue, Aurora
 
 
---+++ 2011 MDM Motorcycle Trip
+## 2011 MDM Motorcycle Trip
 June 17th - 24th
 Rapid City, SD & Cody, WY
 
