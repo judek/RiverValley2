@@ -306,6 +306,13 @@
     <Compile Include="Prayer_and_Praise.aspx.designer.cs">
       <DependentUpon>Prayer_and_Praise.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PreSchool.aspx.cs">
+      <DependentUpon>PreSchool.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreSchool.aspx.designer.cs">
+      <DependentUpon>PreSchool.aspx</DependentUpon>
+    </Compile>
     <Compile Include="privacystatement.aspx.cs">
       <DependentUpon>privacystatement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -533,6 +540,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\SpiritualGifts.png" />
+    <Content Include="PreSchool.aspx" />
     <Content Include="RiverValleyMobile.Master" />
     <Content Include="stylemobile.css" />
     <Content Include="TweetCalendar.aspx" />
