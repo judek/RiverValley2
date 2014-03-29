@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/RiverValley.Master" AutoEventWireup="true" CodeBehind="PreSchool.aspx.cs" Inherits="RiverValley2.PreSchool" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="RiverValley.Master" AutoEventWireup="true" CodeBehind="PreSchool.aspx.cs" Inherits="RiverValley2.PreSchool" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="PageTitle" runat="server">
