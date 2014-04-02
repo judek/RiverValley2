@@ -21,13 +21,18 @@ namespace RiverValley2
 
             sPageName = sPageName.Replace(".aspx", "");
 
+            
 
             FileInfo[] files = dinfo.GetFiles("*" + sPageName + "*.jpg");
 
             if (files.Length < 3)
                 files = dinfo.GetFiles("*.jpg");
-                
-             if (files.Length < 3)
+
+
+            bool blnMaxRandomize = (files.Length >= 6);
+       
+            
+            if (files.Length < 3)
                  return "";
 
             System.Security.Cryptography.RNGCryptoServiceProvider rng = 
@@ -35,36 +40,61 @@ namespace RiverValley2
 
             uint urnd;
             byte[] rnd = new byte[4];
-
             int pict1 = 0, pict2 = 0, pict3 = 0;
-            
-            rng.GetBytes(rnd);
-            urnd = System.BitConverter.ToUInt32(rnd, 0);
 
-            pict1 = ((int)urnd) % (files.Length);
-            if (pict1 < 0)
-                pict1 = pict1 * (-1);
-            
-            
-            
-            rng.GetBytes(rnd);
-            urnd = System.BitConverter.ToUInt32(rnd, 0);
-            
-            pict2 = ((int)urnd) % (files.Length);
+            if (true == blnMaxRandomize)
+            {
 
-          
-            if (pict2 < 0)
-                pict2 = pict2 * (-1);
+                rng.GetBytes(rnd);
+                urnd = System.BitConverter.ToUInt32(rnd, 0);
 
-           
-            
-            rng.GetBytes(rnd);
-            urnd = System.BitConverter.ToUInt32(rnd, 0);
+                pict1 = ((int)urnd) % (files.Length);
+                if (pict1 < 0)
+                    pict1 = pict1 * (-1);
 
-            pict3 = ((int)urnd) % (files.Length - 1);
 
-            if (pict3 < 0)
-                pict3 = pict3 * (-1);
+
+                rng.GetBytes(rnd);
+                urnd = System.BitConverter.ToUInt32(rnd, 0);
+
+                pict2 = ((int)urnd) % (files.Length);
+
+
+                if (pict2 < 0)
+                    pict2 = pict2 * (-1);
+
+
+
+                rng.GetBytes(rnd);
+                urnd = System.BitConverter.ToUInt32(rnd, 0);
+
+                pict3 = ((int)urnd) % (files.Length - 1);
+
+                if (pict3 < 0)
+                    pict3 = pict3 * (-1);
+            }
+            else
+            {
+                rng.GetBytes(rnd);
+                urnd = System.BitConverter.ToUInt32(rnd, 0);
+
+                int i = ((int)urnd) % (files.Length);
+
+                if (i < 0)
+                    i = i * (-1);
+               
+                pict1 = i++;
+                if (i >= files.Length)
+                    i = 0;
+
+                pict2 = i++;
+                if (i >= files.Length)
+                    i = 0;
+                
+                pict3 = i++;
+                if (i >= files.Length)
+                    i = 0;
+            }
 
 
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
