@@ -7,6 +7,11 @@ namespace RiverValley2
 {
     public class RiverValleyPage2 : RiverValleyPage
     {
+        protected virtual string GetPictureMatchPattern(string sPageName)
+        {
+            return "*" + sPageName + "*.jpg";
+        }
+      
         public string GenerateRandomPictures()
         {
             
@@ -21,9 +26,9 @@ namespace RiverValley2
 
             sPageName = sPageName.Replace(".aspx", "");
 
-            
+            string sPattern = GetPictureMatchPattern(sPageName);
 
-            FileInfo[] files = dinfo.GetFiles("*" + sPageName + "*.jpg");
+            FileInfo[] files = dinfo.GetFiles(sPattern);
 
             if (files.Length < 3)
                 files = dinfo.GetFiles("*.jpg");
