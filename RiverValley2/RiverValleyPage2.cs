@@ -175,7 +175,7 @@ namespace RiverValley2
 
 
                 if (true == useMobileTemplate)
-                    base.MasterPageFile = "RiverValleyMobile.Master";
+                    base.MasterPageFile = "RiverValley2014Skin.Master";
                 else
                     base.MasterPageFile = value;
 

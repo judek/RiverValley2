@@ -1,0 +1,367 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RiverValley2014Skin.master.cs" Inherits="RiverValley2.RiverValley2014Skin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>River Valley Community Church - <asp:ContentPlaceHolder ID="PageTitle" runat="server"></asp:ContentPlaceHolder> </title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="coolstyle.css" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+       <!-- START PAGE WRAPPER -->
+    <div class="pagewrapper left-div">
+
+
+
+
+        <!-- START OUTER SPLIT -->
+        <table class="fullwidth splittable">
+            <tr>
+                <td class="td-top td-left headerwidth">
+
+                    <script type="text/javascript" src="header.js"></script>
+
+                </td>
+                <td class="td-top td-left">
+
+
+
+
+                    <!-- HEADER SHADE -->
+                    <div class="headershade">&nbsp;<br /></div>
+
+
+                    <!-- TOP MENU -->
+                    <script type="text/javascript" src="menu-top.js"></script>
+
+
+
+
+                    <!-- MENU & SEARCH -->
+                    <table class="fullwidth">
+                        <tr>
+                            <td class="printhide td-left td-top">
+
+                                <img src="picts/corner-topleft.gif" height="15" width="15" alt="image"><br />
+
+                                <!-- dd menu -->
+                                <script type="text/javascript">
+<!--
+var timeout         = 500;
+var closetimer		= 0;
+var ddmenuitem      = 0;
+
+// open hidden layer
+function mopen(id)
+{
+	// cancel close timer
+	mcancelclosetime();
+
+	// close old layer
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+	// get new layer and show it
+	ddmenuitem = document.getElementById(id);
+	ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+	if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+	closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+	if(closetimer)
+	{
+		window.clearTimeout(closetimer);
+		closetimer = null;
+	}
+}
+
+// close layer when click-out
+document.onclick = mclose;
+// -->
+                                </script>
+                                <style>
+                                    #sddm {
+                                        margin: 0;
+                                        padding: 0;
+                                        z-index: 30;
+                                    }
+
+                                        #sddm li {
+                                            margin: 0;
+                                            padding: 0;
+                                            list-style: none;
+                                            float: left;
+                                            font: bold 11px arial;
+                                        }
+
+                                            #sddm li a {
+                                                display: block;
+                                                margin: 0 1px 0 0;
+                                                padding: 4px 10px;
+                                                width: 60px;
+                                                background: #000000;
+                                                color: #FFF;
+                                                text-align: center;
+                                                text-decoration: none;
+                                            }
+
+                                                #sddm li a:hover {
+                                                    background: #49A3FF;
+                                                }
+
+                                        #sddm div {
+                                            position: absolute;
+                                            visibility: hidden;
+                                            margin: 0;
+                                            padding: 0;
+                                            background: #EAEBD8;
+                                            border: 1px solid #5970B2;
+                                        }
+
+                                            #sddm div a {
+                                                position: relative;
+                                                display: block;
+                                                margin: 0;
+                                                padding: 5px 10px;
+                                                width: auto;
+                                                white-space: nowrap;
+                                                text-align: left;
+                                                text-decoration: none;
+                                                background: #EAEBD8;
+                                                color: #2875DE;
+                                                font: 11px arial;
+                                            }
+
+                                                #sddm div a:hover {
+                                                    background: #49A3FF;
+                                                    color: #FFF;
+                                                }
+                                </style>
+                                <!-- div class="sample" style="margin-bottom: 15px;height:42px;"><span -->
+                                
+                                
+                                <ul id="sddm">
+
+                                    <li>
+                                        <a href="Default.aspx" onmouseover="mopen('m1')" onmouseout="mclosetime()">welcome</a>
+                                        <div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                                            <a href="Default.aspx">Home</a>
+                                            <a href="Contact.aspx">Contact Us</a>
+                                            <a href="About.aspx">About Us</a>
+                                            <a href="Beliefs.aspx">Beliefs</a>
+                                            <a href="Practices.aspx">Best Practices</a>
+                                            <a href="Virtues.aspx">Core Virtues</a>
+                                            <a href="gallery.aspx?f=gallery99Gallery">Pictures</a>
+
+                                        </div>
+                                    </li>
+
+
+
+                                    <li>
+                                        <a href="Worship.aspx" onmouseover="mopen('m3')" onmouseout="mclosetime()">worship</a>
+                                        <div id="m3" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                                            <a href="Worship.aspx">Worship</a>
+                                            <a href="Prayer_and_Praise.aspx">Prayer and Praise</a>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="Ministry.aspx" onmouseover="mopen('m4')" onmouseout="mclosetime()">ministries</a>
+                                        <div id="m4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                                            <a href="Ministry.aspx">Our Ministries</a>
+                                            <a href="PreSchool.aspx">Preschool</a>
+                                            <a href="MensMinistry.aspx">Men's</a>
+                                            <a href="WomensMinistry.aspx">Women's</a>
+                                            <a href="Children.aspx">Children</a>
+                                            <a href="YouthMinistry.aspx">Youth</a>
+
+                                            <a href="http://www.ltcaurora.org/" target="_blank">Life Transformation Center</a>
+                                            <a href="Lighthouses.aspx">Lighthouses</a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <a href="Missions.aspx" onmouseover="mopen('m5')" onmouseout="mclosetime()">missions</a>
+                                        <div id="m5" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                                            <a href="Missions.aspx">Our Missions</a>
+                                            <a href="http://rivervalleycommunity.blogspot.com/">Mission Trip Blog</a>
+                                            <a href="LocalMinistries.aspx">Local Ministries</a>
+                                            <a href="GlobalMissionaries.aspx">Missionaries</a>
+
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="Discipleship.aspx" onmouseover="mopen('m6')" onmouseout="mclosetime()">discipleship</a>
+                                        <div id="m6" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                                            <a href="Discipleship.aspx">Life Groups</a>
+                                            <a href="Classes.aspx">Classes</a>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="Calendar.aspx" onmouseover="mopen('m7')" onmouseout="mclosetime()">calendar</a>
+                                        <div id="m7" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                                            <a href="Calendar.aspx">Our Calendar</a>
+
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="Multimedia.aspx?Tags=sermon" onmouseover="mopen('m8')" onmouseout="mclosetime()">audio/video</a>
+                                        <div id="m8" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                                            <a href="Multimedia.aspx">All Files</a>
+                                            <a href="Podcast.aspx" target="_blank">Podcast</a>
+                                            <a href="Multimedia.aspx?Tags=sermon">Sermons</a>
+                                            <a href="Multimedia.aspx?Tags=video">Videos</a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <a href="gallery.aspx?f=gallery99Gallery" onmouseover="mopen('m2')" onmouseout="mclosetime()">pictures</a>
+                                        <div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                                
+                                
+                                <div style="clear:both"></div>
+                                <!-- /span></div -->
+                                <!-- /dd -->
+
+                            </td>
+                            <td class="searcharea-width">
+
+                                <!-- SEARCH -->
+                                <script type="text/javascript" src="search.js"></script>
+
+
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- END MENU & SEARCH -->
+                    <!-- START INNER SPLIT -->
+                    <table class="content-width">
+                        <tr>
+                            <td class="td-center td-top sidebar-left contentpad">
+
+                                <!-- LEFT SIDEBAR -->
+                                <!-- IMAGE TABLE -->
+                                <table class="center-div homeimages">
+
+
+                                <asp:ContentPlaceHolder ID="PictureColumn" runat="server"></asp:ContentPlaceHolder> 
+
+
+                                </table>
+                                <!-- IMAGE TABLE -->
+
+                                <br />
+
+                            </td>
+                            <td class="td-left td-top contentpad">
+
+
+
+                                <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        
+                                <asp:ContentPlaceHolder ID="ContentEvents" runat="server"></asp:ContentPlaceHolder>
+                                <asp:ContentPlaceHolder ID="ContentSermons" runat="server"></asp:ContentPlaceHolder>  
+
+                               
+
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- END INNER SPLIT -->
+
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    &nbsp;<br />
+
+                </td>
+                <td class="td-bottom">
+
+                    <img src="picts/corner-bottomleft.gif" height="15" width="15" class="printhide blockimage" alt="image">
+
+
+
+
+                    <!-- FOOTER -->
+                    <table class="footer footertext">
+                        <tr>
+                            <td class="td-left td-top footerpad">
+
+                                <script type="text/javascript" src="menu-footer.js"></script>
+
+                                <script type="text/javascript" src="footer-copyright.js"></script>
+
+                            </td>
+                            <td class="td-right td-top footerpad">
+
+                                <script type="text/javascript" src="social_links.js"></script>
+
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!-- FOOTER -->
+                    <!-- FOOTER SHADE -->
+                    <div class="footershade">&nbsp;<br /></div>
+
+
+
+
+                </td>
+            </tr>
+        </table>
+        <!-- END OUTER SPLIT -->
+
+
+
+
+        <br /><br />
+
+
+
+
+    </div>
+    <!-- END PAGE WRAPPER -->
+
+   
+   
+    </div>
+    </form>
+</body>
+</html>
