@@ -130,7 +130,7 @@ namespace RiverValley2
 
             if (sline.StartsWith("--++ "))
             {
-                return "<h1>" + sline.Substring(5) + "</h1><br /><div class=\"page-splits\">&nbsp;<br /></div><br />";
+                return "<h1>" + sline.Substring(5) + "</h1><div class=\"page-splits\">&nbsp;</div>";
             }
             else if (sline.StartsWith("--+++ "))
             {
@@ -144,7 +144,7 @@ namespace RiverValley2
             //Mark down syntax
             else if (sline.StartsWith("# "))
             {
-                return "<h1>" + sline.Substring(2) + "</h1><br /><div class=\"page-splits\">&nbsp;<br /></div><br />";
+                return "<h1>" + sline.Substring(2) + "</h1><div class=\"page-splits\">&nbsp</div>";
             }
             else if (sline.StartsWith("## "))
             {

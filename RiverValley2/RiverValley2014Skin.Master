@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>River Valley Community Church - <asp:ContentPlaceHolder ID="PageTitle" runat="server"></asp:ContentPlaceHolder> </title>
+    <title>River Valley Community Church </title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link rel="stylesheet" href="coolstyle.css" type="text/css" />
@@ -286,8 +286,13 @@ document.onclick = mclose;
                             </td>
                             <td class="td-left td-top contentpad">
 
-
-
+                                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                                
+                                
+                                <asp:ContentPlaceHolder ID="PageTitle" runat="server"></asp:ContentPlaceHolder>
+                                
+                                
                                 <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
         
                                 <asp:ContentPlaceHolder ID="ContentEvents" runat="server"></asp:ContentPlaceHolder>

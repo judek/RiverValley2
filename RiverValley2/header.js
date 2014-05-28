@@ -3,7 +3,7 @@
 // NOTE: If you use a ' add a slash before it like this \'
 
 
-var headerlink		= "index.html"	   // LINK FOR LOGO
+var headerlink		= "default.aspx"	   // LINK FOR LOGO
 var logoalign		= "left"	   // ALIGN LOGO | left | right | center |
 
 

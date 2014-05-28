@@ -18,7 +18,12 @@ namespace RiverValley2
 
             if (MasterPageFile.Contains("Mobile"))
                 Response.Redirect("About.aspx");
+
+            if (MasterPageFile.Contains("2014"))
+                Response.Redirect("Util.aspx?Full=true");
             
+
+            //Util.aspx?Full=true
             LiteralBanner.Text =  GetRandomBanner();
             
             

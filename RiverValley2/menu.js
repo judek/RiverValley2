@@ -9,7 +9,7 @@ var menuside	= "left"	// MENU SIDE | left | right | center
 document.write('<table class="menutable '+menuside+'-div"><tr>');
 
 
-document.write('<td><a href="index.html" class="menu">Home</a></td>');
+document.write('<td><a href="default.aspx.html" class="menu">Home</a></td>');
 
 
 document.write('<td><a href="about.htm" class="menu">About</a></td>');
