@@ -45,7 +45,7 @@ namespace RiverValley2
             
 
             TextBoxSubject.Text = multimediaFile.Title;
-            LabelSubject.Text = multimediaFile.Title;
+            LabelSubject.Text = "<h1>" + multimediaFile.Title + "</h1></h1><div class=\"page-splits\">&nbsp;</div>";
             LiteralTags.Text += multimediaFile.Tags.ToString();
             TextBoxTags.Text = multimediaFile.Tags.ToString();
 
