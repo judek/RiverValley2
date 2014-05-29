@@ -81,6 +81,8 @@ namespace RiverValley2
             if (IsPostBack)
                 return;
 
+            LiteralPageTitle.Text = FormatPageTitle("Picture Gallery");
+            
             EnalbeEdits(CanEdit);
 
             DirectoryInfo directoryInfo;

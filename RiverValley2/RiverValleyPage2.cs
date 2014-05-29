@@ -11,7 +11,25 @@ namespace RiverValley2
         {
             return "*" + sPageName + "*.jpg";
         }
-      
+
+        protected string FormatPageTitle(string sInput)
+        {
+            string test = MasterPageFile;
+
+            if (MasterPageFile == "RiverValley.Master")
+                return "<h1>" + sInput + " </h1>";
+            else if (MasterPageFile == "RiverValleyMobile.Master")
+                return "<h1>" + sInput + " </h1>";
+            else if (MasterPageFile == "RiverValley2014Skin.Master")
+                return "<h1>" + sInput + " </h1><div class=\"page-splits\">&nbsp;</div>"; 
+            
+            else
+                return sInput ;
+
+            
+            
+        }
+        
         public string GenerateRandomPictures()
         {
             

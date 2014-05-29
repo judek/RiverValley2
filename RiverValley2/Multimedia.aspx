@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="PageTitle" runat="server">
-<h1>Sermon Archive</h1></h1><div class="page-splits">&nbsp;</div>
+<asp:Literal ID="LiteralPageTitle" runat="server"></asp:Literal>
 <br /><span class="phonetitle">Click on Sermon name to listen to audio</span>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">

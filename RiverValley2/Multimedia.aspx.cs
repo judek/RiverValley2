@@ -14,6 +14,8 @@ namespace RiverValley2
 
             //LabelMain.Text = GetContent("Body");
 
+            LiteralPageTitle.Text = FormatPageTitle("Sermon Archive");
+
             LabelRightSideBarArea.Text = "<span class=\"title\">Archives</span><br />";
 
 

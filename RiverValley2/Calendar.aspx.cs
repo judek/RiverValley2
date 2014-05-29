@@ -21,6 +21,7 @@ namespace RiverValley2
             
             _CanEditCalendar = (null != Session["EditRiverValleyCalendar"]);
 
+            LiteralPageTitle.Text = FormatPageTitle("River Valley Calendar");
             
             //LabelMain.Text = GetContent("Body");
 

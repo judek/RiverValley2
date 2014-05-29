@@ -87,7 +87,7 @@ namespace RiverValley2
 
 
 
-            LabelTitle.Text = "<h1>" + calEvent.Subject + "</h1></h1><div class=\"page-splits\">&nbsp;</div>";
+            LabelTitle.Text = FormatPageTitle(calEvent.Subject);
             //Label1.Text = drs[0]["Subject"] as string;
             //LabelDetails.Text = drs[0]["Details"] as string;
             //TextBoxBody.Text = drs[0]["Details"] as string;
