@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="PageTitle" runat="server">
-<h1>River Valley Calendar</h1></h1><div class="page-splits">&nbsp;</div>
+<h1>River Valley Calendar</h1><div class="page-splits">&nbsp;</div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
 
