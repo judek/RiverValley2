@@ -24,7 +24,11 @@
             <tr>
                 <td class="td-top td-left headerwidth">
 
-                    <script type="text/javascript" src="header.js"></script>
+                   <div class="header headerwidth pageheight td-left">
+                   <a href="default.aspx"><img src="picts/New_Picture.gif" class="blockimage left-div"></a>
+                   </div>
+                   
+                   <%-- <script type="text/javascript" src="header.js"></script>--%>
 
                 </td>
                 <td class="td-top td-left">
@@ -37,7 +41,21 @@
 
 
                     <!-- TOP MENU -->
-                    <script type="text/javascript" src="menu-top.js"></script>
+                    <%--<script type="text/javascript" src="menu-top.js"></script>--%>
+                    <table class="fullwidth">
+                    <tr>
+                    <td class="top-menu-area"></td>
+                    <td class="top-menu-area">
+                    <table class="top-menu-inner right-div">
+                    <tr>
+                    <td></td>
+                    <td><span class="headertitle">River Valley Community Church</span><span class="headertext">
+                    <br /><a href="Contact.aspx">888 S Edgelawn | Aurora, IL 60506 | 630-844-9115</a>
+                    <br />questions@rivervalleycommunity.org
+                    <br />Sunday Worship at 10:00AM</span>&nbsp;
+                    <br /></td></tr></table></td></tr></table>
+                    
+                    
 
 
 
@@ -258,7 +276,7 @@ document.onclick = mclose;
                             <td class="searcharea-width">
 
                                 <!-- SEARCH -->
-                                <script type="text/javascript" src="search.js"></script>
+                                <!--<script type="text/javascript" src="search.js"></script>-->
 
 
                             </td>
@@ -328,14 +346,35 @@ document.onclick = mclose;
                         <tr>
                             <td class="td-left td-top footerpad">
 
-                                <script type="text/javascript" src="menu-footer.js"></script>
+                                <!-- <script type="text/javascript" src="menu-footer.js"></script> -->
+                                <table class="footer-menu footertext">
+                                <tr>
+                                <td>|</td>
+                                <td> <a href="default.aspx" class="footlink">Home</a></td>
+                                <td>|</td>
+                                <td> <a href="Contact.aspx" class="footlink">Contact</a></td>
+                                <td>|</td>
+                                <td> <a href="About.aspx" class="footlink">About</a></td>
+                                <td>|</td>
+                                <td>&nbsp;<br /></td></tr></table>
+                                
+                                
+                                
 
-                                <script type="text/javascript" src="footer-copyright.js"></script>
+                                <!-- <script type="text/javascript" src="footer-copyright.js"></script> -->
+                                <div class="footer-copyright footertext nobreak">Copyright &#169; <%=DateTime.Now.Year%> River Valley Community Church  <a href="default.aspx" class="footlink">rivervalleycommunity.org</a> </div>
+                                
+                                
 
                             </td>
                             <td class="td-right td-top footerpad">
 
-                                <script type="text/javascript" src="social_links.js"></script>
+                                <!-- <script type="text/javascript" src="social_links.js"></script> -->
+                                <table class="social-icon-area printhide right-div">
+                                <tr>
+                                <td class="socialspace"><a href="https://www.facebook.com/pages/River-Valley-Community-Church/112078325513992" target="_blank"><img src="picts/social_facebook.gif" width="22" height="22" class="blockimage" alt="Connect on Facebook"></a></td>
+                                <td class="socialspace"><a href="https://twitter.com/RVCCAurora" target="_blank"><img src="picts/social_twitter.gif" width="22" height="22" class="blockimage" alt="Follow us on twitter"></a></td>
+                                <td class="socialspace"><a href="contact.aspx" target="_top"><img src="picts/social_contact.gif" width="22" height="22" class="blockimage" alt="Contact Us"></a></td></tr></table><div class="footer-right-box td-center footertext right-div">Connect With Us</div>
 
                             </td>
                         </tr>
