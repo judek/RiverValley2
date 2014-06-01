@@ -83,9 +83,9 @@ a:hover		{ color: #FFFFFF; text-decoration: none; }
 
 table, div	{ color: #A2A3AD; font: 12px arial, sans-serif; font-weight: bold; line-height: 19px; }
 
-.title 		{ color: #258883; font: 16px arial, sans-serif; font-weight: bold; letter-spacing: 10px; }
+.title 		{ color: #258883; font: 24px arial, sans-serif; font-weight: bold; letter-spacing: 10px; }
 
-h1	{ color: #258883; font: 16px arial, sans-serif; font-weight: bold; letter-spacing: 10px; }
+h1	{ color: #258883; font: 24px arial, sans-serif; font-weight: bold; letter-spacing: 10px; }
 
 .subtitle 	{  color: #A7D35C; font: 16px arial, sans-serif; font-weight: bold; }
 h2 	{ color: #A7D35C; font: 16px arial, sans-serif; font-weight: bold; }

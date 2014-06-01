@@ -162,43 +162,85 @@ namespace RiverValley2
             }
             set
             {
+                bool useMobileMaster = false;
+                bool useNewSkinMaster = false;
 
-                bool useMobileTemplate = false;
-
-                if (null == Request.UserAgent)
-                    return;
-                
-                if (null == Session["InMobileMode"])
+                if (null != Session["InMobileMode"])
                 {
-                    //Otherwise we check our selves
-                    string userAgent = Request.UserAgent;
+                    useMobileMaster = (bool)Session["InMobileMode"];
+                }
 
+                if (false == useMobileMaster)
+                {//Lets check user Agent
                     if (null != Request.UserAgent)
                     {
-                        useMobileTemplate = (userAgent.Contains("Android")
+                        string userAgent = Request.UserAgent;
+                        useMobileMaster = (userAgent.Contains("Android")
                             || userAgent.Contains("iPhone")
                             || userAgent.Contains("webOS")
                             || userAgent.Contains("iPod"));
                     }
                     else
                     {
-                        useMobileTemplate = false;
+                        useMobileMaster = false;
                     }
+
                 }
-                else
+           
+                if (null != Session["InNewSkin"])
                 {
-                    //Use session Override
-                    useMobileTemplate = (bool)Session["InMobileMode"];
+                    useNewSkinMaster = (bool)Session["InNewSkin"];
                 }
 
 
-                if (true == useMobileTemplate)
+                if (true == useMobileMaster)
+                    base.MasterPageFile = "RiverValleyMobile.Master";
+                else if (true == useNewSkinMaster)
                     base.MasterPageFile = "RiverValley2014Skin.Master";
                 else
-                    base.MasterPageFile = value;
+                    base.MasterPageFile = value; 
+
+
+
+                return;
+                
+                
+                //bool useMobileTemplate = false;
+
+                //if (null == Request.UserAgent)
+                //    return;
+                
+                //if (null == Session["InMobileMode"])
+                //{
+                //    //Otherwise we check our selves
+                //    string userAgent = Request.UserAgent;
+
+                //    if (null != Request.UserAgent)
+                //    {
+                //        useMobileTemplate = (userAgent.Contains("Android")
+                //            || userAgent.Contains("iPhone")
+                //            || userAgent.Contains("webOS")
+                //            || userAgent.Contains("iPod"));
+                //    }
+                //    else
+                //    {
+                //        useMobileTemplate = false;
+                //    }
+                //}
+                //else
+                //{
+                //    //Use session Override
+                //    useMobileTemplate = (bool)Session["InMobileMode"];
+                //}
+
+
+                //if (true == useMobileTemplate)
+                //    base.MasterPageFile = "RiverValley2014Skin.Master";
+                //else
+                //    base.MasterPageFile = value;
 
                 
-                Session["InMobileMode"] = useMobileTemplate;
+                //Session["InMobileMode"] = useMobileTemplate;
 
 
             }

@@ -13,19 +13,22 @@ namespace RiverValley2
             if (Request.QueryString["Mobile"] != null)
             {
                 Session["InMobileMode"] = true;
+                Session["InNewSkin"] = false;
                 Response.Redirect("About.aspx");
             }
 
             if (Request.QueryString["Full"] != null)
             {
                 Session["InMobileMode"] = false;
+                Session["InNewSkin"] = false;
                 Response.Redirect("Default.aspx");
 
             }
 
             if (Request.QueryString["NewSkin"] != null)
             {
-                Session["InNewSkin"] = false;
+                Session["InNewSkin"] = true;
+                Session["InMobileMode"] = false;
                 Response.Redirect("About.aspx");
 
             }

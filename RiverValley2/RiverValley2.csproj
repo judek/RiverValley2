@@ -554,6 +554,7 @@
     <Content Include="Util.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="coolstyle.css" />
     <Content Include="RiverValley2014Skin.Master" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
