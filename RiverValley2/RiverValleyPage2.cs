@@ -170,33 +170,36 @@ namespace RiverValley2
                     useMobileMaster = (bool)Session["InMobileMode"];
                 }
 
-                if (false == useMobileMaster)
-                {//Lets check user Agent
-                    if (null != Request.UserAgent)
-                    {
-                        string userAgent = Request.UserAgent;
-                        useMobileMaster = (userAgent.Contains("Android")
-                            || userAgent.Contains("iPhone")
-                            || userAgent.Contains("webOS")
-                            || userAgent.Contains("iPod"));
-                    }
-                    else
-                    {
-                        useMobileMaster = false;
-                    }
+                //#region detect mobile browser
+                //if (false == useMobileMaster)
+                //{//Lets check user Agent
+                //    if (null != Request.UserAgent)
+                //    {
+                //        string userAgent = Request.UserAgent;
+                //        useMobileMaster = (userAgent.Contains("Android")
+                //            || userAgent.Contains("iPhone")
+                //            || userAgent.Contains("webOS")
+                //            || userAgent.Contains("iPod"));
+                //    }
+                //    else
+                //    {
+                //        useMobileMaster = false;
+                //    }
 
-                }
-           
+                //}
+                //#endregion
+                
+                
                 if (null != Session["InNewSkin"])
                 {
                     useNewSkinMaster = (bool)Session["InNewSkin"];
                 }
 
 
-                if (true == useMobileMaster)
-                    base.MasterPageFile = "RiverValleyMobile.Master";
-                else if (true == useNewSkinMaster)
+                if (true == useNewSkinMaster)
                     base.MasterPageFile = "RiverValley2014Skin.Master";
+                else if (true == useMobileMaster)
+                    base.MasterPageFile = "RiverValleyMobile.Master";
                 else
                     base.MasterPageFile = value; 
 

@@ -48,7 +48,11 @@
                     <td class="top-menu-area">
                     <table class="top-menu-inner right-div">
                     <tr>
-                    <td></td>
+                    <td>   
+                     <asp:Button ID="ButtonEditHome" runat="server" Text="Edit Home" 
+                CssClass="button-edit" onclick="ButtonEditHome_Click" />
+                    <asp:Button ID="ButtonLogoff" runat="server" Text="Stop Editing" 
+                onclick="ButtonLogoff_Click" CssClass="button-edit" /></td>
                     <td><span class="headertitle">River Valley Community Church</span><span class="headertext">
                     <br /><a href="Contact.aspx">888 S Edgelawn | Aurora, IL 60506 | 630-844-9115</a>
                     <br />questions@rivervalleycommunity.org
@@ -292,6 +296,13 @@ document.onclick = mclose;
                                 <!-- IMAGE TABLE -->
                                 <table class="center-div homeimages">
 
+<asp:Literal ID="LiteralMessage" runat="server"></asp:Literal>
+   <asp:Button ID="ButtonUpload" runat="server" 
+                Text="Attach File to this page" CssClass="button-edit" 
+                onclick="ButtonUpload_Click" />
+        <asp:FileUpload ID="FileUpload1" runat="server" />
+<asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
 
                                 <asp:ContentPlaceHolder ID="PictureColumn" runat="server"></asp:ContentPlaceHolder> 
 
