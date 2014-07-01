@@ -162,6 +162,8 @@ namespace RiverValley2
             }
             set
             {
+
+            
                 bool useMobileMaster = false;
                 bool useNewSkinMaster = false;
 
@@ -201,7 +203,14 @@ namespace RiverValley2
                 else if (true == useMobileMaster)
                     base.MasterPageFile = "RiverValleyMobile.Master";
                 else
-                    base.MasterPageFile = value; 
+                {
+                    //Use new skin for all except Home Page
+                    string sPageName = Path.GetFileName(Request.Path).ToLower();
+                    if (sPageName.StartsWith("default"))
+                        base.MasterPageFile = value;
+                    else
+                        base.MasterPageFile = "RiverValley2014Skin.Master";
+                }
 
 
 

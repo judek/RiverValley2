@@ -53,11 +53,19 @@
                 CssClass="button-edit" onclick="ButtonEditHome_Click" />
                     <asp:Button ID="ButtonLogoff" runat="server" Text="Stop Editing" 
                 onclick="ButtonLogoff_Click" CssClass="button-edit" /></td>
+                 <td class="socialspace">
+                    <br />
+                    <a href="https://twitter.com/RVCCAurora" target="_blank"><img src="picts/social_twitter.gif" width="22" height="22" class="blockimage" alt="Follow us on twitter"></a>
+                    <a href="https://www.facebook.com/pages/River-Valley-Community-Church/112078325513992" target="_blank"><img src="picts/social_facebook.gif" width="22" height="22" class="blockimage" alt="Connect on Facebook"></a>
+                    </td>
                     <td><span class="headertitle">River Valley Community Church</span><span class="headertext">
                     <br /><a href="Contact.aspx">888 S Edgelawn | Aurora, IL 60506 | 630-844-9115</a>
                     <br />questions@rivervalleycommunity.org
                     <br />Sunday Worship at 10:00AM</span>&nbsp;
-                    <br /></td></tr></table></td></tr></table>
+                    
+                    <br /></td>
+                   
+                    </tr></table></td></tr></table>
                     
                     
 
@@ -69,7 +77,7 @@
                         <tr>
                             <td class="printhide td-left td-top">
 
-                                <img src="picts/corner-topleft.gif" height="15" width="15" alt="image"><br />
+                                <%--<img src="picts/corner-topleft.gif" height="15" width="15" alt="image"><br />--%>
 
                                 <!-- dd menu -->
                                 <script type="text/javascript">
@@ -347,7 +355,7 @@ document.onclick = mclose;
                 </td>
                 <td class="td-bottom">
 
-                    <img src="picts/corner-bottomleft.gif" height="15" width="15" class="printhide blockimage" alt="image">
+                    <%--<img src="picts/corner-bottomleft.gif" height="15" width="15" class="printhide blockimage" alt="image">--%>
 
 
 
@@ -385,7 +393,7 @@ document.onclick = mclose;
                                 <tr>
                                 <td class="socialspace"><a href="https://www.facebook.com/pages/River-Valley-Community-Church/112078325513992" target="_blank"><img src="picts/social_facebook.gif" width="22" height="22" class="blockimage" alt="Connect on Facebook"></a></td>
                                 <td class="socialspace"><a href="https://twitter.com/RVCCAurora" target="_blank"><img src="picts/social_twitter.gif" width="22" height="22" class="blockimage" alt="Follow us on twitter"></a></td>
-                                <td class="socialspace"><a href="contact.aspx" target="_top"><img src="picts/social_contact.gif" width="22" height="22" class="blockimage" alt="Contact Us"></a></td></tr></table><div class="footer-right-box td-center footertext right-div">Connect With Us</div>
+                                <td class="socialspace"><a href="contact.aspx" target="_top"><img src="picts/social_contact.gif" width="22" height="22" class="blockimage" alt="Contact Us"></a></td></tr></table><%--<div class="footer-right-box td-center footertext right-div">Connect With Us</div>--%>
 
                             </td>
                         </tr>
