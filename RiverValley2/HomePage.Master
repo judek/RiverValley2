@@ -133,7 +133,7 @@ document.onclick = mclose;
 	<li><a href="Discipleship.aspx" onmouseover="mopen('m6')" onmouseout="mclosetime()">discipleship</a>
 		<div id="m6" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
 		<a href="Discipleship.aspx">Life Groups</a>
-		<a href="Classes.aspx">Classes</a>
+		<!--<a href="Classes.aspx">Classes</a>-->
 		</div>
 	</li>
 	
