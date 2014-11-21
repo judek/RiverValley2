@@ -33,6 +33,11 @@ namespace RiverValley2
             
             get
             {
+                return new List<CalEvent>();
+              
+                //Had to create this short circuit because the version of Google API has been deprecated.
+
+
                 string HardCacheName = Server.MapPath(".") + "\\RiverValleyCalEvents.xml";
 
                 //bool blnCreateBackup = false;
@@ -85,7 +90,7 @@ namespace RiverValley2
 
                     #region Google Calendar database fetch
 
-                    calevents = GoogleAPI.GetCalendarEvents(null, null,
+                    calevents = GoogleAPI.GetCalendarEvents("rivervalleycommunity", "holybible1",
                         "https://www.google.com/calendar/feeds/rivervalleycommunity@gmail.com/public/full",
                         now, nowEnd, null);
 
