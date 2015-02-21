@@ -1,1 +1,1 @@
-http://www.ltcaurora.org/ 
+<a href="http://rivervalleycommunity.org/temp/JesusWalk.html" onclick="window.open(this.href, 'winname', 'directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=640,height=640'); return false;" onkeypress="window.open(this.href); return false;">

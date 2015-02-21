@@ -14,15 +14,21 @@ namespace RiverValley2
             LiteralButton4Title.Text = GetContent("Button4Title");
             LiteralButton4Description.Text = GetContent("Button4Description");
             string Button4Link = GetContent("Button4Link");
-            
-            LiteralButton4Link.Text = "<a href='" + Button4Link + "'";
 
-            if (Button4Link.StartsWith("http"))
-                LiteralButton4Link.Text += " target='_blank' >";
+            if (Button4Link.StartsWith("<a"))
+            {
+                LiteralButton4Link.Text = Button4Link;
+            }
             else
-                LiteralButton4Link.Text += ">";
-            
-            
+            {
+                LiteralButton4Link.Text = "<a href='" + Button4Link + "'";
+
+                if (Button4Link.StartsWith("http"))
+                    LiteralButton4Link.Text += " target='_blank' >";
+                else
+                    LiteralButton4Link.Text += ">";
+
+            }
             
             LiteralButton3Title.Text = GetContent("Button3Title");
             LiteralButton3Description.Text = GetContent("Button3Description");
@@ -30,13 +36,20 @@ namespace RiverValley2
 
             string Button3Link = GetContent("Button3Link");
 
-            LiteralButton3Link.Text = "<a href='" + Button3Link + "'";
 
-            if (Button3Link.StartsWith("http"))
-                LiteralButton3Link.Text += " target='_blank' >";
+            if (Button3Link.StartsWith("<a"))
+            {
+                LiteralButton3Link.Text = Button3Link;
+            }
             else
-                LiteralButton3Link.Text += " >";
-           
+            {
+                LiteralButton3Link.Text = "<a href='" + Button3Link + "'";
+
+                if (Button3Link.StartsWith("http"))
+                    LiteralButton3Link.Text += " target='_blank' >";
+                else
+                    LiteralButton3Link.Text += " >";
+            }
         }
 
         protected virtual string GetContent(string sPortion)
