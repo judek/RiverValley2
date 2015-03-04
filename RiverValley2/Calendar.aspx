@@ -10,7 +10,7 @@
 <asp:Label ID="LabelTodayMessage" runat="server" 
         Text="LabelTodayMessage"></asp:Label>
       
-      <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=rivervalleycommunity%40gmail.com&amp;color=%23182C57&amp;ctz=America%2FChicago" style=" border:solid 1px #777 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+     <%-- <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=rivervalleycommunity%40gmail.com&amp;color=%23182C57&amp;ctz=America%2FChicago" style=" border:solid 1px #777 " width="800" height="600" frameborder="0" scrolling="no"></iframe>--%>
       
       
         <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" 
@@ -19,7 +19,7 @@
         CaptionAlign="Top" ShowGridLines="True" 
     ondayrender="Calendar1_DayRender" 
     onvisiblemonthchanged="Calendar1_VisibleMonthChanged" 
-            onselectionchanged="Calendar1_SelectionChanged" Visible="False">
+            onselectionchanged="Calendar1_SelectionChanged">
     <SelectedDayStyle BackColor="#009999" ForeColor="#CCFF99" Font-Bold="True" />
     <SelectorStyle BackColor="#99CCCC" ForeColor="#336666" />
     <WeekendDayStyle BackColor="#0F1B30" ForeColor="White" />

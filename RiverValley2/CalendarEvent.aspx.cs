@@ -96,6 +96,7 @@ namespace RiverValley2
 
             string sDetails = "";
 
+            if (null != calEvent.Location)
             if (calEvent.Location.Length > 1)
                 sDetails += "Location: " + calEvent.Location + "<a target=_blank href=http://maps.google.com?q=" + System.Web.HttpUtility.UrlEncode(calEvent.Location.Trim()) + "> view map</a>" + "<br /><br />";
 

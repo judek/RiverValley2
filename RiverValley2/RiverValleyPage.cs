@@ -33,14 +33,11 @@ namespace RiverValley2
             
             get
             {
-                return new List<CalEvent>();
+                //return new List<CalEvent>();
               
                 //Had to create this short circuit because the version of Google API has been deprecated.
 
 
-                string HardCacheName = Server.MapPath(".") + "\\RiverValleyCalEvents.xml";
-
-                //bool blnCreateBackup = false;
 
                 List<CalEvent>  calevents = Cache.Get("cache.CalEvents.RiverValley") as List<CalEvent>;
                 if (null != calevents)
@@ -49,6 +46,7 @@ namespace RiverValley2
                     return calevents;
                 }
 
+                string HardCacheName = Server.MapPath(".") + "\\RiverValleyCalEvents.xml";
 
                 calevents = new List<CalEvent>();
 
@@ -90,9 +88,17 @@ namespace RiverValley2
 
                     #region Google Calendar database fetch
 
-                    calevents = GoogleAPI.GetCalendarEvents("rivervalleycommunity", "holybible1",
-                        "https://www.google.com/calendar/feeds/rivervalleycommunity@gmail.com/public/full",
-                        now, nowEnd, null);
+                    //calevents = GoogleAPI.GetCalendarEvents("rivervalleycommunity", "holybible1",
+                    //    "https://www.google.com/calendar/feeds/rivervalleycommunity@gmail.com/public/full",
+                    //    now, nowEnd, null);
+
+
+                    
+                    string SERVICE_ACCOUNT_EMAIL = "414558114750-vj3ttcv5n87sol20e3lshtvuft5p0b3l@developer.gserviceaccount.com";
+                    string SERVICE_ACCOUNT_KEYFILE = Server.MapPath(@"./certs/rivervalleycommunity.p12");
+
+
+                    calevents = GoogleAPI.GetCalendarEvents3(SERVICE_ACCOUNT_EMAIL, SERVICE_ACCOUNT_KEYFILE, "rivervalleycommunity@gmail.com", now, nowEnd);
 
                     if (null != calevents)
                         if (calevents.Count < 1)
