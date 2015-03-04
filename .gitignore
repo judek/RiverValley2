@@ -193,3 +193,6 @@ Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
+
+# NuGet Packages Directory
+packages/*
