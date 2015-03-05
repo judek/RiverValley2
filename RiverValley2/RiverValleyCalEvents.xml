@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfCalEvent>
   <CalEvent>
-    <ID>59np4iu71erdtb7055i95bp1f8_20150203T003000Z</ID>
-    <Subject>Stitches Of Love</Subject>
-    <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
-
-*If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
-
-Any questions contact the church office 630-844-9115</Details>
-    <Location>888 S. Edgelawn Dr., unit 1731. Aurora, IL 60506</Location>
-    <StartDate>2015-02-02T18:30:00-06:00</StartDate>
-    <EndDate>2015-02-02T20:30:00-06:00</EndDate>
-    <StartTime>2015-02-02T18:30:00-06:00</StartTime>
-    <EndTime>2015-02-02T20:30:00-06:00</EndTime>
-    <IsAllDayEvent>false</IsAllDayEvent>
-    <IsPrivate>false</IsPrivate>
-  </CalEvent>
-  <CalEvent>
     <ID>59np4iu71erdtb7055i95bp1f8_20150303T003000Z</ID>
     <Subject>Stitches Of Love</Subject>
     <Details>If you are a sewer, crocheter, knitter, stitcher, etc. we would love for you to join us for a time of fellowship as we make items to donate to local ministries in Aurora and surrounding areas. You can also work on items for yourself or things you want to give to loved ones! We will pray over these items, and the people that will receive them, all while spending time getting to know each other better.
@@ -216,6 +200,7 @@ Any questions contact the church office 630-844-9115</Details>
 *If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
 
 If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
     <StartDate>2015-02-16T18:30:00-06:00</StartDate>
     <EndDate>2015-02-16T20:30:00-06:00</EndDate>
     <StartTime>2015-02-16T18:30:00-06:00</StartTime>
@@ -231,6 +216,7 @@ If you have any questions contact the church office 630-844-9115.</Details>
 *If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
 
 If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
     <StartDate>2015-03-16T18:30:00-05:00</StartDate>
     <EndDate>2015-03-16T20:30:00-05:00</EndDate>
     <StartTime>2015-03-16T18:30:00-05:00</StartTime>
@@ -246,6 +232,7 @@ If you have any questions contact the church office 630-844-9115.</Details>
 *If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
 
 If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
     <StartDate>2015-04-20T18:30:00-05:00</StartDate>
     <EndDate>2015-04-20T20:30:00-05:00</EndDate>
     <StartTime>2015-04-20T18:30:00-05:00</StartTime>
@@ -261,6 +248,7 @@ If you have any questions contact the church office 630-844-9115.</Details>
 *If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
 
 If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
     <StartDate>2015-05-18T18:30:00-05:00</StartDate>
     <EndDate>2015-05-18T20:30:00-05:00</EndDate>
     <StartTime>2015-05-18T18:30:00-05:00</StartTime>
@@ -276,6 +264,7 @@ If you have any questions contact the church office 630-844-9115.</Details>
 *If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
 
 If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
     <StartDate>2015-06-15T18:30:00-05:00</StartDate>
     <EndDate>2015-06-15T20:30:00-05:00</EndDate>
     <StartTime>2015-06-15T18:30:00-05:00</StartTime>
@@ -291,6 +280,7 @@ If you have any questions contact the church office 630-844-9115.</Details>
 *If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
 
 If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
     <StartDate>2015-07-20T18:30:00-05:00</StartDate>
     <EndDate>2015-07-20T20:30:00-05:00</EndDate>
     <StartTime>2015-07-20T18:30:00-05:00</StartTime>
@@ -306,6 +296,7 @@ If you have any questions contact the church office 630-844-9115.</Details>
 *If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
 
 If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
     <StartDate>2015-08-17T18:30:00-05:00</StartDate>
     <EndDate>2015-08-17T20:30:00-05:00</EndDate>
     <StartTime>2015-08-17T18:30:00-05:00</StartTime>
@@ -321,6 +312,7 @@ If you have any questions contact the church office 630-844-9115.</Details>
 *If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
 
 If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
     <StartDate>2015-09-21T18:30:00-05:00</StartDate>
     <EndDate>2015-09-21T20:30:00-05:00</EndDate>
     <StartTime>2015-09-21T18:30:00-05:00</StartTime>
@@ -336,6 +328,7 @@ If you have any questions contact the church office 630-844-9115.</Details>
 *If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
 
 If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
     <StartDate>2015-10-19T18:30:00-05:00</StartDate>
     <EndDate>2015-10-19T20:30:00-05:00</EndDate>
     <StartTime>2015-10-19T18:30:00-05:00</StartTime>
@@ -351,6 +344,7 @@ If you have any questions contact the church office 630-844-9115.</Details>
 *If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
 
 If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
     <StartDate>2015-11-16T18:30:00-06:00</StartDate>
     <EndDate>2015-11-16T20:30:00-06:00</EndDate>
     <StartTime>2015-11-16T18:30:00-06:00</StartTime>
@@ -366,6 +360,7 @@ If you have any questions contact the church office 630-844-9115.</Details>
 *If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
 
 If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
     <StartDate>2015-12-21T18:30:00-06:00</StartDate>
     <EndDate>2015-12-21T20:30:00-06:00</EndDate>
     <StartTime>2015-12-21T18:30:00-06:00</StartTime>
@@ -381,6 +376,7 @@ If you have any questions contact the church office 630-844-9115.</Details>
 *If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
 
 If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
     <StartDate>2016-01-18T18:30:00-06:00</StartDate>
     <EndDate>2016-01-18T20:30:00-06:00</EndDate>
     <StartTime>2016-01-18T18:30:00-06:00</StartTime>
@@ -396,6 +392,7 @@ If you have any questions contact the church office 630-844-9115.</Details>
 *If you do not know how to sew, crochet, or knit but would like to learn we would love to teach you!
 
 If you have any questions contact the church office 630-844-9115.</Details>
+    <Location />
     <StartDate>2016-02-15T18:30:00-06:00</StartDate>
     <EndDate>2016-02-15T20:30:00-06:00</EndDate>
     <StartTime>2016-02-15T18:30:00-06:00</StartTime>
