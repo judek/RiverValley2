@@ -33,7 +33,7 @@ namespace RiverValley2
             
             get
             {
-                //return new List<CalEvent>();
+                return new List<CalEvent>();
               
                 //Had to create this short circuit because the version of Google API has been deprecated.
 
