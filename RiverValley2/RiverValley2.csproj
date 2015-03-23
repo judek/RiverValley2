@@ -153,6 +153,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DivorceRecovery.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -219,6 +220,13 @@
     </Compile>
     <Compile Include="Discipleship.aspx.designer.cs">
       <DependentUpon>Discipleship.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DivorceRecovery.aspx.cs">
+      <DependentUpon>DivorceRecovery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DivorceRecovery.aspx.designer.cs">
+      <DependentUpon>DivorceRecovery.aspx</DependentUpon>
     </Compile>
     <Compile Include="Document.cs" />
     <Compile Include="Edit\CalendarEdit\Default.aspx.cs">
