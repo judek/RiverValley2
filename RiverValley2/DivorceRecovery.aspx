@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/RiverValley.Master" AutoEventWireup="true" CodeBehind="DivorceRecovery.aspx.cs" Inherits="RiverValley2.DivorceRecovery" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="RiverValley.Master" AutoEventWireup="true" CodeBehind="DivorceRecovery.aspx.cs" Inherits="RiverValley2.DivorceRecovery" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="PageTitle" runat="server">
