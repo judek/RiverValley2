@@ -33,7 +33,26 @@ namespace RiverValley2
             
             get
             {
-                return new List<CalEvent>();
+                List<CalEvent> softCalevents = Cache.Get("cache.CalEvents.RiverValley") as List<CalEvent>;
+                if (null != softCalevents)
+                {
+                    return softCalevents;
+                }
+
+                string SoftCacheName = Server.MapPath(".") + "\\events\\RiverValleyCalEvents.xml";
+                if (true == File.Exists(SoftCacheName))
+                {
+                    softCalevents = XMLUtil.Deserialize<List<CalEvent>>(File.ReadAllText(SoftCacheName));
+
+                    Cache.Insert("cache.CalEvents.RiverValley", softCalevents,
+                 null,
+                        //DateTime.Now.AddMinutes(15), TimeSpan.Zero);
+                 DateTime.Now.AddHours(1), TimeSpan.Zero);
+
+                    return softCalevents;
+                }
+                else
+                    new List<CalEvent>();  
               
                 //Had to create this short circuit because the version of Google API has been deprecated.
 
