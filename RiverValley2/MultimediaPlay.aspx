@@ -16,7 +16,10 @@
 </span>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
-    <!-- START OF THE PLAYER EMBEDDING TO COPY-PASTE -->
+   
+    <audio controls="controls">
+   <source src="<%=Request.QueryString["FL"]%>/<%=Request.QueryString["F"]%>" type="audio/mpeg">
+  <!-- START OF THE PLAYER EMBEDDING TO COPY-PASTE -->
 	<object id="player" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" name="player" width="<%=Request.QueryString["W"]%>" height="<%=Request.QueryString["H"]%>">
 		<param name="movie" value="player.swf" />
 		<param name="allowfullscreen" value="true" />
@@ -30,6 +33,9 @@
 		</object>
 	</object>
 <!-- END OF THE PLAYER EMBEDDING -->
+</audio>
+
+   
 <br />
 <asp:Literal ID="LiteralDoneButton" runat="server">
 <input type="button" value="Done" onclick="history.go(-1)" class="button-order" id="button1" name="button1" />
