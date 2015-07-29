@@ -224,7 +224,6 @@ document.onclick = mclose;
                                             <a href="Children.aspx">Children</a>
                                             <a href="YouthMinistry.aspx">Youth</a>
 
-                                            <a href="http://www.ltcaurora.org/" target="_blank">Life Transformation Center</a>
                                             <a href="Lighthouses.aspx">Lighthouses</a>
                                         </div>
                                     </li>
