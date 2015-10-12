@@ -11,6 +11,8 @@ using System.Net;
 using System.Threading;
 using System.Text;
 using System.IO;
+using System.Web.Script.Serialization;
+
 
 namespace RiverValley2
 {
@@ -33,31 +35,7 @@ namespace RiverValley2
             
             get
             {
-                List<CalEvent> softCalevents = Cache.Get("cache.CalEvents.RiverValley") as List<CalEvent>;
-                if (null != softCalevents)
-                {
-                    return softCalevents;
-                }
-
-                string SoftCacheName = Server.MapPath(".") + "\\events\\RiverValleyCalEvents.xml";
-                if (true == File.Exists(SoftCacheName))
-                {
-                    softCalevents = XMLUtil.Deserialize<List<CalEvent>>(File.ReadAllText(SoftCacheName));
-
-                    Cache.Insert("cache.CalEvents.RiverValley", softCalevents,
-                 null,
-                        //DateTime.Now.AddMinutes(15), TimeSpan.Zero);
-                 DateTime.Now.AddHours(1), TimeSpan.Zero);
-
-                    return softCalevents;
-                }
-                else
-                    new List<CalEvent>();  
-              
-                //Had to create this short circuit because the version of Google API has been deprecated.
-
-
-
+          
                 List<CalEvent>  calevents = Cache.Get("cache.CalEvents.RiverValley") as List<CalEvent>;
                 if (null != calevents)
                 {
@@ -77,7 +55,7 @@ namespace RiverValley2
 
                 try
                 {
-                    //#region Legacy Database Fetch
+                    #region Legacy Database Fetch
                     //DataRow[] drs;
                     //drs = OLDCalendarEvents.Tables[0].Select(string.Format("EventDate > '{0}-{1}-{2}'", now.Day, now.ToString("MMM"), now.Year));
                     //CalEvent calevent;
@@ -103,7 +81,7 @@ namespace RiverValley2
 
                     //    calevents.Add(calevent);
                     //}
-                    //#endregion
+                    #endregion
 
                     #region Google Calendar database fetch
 
@@ -113,20 +91,50 @@ namespace RiverValley2
 
 
                     
-                    string SERVICE_ACCOUNT_EMAIL = "414558114750-vj3ttcv5n87sol20e3lshtvuft5p0b3l@developer.gserviceaccount.com";
-                    string SERVICE_ACCOUNT_KEYFILE = Server.MapPath(@"./certs/rivervalleycommunity.p12");
+                    //string SERVICE_ACCOUNT_EMAIL = "414558114750-vj3ttcv5n87sol20e3lshtvuft5p0b3l@developer.gserviceaccount.com";
+                    //string SERVICE_ACCOUNT_KEYFILE = Server.MapPath(@"./certs/rivervalleycommunity.p12");
 
 
-                    calevents = GoogleAPI.GetCalendarEvents3(SERVICE_ACCOUNT_EMAIL, SERVICE_ACCOUNT_KEYFILE, "rivervalleycommunity@gmail.com", now, nowEnd);
+                    //calevents = GoogleAPI.GetCalendarEvents3(SERVICE_ACCOUNT_EMAIL, SERVICE_ACCOUNT_KEYFILE, "rivervalleycommunity@gmail.com", now, nowEnd);
 
-                    if (null != calevents)
-                        if (calevents.Count < 1)
-                            throw new ApplicationException("Calendar returned zero events");
+                    //if (null != calevents)
+                    //    if (calevents.Count < 1)
+                    //        throw new ApplicationException("Calendar returned zero events");
 
                     //blnCreateBackup = true;
 
                     
                     //markRepeatingEvents(calevents);
+
+                    #endregion
+
+                    #region JSON Calendar fetch
+                    string JSONurl = @"https://script.google.com/macros/s/AKfycbzQgAEZfNzlf0ZNjAcY5w3B0iwppX94LpO8tM_Svm-NTZxIBAs/exec";
+
+                    
+
+                    WebClient client = new WebClient();
+                    //WebProxy wp = new WebProxy("proxy.taltrade.com:8080");
+                    //client.Proxy = wp;
+                    string str = client.DownloadString(JSONurl);
+
+
+                    JSONCalEvents JSONevents = new JavaScriptSerializer().Deserialize<JSONCalEvents>(str);
+                    calevents = JSONevents.calEvents;
+
+                    if (null != calevents)
+                        if (calevents.Count < 1)
+                           throw new ApplicationException("Calendar returned zero events");
+
+
+                    foreach (CalEvent e in calevents)
+                    {
+                        //Fix time zone we want to display cst but server is est
+                        e.StartTime = e.StartTime.AddHours(-1);
+                        e.StartDate = e.StartDate.AddHours(-1);
+                        e.EndTime = e.EndTime.AddHours(-1);
+                        e.EndDate = e.EndDate.AddHours(-1);
+                    }
 
                     #endregion
 
@@ -164,8 +172,8 @@ namespace RiverValley2
 
                 Cache.Insert("cache.CalEvents.RiverValley", calevents,
                    null,
-                   //DateTime.Now.AddMinutes(15), TimeSpan.Zero);
-                   DateTime.Now.AddHours(1), TimeSpan.Zero);
+                   DateTime.Now.AddMinutes(30), TimeSpan.Zero);
+                 
 
                 //Save to disk in case we loose cache and cannot access database
                 //This way we will have something to show for events even if not latest

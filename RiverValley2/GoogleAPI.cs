@@ -16,6 +16,11 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace RiverValley2
 {
+    [Serializable]
+    public class JSONCalEvents
+    {
+        public List<CalEvent> calEvents;
+    }
 
     [Serializable]
     public class CalEvent
