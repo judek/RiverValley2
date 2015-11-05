@@ -63,7 +63,7 @@ namespace RiverValley2
                 nEventshown++;
 
                 //string slink = "<a href=viewEvent.aspx?ID=" + drs[i]["ID"] + "&ColID=207 onclick=\"window.open(this.href,'newWindow','width=400,height=400', 'modal');return false\">";
-                string slink = "<a href=CalendarEvent.aspx?ID=" + currentEvents[i].ID + ">";
+                string slink = "<a href=CalendarEvent.aspx?ID=" + currentEvents[i].ID + "&Y=" + currentEvents[i].StartDate.Year + "&M=" + currentEvents[i].StartDate.Month + "&D=" + currentEvents[i].StartDate.Day + ">";
 
                 LiteralComingEvents.Text += "<b>" + slink + StringTrunk(sEventSubject, 25) + "...</a></b>";
                 //LiteralComingEvents.Text += "<br /><br /><br />" + slink + sEventSubject + "</a><br /><br />";
