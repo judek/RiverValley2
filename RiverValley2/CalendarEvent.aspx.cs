@@ -34,8 +34,16 @@ namespace RiverValley2
             if (true == _CanEditCalendar)
                 Response.Redirect("CalendarEventEdit.aspx?ID=" + Request.QueryString["ID"]);
 
+            int Year = 0, Month = 0, Day = 0;
 
             string stest = Request.QueryString["ID"];
+            try
+            {
+                if (Request.QueryString["Y"] != null) Year = Int32.Parse(Request.QueryString["Y"]);
+                if (Request.QueryString["M"] != null) Month = Int32.Parse(Request.QueryString["M"]);
+                if (Request.QueryString["D"] != null) Day = Int32.Parse(Request.QueryString["D"]);
+            }
+            catch { }//do nothing event just won't be found if parsing date parsing fails
 
             //Event IDs are no longer ints
             //try { nEventID = Int32.Parse(Request.QueryString["ID"]); }
@@ -46,7 +54,11 @@ namespace RiverValley2
             
             CalEvent calEvent = CalEvents.Find(delegate(CalEvent c)
             {
-                return (c.ID == stest);
+                return ((c.ID == stest)
+                && (c.StartDate.Year == Year)
+                && (c.StartDate.Month == Month)
+                && (c.StartDate.Day == Day)
+                );
             });
 
 

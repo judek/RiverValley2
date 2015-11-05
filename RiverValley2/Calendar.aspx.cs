@@ -379,7 +379,7 @@ namespace RiverValley2
                     //string slink = "<a href=CalendarEvent.aspx?ID=" + drs[i]["ID"] + ">";
                     //sEvents += ("<br />" + slink + (drs[i]["Subject"] as string) + "</a>");
 
-                    string slink = "<a href=CalendarEvent.aspx?ID=" + calEvent.ID + ">";
+                    string slink = "<a href=CalendarEvent.aspx?ID=" + calEvent.ID + "&Y=" + calEvent.StartDate.Year + "&M=" + calEvent.StartDate.Month + "&D=" + calEvent.StartDate.Day + ">";
                     sEvents += ("<br />" + slink + (calEvent.Subject) + "</a>");
 
                 }
