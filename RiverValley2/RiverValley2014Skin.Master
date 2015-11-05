@@ -262,7 +262,6 @@ document.onclick = mclose;
                                         <a href="Multimedia.aspx?Tags=sermon" onmouseover="mopen('m8')" onmouseout="mclosetime()">audio/video</a>
                                         <div id="m8" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
                                             <a href="Multimedia.aspx">All Files</a>
-                                            <a href="Podcast.aspx" target="_blank">Podcast</a>
                                             <a href="Multimedia.aspx?Tags=sermon">Sermons</a>
                                             <a href="Multimedia.aspx?Tags=video">Videos</a>
                                         </div>
