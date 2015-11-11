@@ -193,8 +193,8 @@ document.onclick = mclose;
 
 </td>
 	    <td align="center">
-        <div class="homeBox">sermons</div>
-        <a href="Multimedia.aspx?Tags=sermon">
+        <div class="homeBox">faith and family builders</div>
+        <a href="CalendarEvent.aspx?ID=j33ticb6g4d5bmtquqgoi44krg@google.com&Y=2016&M=1&D=31">
         <img src="ShrinkImage.aspx?i=folders/buttons/button2.jpg&w=233" alt="sermon archive" class="shadowMe" />
         </a>
               <br />

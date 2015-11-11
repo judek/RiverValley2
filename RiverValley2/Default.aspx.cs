@@ -11,7 +11,7 @@ namespace RiverValley2
 {
     public partial class Default : RiverValleyPage2
     {
-        const int MAX_SERMON_DISPLAY = 3;
+        const int MAX_SERMON_DISPLAY = 0;
         
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -150,11 +150,13 @@ namespace RiverValley2
                 
                 
                 //<!--  <a href="">James 2:14-26</a> - Andy Morgan<br />
+                if (nDisplayedSermons >= MAX_SERMON_DISPLAY)
+                    break;
+
                 LiteralSermons.Text += slink + StringTrunk(d.Title, 25) + "...</a> " + d.Dated.ToString("MM/dd/yyyy") + "<br />";
                 nDisplayedSermons++;
 
-                if (nDisplayedSermons >= MAX_SERMON_DISPLAY)
-                    break;
+                
             }
         }
 
