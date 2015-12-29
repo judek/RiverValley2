@@ -160,9 +160,9 @@ namespace RiverValley2
                 ;
 
                 if (eventToTweet.IsAllDayEvent)
-                    tweet = sTweetPrefix + " " + eventToTweet.StartTime.ToString("ddd") + ", " + eventToTweet.Subject + ", " + sURL + eventToTweet.ID;
+                    tweet = sTweetPrefix + " " + eventToTweet.StartTime.ToString("ddd") + ", " + eventToTweet.Subject + ", " + sURL + eventToTweet.ID + "&Y=" + eventToTweet.StartDate.Year + "&M=" + eventToTweet.StartDate.Month + "&D=" + eventToTweet.StartDate.Day;
                 else
-                    tweet = sTweetPrefix + " " + eventToTweet.StartTime.ToString("ddd") + ", " + eventToTweet.Subject + ", " + eventToTweet.StartTime.ToShortTimeString() + " - " + eventToTweet.EndTime.ToShortTimeString() + " " + sURL + eventToTweet.ID;
+                    tweet = sTweetPrefix + " " + eventToTweet.StartTime.ToString("ddd") + ", " + eventToTweet.Subject + ", " + eventToTweet.StartTime.ToShortTimeString() + " - " + eventToTweet.EndTime.ToShortTimeString() + " " + sURL + eventToTweet.ID + "&Y=" + eventToTweet.StartDate.Year + "&M=" + eventToTweet.StartDate.Month + "&D=" + eventToTweet.StartDate.Day;
                 
                 
                 callerPage.PrintLine(tweet);
