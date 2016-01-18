@@ -76,25 +76,28 @@ namespace RiverValley2
                     pict1 = pict1 * (-1);
 
 
+                do
+                {
+                    rng.GetBytes(rnd);
+                    urnd = System.BitConverter.ToUInt32(rnd, 0);
 
-                rng.GetBytes(rnd);
-                urnd = System.BitConverter.ToUInt32(rnd, 0);
-
-                pict2 = ((int)urnd) % (files.Length);
-
-
-                if (pict2 < 0)
-                    pict2 = pict2 * (-1);
+                    pict2 = ((int)urnd) % (files.Length);
 
 
+                    if (pict2 < 0)
+                        pict2 = pict2 * (-1);
+                } while (pict2 == pict1);
 
-                rng.GetBytes(rnd);
-                urnd = System.BitConverter.ToUInt32(rnd, 0);
+                do
+                {
+                    rng.GetBytes(rnd);
+                    urnd = System.BitConverter.ToUInt32(rnd, 0);
 
-                pict3 = ((int)urnd) % (files.Length - 1);
+                    pict3 = ((int)urnd) % (files.Length - 1);
 
-                if (pict3 < 0)
-                    pict3 = pict3 * (-1);
+                    if (pict3 < 0)
+                        pict3 = pict3 * (-1);
+                } while ((pict3 == pict2) || (pict3 == pict1));
             }
             else
             {
