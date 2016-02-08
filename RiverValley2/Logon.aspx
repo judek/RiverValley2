@@ -14,8 +14,8 @@
     <div>
         <br />
         <%
-            string link = "https://accounts.google.com/o/oauth2/auth?client_id=" 
-                + "830214409982-e1su7c8o90mji3l6jf47rfdbrs4v23jk.apps.googleusercontent.com" 
+            string link = "https://accounts.google.com/o/oauth2/auth?client_id="
+                + "397605678479-9cnlh0uo8mlo1qo3f756ims11jqe4pqm.apps.googleusercontent.com" 
                 + "&state=" 
                 + Session["state"] 
                 + "&redirect_uri="
@@ -23,7 +23,7 @@
 
 
             string link2 = "https://accounts.google.com/o/oauth2/v2/auth?"
-                                + "client_id=830214409982-e1su7c8o90mji3l6jf47rfdbrs4v23jk.apps.googleusercontent.com"
+                                + "client_id=397605678479-9cnlh0uo8mlo1qo3f756ims11jqe4pqm.apps.googleusercontent.com"
                                 + "&response_type=code"
                                 + "&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile"
                                 + "&redirect_uri=http://localhost:49256/Logon.aspx"

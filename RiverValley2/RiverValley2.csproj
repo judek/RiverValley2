@@ -154,6 +154,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DivorceRecovery.aspx" />
+    <Content Include="Edit\SendTweet\Default.aspx" />
     <Content Include="Logon.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -256,6 +257,13 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Edit\HomeworkUpload\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\SendTweet\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit\SendTweet\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Logon.aspx.cs">
@@ -674,10 +682,15 @@
     <Content Include="Edit\GalleryEdit\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Edit\MultimediaEdit\Web.config" />
+    <Content Include="Edit\MultimediaEdit\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Edit\CalendarEdit\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Edit\SendTweet\Web.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

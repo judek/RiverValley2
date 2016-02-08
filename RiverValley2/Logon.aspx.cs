@@ -83,9 +83,9 @@ namespace RiverValley2.Edit
                 client.UploadValues(baseAddress, new NameValueCollection()
        {
            { "code", code }
-           ,{ "client_id", "830214409982-e1su7c8o90mji3l6jf47rfdbrs4v23jk.apps.googleusercontent.com" }
+           ,{ "client_id", "397605678479-9cnlh0uo8mlo1qo3f756ims11jqe4pqm.apps.googleusercontent.com" }
            //Client secret has changed
-           //,{ "client_secret", "7wr3VUOWZK1F22o_ngwA7F0c" }
+           ,{ "client_secret", "xxxxxxxxxxx" }
            //To Do: get real client_secret
            ,{ "redirect_uri", "http://localhost:49256/Logon.aspx" }
            ,{ "grant_type", "authorization_code" }
