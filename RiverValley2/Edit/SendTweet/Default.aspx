@@ -8,7 +8,7 @@
 
     <title>Send Tweet</title>
 </head>
-<body>
+<body style="margin:0;padding:50px;">
     <form id="form1" runat="server">
     <div>
     
@@ -16,6 +16,7 @@
         <asp:TextBox ID="TextBox1" runat="server" Height="170px" Rows="5" TextMode="MultiLine" Width="332px"></asp:TextBox>
         <p>
             <asp:Button ID="Button1" runat="server" Text="Send Tweet" />
+            <br /><asp:Literal ID="Literal1" runat="server"></asp:Literal>
         </p>
     </form>
 </body>

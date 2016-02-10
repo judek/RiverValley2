@@ -14,18 +14,27 @@ namespace RiverValley2.Edit.SendTweet
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            
+
             if (false == IsPostBack)
                 return;
 
+            if (string.IsNullOrEmpty(TextBox1.Text.Trim()))
+            {
+                Literal1.Text = "<font color=\"red\">Message is empty</font>";
+                return;
+            }
 
 
             try
             {
                 SendEmail(null, TextBox1.Text, new string[] { "tweet@tweetymail.com", "judek@yahoo.com" });
+                Literal1.Text = "<font color=\"green\">Tweet successfully sent!</font>";
+                TextBox1.Text = "";
             }
-            catch
+            catch (Exception exp)
             {
-                
+                Literal1.Text = "<font color=\"red\">Could not send Tweet.<br /> " + exp.Message + "</font>";
             }
         }
 
@@ -55,9 +64,9 @@ namespace RiverValley2.Edit.SendTweet
 
                     SendMailMessage(mailMessage);
                 }
-                catch (Exception )
+                catch (Exception exp)
                 {
-                    
+                    throw exp;
                 }
 
             }
