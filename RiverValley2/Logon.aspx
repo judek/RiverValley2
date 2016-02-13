@@ -19,14 +19,14 @@
                 + "&state=" 
                 + Session["state"] 
                 + "&redirect_uri="
-                + "http://localhost:49256/Logon.aspx";
+                + "https://rivervalleycarpe.readyhosting.com/Logon.aspx";
 
 
             string link2 = "https://accounts.google.com/o/oauth2/v2/auth?"
                                 + "client_id=397605678479-9cnlh0uo8mlo1qo3f756ims11jqe4pqm.apps.googleusercontent.com"
                                 + "&response_type=code"
                                 + "&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile"
-                                + "&redirect_uri=http://localhost:49256/Logon.aspx"
+                                + "&redirect_uri=https://rivervalleycarpe.readyhosting.com/Logon.aspx"
                                 + "&state=" + Session["state"]
                                 //+ "&login_hint=jsmith@example.com"
                                 //+ "&openid.realm=example.com"
