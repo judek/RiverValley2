@@ -97,7 +97,7 @@ namespace RiverValley2.Edit
            { "code", code }
            ,{ "client_id", "397605678479-9cnlh0uo8mlo1qo3f756ims11jqe4pqm.apps.googleusercontent.com" }
            //Client secret has changed
-           ,{ "client_secret", "xQsUS45ElWaFotglPhq8hzBN" }
+           ,{ "client_secret", "" }
            //To Do: get real client_secret
            ,{ "redirect_uri", "https://rivervalleycarpe.readyhosting.com/Logon.aspx" }
            ,{ "grant_type", "authorization_code" }
