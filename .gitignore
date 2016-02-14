@@ -200,4 +200,4 @@ packages/*
 
 
 # Secrets
-Secret.txt
+Secret.config

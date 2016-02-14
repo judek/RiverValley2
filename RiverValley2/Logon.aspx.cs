@@ -39,7 +39,7 @@ namespace RiverValley2.Edit
         {
 
             string secret = "Not a secret";
-            string secretPath = Server.MapPath(".") + @"\Secret.txt";
+            string secretPath = Server.MapPath(".") + @"\Secret.config";
 
             if (true == File.Exists(secretPath))
                 secret = File.ReadAllText(secretPath).Trim();
