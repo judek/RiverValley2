@@ -30,6 +30,9 @@
         <br /><span class="subtitle"><a href="CalendarEdit/Default.aspx">Calendar</a></span><br />
         <ul><span class="phonetitle">Add, delete, and edit calendar events</span></ul>
         
+        <br /><span class="subtitle"><a href="SendTweet/Default.aspx">Twitter</a></span><br />
+        <ul><span class="phonetitle">Send Tweets on behalf of River Valley Church</span></ul>
+
         <br /><span class="subtitle"><a href="MultimediaEdit/Default.aspx">Mulitmedia (Sermons and videos)</a></span><br />
         <ul><span class="phonetitle">
         Delete, Edit and Tag(Classify) multimedia content.

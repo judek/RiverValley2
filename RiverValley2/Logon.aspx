@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Logon.aspx.cs" Inherits="RiverValley2.Edit.Logon" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Logon.aspx.cs" Inherits="RiverValley2.Edit.Logon" %>
 
 <!DOCTYPE html>
 
@@ -9,7 +9,7 @@
 
     <title>River Valley Web Site Editor</title>
 </head>
-<body>
+<body style="margin:50px;padding:0">
     <form id="form1" runat="server">
     <div>
         <br />
@@ -39,17 +39,20 @@
         <asp:Literal ID="Literal1" runat="server"></asp:Literal>
 
         <%
-            if(System.Web.HttpContext.Current.User.Identity.IsAuthenticated)
+            if(true == System.Web.HttpContext.Current.User.Identity.IsAuthenticated)
             {
                 %>
-                    <br />User <%=HttpContext.Current.User.Identity.Name%> not allowed access to this resource. 
+                    <br />User <%=System.Web.HttpContext.Current.User.Identity.Name%> not allowed access to this resource. 
                     <br /><a href='https://accounts.google.com/logout'>Please, click here to logout</a>            
                     <br />And then log into an another Google account.
                             <%
             }
             else
             {
-               %> <a href="<%=link2%>">Click here to login through Google</a> <%
+               %> <a href="<%=link2%>"><img src="login-google.png" alt="Click here to login through Google"></a> 
+<br /><%=System.Web.HttpContext.Current.User.Identity.Name%>
+                    <br /><a href='https://accounts.google.com/logout'>Please, click here to logout</a> 
+<%
             }
             
              %>
