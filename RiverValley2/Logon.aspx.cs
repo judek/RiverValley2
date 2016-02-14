@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Configuration;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -31,8 +32,21 @@ namespace RiverValley2.Edit
 
     public partial class Logon : System.Web.UI.Page
     {
+        public string sLogonRedirectURL = ConfigurationManager.AppSettings["LogonRedirectURL"];
+        public string sLogonClientID = ConfigurationManager.AppSettings["LogonClientID"];
+       
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            string secret = "Not a secret";
+            string secretPath = Server.MapPath(".") + @"\Secret.txt";
+
+            if (true == File.Exists(secretPath))
+                secret = File.ReadAllText(secretPath).Trim();
+            else
+                Literal1.Text = "Error cannot find file:" + secretPath + "<br />";
+            
+            
             if (Session["state"] == null)
             {
                 Session["state"] = Guid.NewGuid();
@@ -95,11 +109,11 @@ namespace RiverValley2.Edit
                 client.UploadValues(baseAddress, new NameValueCollection()
        {
            { "code", code }
-           ,{ "client_id", "397605678479-9cnlh0uo8mlo1qo3f756ims11jqe4pqm.apps.googleusercontent.com" }
+           ,{ "client_id", sLogonClientID }
            //Client secret has changed
-           ,{ "client_secret", "" }
+           ,{ "client_secret", secret }
            //To Do: get real client_secret
-           ,{ "redirect_uri", "https://rivervalleycarpe.readyhosting.com/Logon.aspx" }
+           ,{ "redirect_uri", sLogonRedirectURL }
            ,{ "grant_type", "authorization_code" }
        });
 
