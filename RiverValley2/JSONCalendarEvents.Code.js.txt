@@ -1,0 +1,93 @@
+/**
+ * Serves HTML of the application for HTTP GET requests.
+ * If folderId is provided as a URL parameter, the web app will list
+ * the contents of that folder (if permissions allow). Otherwise
+ * the web app will list the contents of the root folder.
+ *
+ * @param {Object} e event parameter that can contain information
+ *     about any URL parameters provided.
+ */
+
+/*
+ public class CalEvent
+    {
+        public string ID = "";
+        public string Subject = "";
+        public string Details = "";
+        public string Location = "";
+        public DateTime StartDate = DateTime.MinValue;
+        public DateTime EndDate = DateTime.MinValue;
+        public DateTime StartTime = DateTime.MinValue;
+        public DateTime EndTime = DateTime.MinValue;
+        public bool IsAllDayEvent;
+        public bool IsPrivate;
+        public TimeSpan Duration
+        {
+            get { return EndTime - StartTime; }
+        }
+
+        public string Recurrence = null;
+    }
+*/
+
+
+
+function doGet(e) {
+  
+   
+  var myCalevents = {
+      calEvents: []
+  };
+  
+  
+  
+   var cal = CalendarApp.getDefaultCalendar();
+  
+  var today = new Date();
+  
+  //Logger.log(addDays(today, -365));
+  
+  var events = cal.getEvents(addDays(today, -66), addDays(today, 365));
+  
+  for (var i=0;i<events.length;i++) {
+    //http://www.google.com/google-d-s/scripts/class_calendarevent.html
+    //var details=[[events[i].getStartTime(), events[i].getEndTime(), events[i].getTitle(), events[i].getDescription()]];
+    
+    var calEvent = {Subject: events[i].getTitle()
+                    , StartTime:events[i].getStartTime()
+                    , StartDate:events[i].getStartTime()
+                    , EndTime:events[i].getEndTime()
+                    , EndDate:events[i].getEndTime()
+                    , Details:events[i].getDescription()
+                    , ID:events[i].getId()
+                    , Location:events[i].getLocation()
+                    //, isRecurringEvent:events[i].isRecurringEvent()
+                    , IsAllDayEvent:events[i].isAllDayEvent()
+                    , IsPrivate:events[i].isOwnedByMe()
+                   }; 
+    
+    
+    myCalevents.calEvents.push(calEvent)
+    
+
+  }
+  
+  return ContentService.createTextOutput(JSON.stringify(myCalevents))
+    .setMimeType(ContentService.MimeType.JSON);
+
+//Logger.log(JSON.stringify(myCalevents));
+  
+  
+}
+
+function addDays(startDate,numberOfDays)
+	{
+		var returnDate = new Date(
+								startDate.getFullYear(),
+								startDate.getMonth(),
+								startDate.getDate()+numberOfDays,
+								startDate.getHours(),
+								startDate.getMinutes(),
+								startDate.getSeconds());
+		return returnDate;
+	}
