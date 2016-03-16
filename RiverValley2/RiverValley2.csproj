@@ -25,6 +25,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <NuGetPackageImportStamp>074cb179</NuGetPackageImportStamp>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -156,6 +157,7 @@
     <Content Include="DivorceRecovery.aspx" />
     <Content Include="Edit\SendTweet\Default.aspx" />
     <Content Include="Logon.aspx" />
+    <Content Include="PreSchoolSecure.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -424,6 +426,13 @@
     </Compile>
     <Compile Include="PreSchool.aspx.designer.cs">
       <DependentUpon>PreSchool.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreSchoolSecure.aspx.cs">
+      <DependentUpon>PreSchoolSecure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreSchoolSecure.aspx.designer.cs">
+      <DependentUpon>PreSchoolSecure.aspx</DependentUpon>
     </Compile>
     <Compile Include="privacystatement.aspx.cs">
       <DependentUpon>privacystatement.aspx</DependentUpon>
