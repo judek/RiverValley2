@@ -194,7 +194,7 @@ document.onclick = mclose;
 </td>
 	    <td align="center">
         <div class="homeBox">missions</div>
-        <a href="Missions.aspx">
+        <a href="http://www.onamissionrivervalley.org" target="_blank">
         <img src="ShrinkImage.aspx?i=folders/buttons/button2.jpg&w=233" alt="sermon archive" class="shadowMe" />
         </a>
               <br />
