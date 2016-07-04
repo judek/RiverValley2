@@ -154,10 +154,14 @@ namespace RiverValley2
             {
                 return "<h3>" + sline.Substring(4) + "</h3>";
             }
-           
-            
-            
-            
+            else if (sline.StartsWith("#### "))
+            {
+                return "<h4>" + sline.Substring(5) + "</h4>";
+            }
+
+
+
+
             else if (sline.StartsWith("--+++++ "))
             {
                 return "<span class=\"phonetitle\">" + sline.Substring(8) + "</span>";

@@ -54,11 +54,12 @@
     <table><tr><td>
         <span class="subtitle"><br /><br />Help<br /></span>
         <ul>
-            <span class="smalltitle"><br />HTML Short cuts</span>
-            <span class="title"><br />--++ Page Title or Heading 1</span>
-            <span class="subtitle"><br />--+++ Page Sub Title or Heading 2</span>
-            <span class="smalltitle"><br />--++++ Page Small Title or Heading 3</span>
-            <span class="phonetitle"><br />--+++++ This is text just bigger than normal use in place of bolding text or Heading 3</span>
+            <span class="smalltitle"><br />Handy Short cuts</span>
+            <br />Us the # symbol followed by a space then your text.  Use as shown below.<br />
+            <h1># Page Title or Heading 1</h1>
+            <h2>## Page Sub Title or Heading 2</h2>
+            <h3>### Page Small Title or Heading 3</h3>
+            <h4>#### This is text just bigger than normal use in place of bolding text or Heading 3</h4>
             <br />This is regular text or no Headings
             
             <br /><br />
@@ -70,11 +71,9 @@
               <br /><span class="smalltitle"><br />Bolding text</span>
             <br />Bolding is not supported cause all styles are already bolded
 
-            <br /><span class="smalltitle"><br />Indenting text</span>
-            <br /><ul>&lt;ul>Indent text by wraping text with the ul tag&lt;/ul></ul>
-            <br /><span class="smalltitle"><br />Bulleting text</span>
-            <br /><li>&lt;li/>Bullet by wraping text with the il tag&lt;/li></li>
-
+            <br /><span class="smalltitle"><br />Indenting text, bullenting and numbering</span>
+            <br /><br />This can be done by adding a little html code see <a href="http://www.w3schools.com/html/html_lists.asp" target="_blank">this page</a> for details
+           
 
         </ul>
         </td></tr></table>
