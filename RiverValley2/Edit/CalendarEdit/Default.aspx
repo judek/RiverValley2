@@ -9,12 +9,10 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    Welcome. To edit calendar, log into the following gmail account
-    <br />Username: rivervalleycommunity
-    <br />Password: bRA8+U#U
+    Welcome. To edit calendar, contact Jude and have him give your gmail account access to edit river valley calendar.
+ 
     <br />
-    <br /><a href="http://google.com/calendar" target="_blank">Click here</a> to go to the calendar login.
-    
+   
     </div>
     </form>
 </body>
