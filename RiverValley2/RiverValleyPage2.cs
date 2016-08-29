@@ -269,5 +269,10 @@ namespace RiverValley2
             Cache.Remove("cache.RiverValley.MultimediaTagList");
             Cache.Remove("cache.RiverValley.PodcastXMLString");
         }
+
+        protected void DropCalendarCache()
+        {
+            Cache.Remove("cache.CalEvents.RiverValley");
+        }
     }
 }

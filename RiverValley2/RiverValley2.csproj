@@ -66,6 +66,7 @@
   <ItemGroup>
     <Content Include="DivorceRecovery.aspx" />
     <Content Include="Edit\SendTweet\Default.aspx" />
+    <Content Include="execute.aspx" />
     <Content Include="Logon.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -176,6 +177,13 @@
     </Compile>
     <Compile Include="Edit\SendTweet\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="execute.aspx.cs">
+      <DependentUpon>execute.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="execute.aspx.designer.cs">
+      <DependentUpon>execute.aspx</DependentUpon>
     </Compile>
     <Compile Include="GoogleAPI.cs" />
     <Compile Include="Logon.aspx.cs">
