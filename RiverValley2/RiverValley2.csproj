@@ -68,6 +68,7 @@
     <Content Include="Edit\SendTweet\Default.aspx" />
     <Content Include="execute.aspx" />
     <Content Include="Logon.aspx" />
+    <Content Include="Recess.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -351,6 +352,13 @@
       <DependentUpon>privacystatement.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recess.aspx.cs">
+      <DependentUpon>Recess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Recess.aspx.designer.cs">
+      <DependentUpon>Recess.aspx</DependentUpon>
+    </Compile>
     <Compile Include="RiverValley.Master.cs">
       <DependentUpon>RiverValley.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
